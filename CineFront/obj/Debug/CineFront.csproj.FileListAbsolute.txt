@@ -1,0 +1,12 @@
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\CineFront.exe.config
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\CineFront.exe
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\CineFront.pdb
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.csproj.AssemblyReference.cache
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.csproj.SuggestedBindingRedirects.cache
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.SeleccionPelicula.resources
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Principal.resources
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Properties.Resources.resources
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.csproj.GenerateResource.cache
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.csproj.CoreCompileInputs.cache
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.exe
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.pdb
