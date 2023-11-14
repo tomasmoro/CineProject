@@ -14,3 +14,19 @@ D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFro
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\DataApi.pdb
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\DataApi.exe.config
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.csproj.CopyComplete
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\bin\Debug\CineFront.exe.config
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\bin\Debug\CineFront.exe
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\bin\Debug\CineFront.pdb
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\bin\Debug\DataApi.exe
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\bin\Debug\DataApi.pdb
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\bin\Debug\DataApi.exe.config
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.csproj.AssemblyReference.cache
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.Presentacion.RegistroUsuario.resources
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.Presentacion.SeleccionPelicula.resources
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.Principal.resources
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.Properties.Resources.resources
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.csproj.GenerateResource.cache
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.csproj.CoreCompileInputs.cache
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.csproj.CopyComplete
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.exe
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.pdb

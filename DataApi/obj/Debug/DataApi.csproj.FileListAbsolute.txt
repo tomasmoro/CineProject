@@ -8,3 +8,12 @@ D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\DataApi
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\DataApi\obj\Debug\DataApi.csproj.CoreCompileInputs.cache
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\DataApi\obj\Debug\DataApi.exe
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\DataApi\obj\Debug\DataApi.pdb
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\DataApi\bin\Debug\DataApi.exe.config
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\DataApi\bin\Debug\DataApi.exe
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\DataApi\bin\Debug\DataApi.pdb
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\DataApi\obj\Debug\DataApi.csproj.AssemblyReference.cache
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\DataApi\obj\Debug\DataApi.Properties.Resources.resources
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\DataApi\obj\Debug\DataApi.csproj.GenerateResource.cache
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\DataApi\obj\Debug\DataApi.csproj.CoreCompileInputs.cache
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\DataApi\obj\Debug\DataApi.exe
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\DataApi\obj\Debug\DataApi.pdb

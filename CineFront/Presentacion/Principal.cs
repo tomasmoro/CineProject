@@ -14,6 +14,7 @@ namespace CineFront
     public partial class Principal : Form
     {
         SeleccionPelicula seleccionPelicula;
+        RegistroUsuario registroUsuario;
 
         public Principal()
         {
@@ -26,19 +27,33 @@ namespace CineFront
             seleccionPelicula = new SeleccionPelicula();
             seleccionPelicula.Show();
             
+
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             seleccionPelicula = new SeleccionPelicula();
             seleccionPelicula.Show();
-            
+
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("¿Seguro que quiere salir?", "SALIR", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
             Close();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            registroUsuario = new RegistroUsuario();
+            registroUsuario.Show();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            registroUsuario = new RegistroUsuario();
+            registroUsuario.Show();
         }
     }
 }

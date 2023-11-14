@@ -31,11 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeleccionPelicula));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pbxPeli1 = new System.Windows.Forms.PictureBox();
-            this.pbxPeli2 = new System.Windows.Forms.PictureBox();
-            this.pbxPeli3 = new System.Windows.Forms.PictureBox();
-            this.pbxPeli4 = new System.Windows.Forms.PictureBox();
-            this.pbxPeli5 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pbrTickets = new System.Windows.Forms.ProgressBar();
@@ -44,11 +39,18 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli4)).BeginInit();
+            this.pbxPeli5 = new System.Windows.Forms.PictureBox();
+            this.pbxPeli4 = new System.Windows.Forms.PictureBox();
+            this.pbxPeli3 = new System.Windows.Forms.PictureBox();
+            this.pbxPeli2 = new System.Windows.Forms.PictureBox();
+            this.pbxPeli1 = new System.Windows.Forms.PictureBox();
+            this.pbAtras = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPeli5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAtras)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -72,61 +74,6 @@
             this.label2.Size = new System.Drawing.Size(238, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "Seleccione una Película:";
-            // 
-            // pbxPeli1
-            // 
-            this.pbxPeli1.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli1.Image")));
-            this.pbxPeli1.Location = new System.Drawing.Point(17, 144);
-            this.pbxPeli1.Name = "pbxPeli1";
-            this.pbxPeli1.Size = new System.Drawing.Size(165, 257);
-            this.pbxPeli1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxPeli1.TabIndex = 3;
-            this.pbxPeli1.TabStop = false;
-            this.pbxPeli1.Click += new System.EventHandler(this.pbxPeli1_Click);
-            // 
-            // pbxPeli2
-            // 
-            this.pbxPeli2.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli2.Image")));
-            this.pbxPeli2.Location = new System.Drawing.Point(199, 144);
-            this.pbxPeli2.Name = "pbxPeli2";
-            this.pbxPeli2.Size = new System.Drawing.Size(165, 257);
-            this.pbxPeli2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxPeli2.TabIndex = 4;
-            this.pbxPeli2.TabStop = false;
-            this.pbxPeli2.Click += new System.EventHandler(this.pbxPeli2_Click);
-            // 
-            // pbxPeli3
-            // 
-            this.pbxPeli3.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli3.Image")));
-            this.pbxPeli3.Location = new System.Drawing.Point(381, 144);
-            this.pbxPeli3.Name = "pbxPeli3";
-            this.pbxPeli3.Size = new System.Drawing.Size(165, 257);
-            this.pbxPeli3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxPeli3.TabIndex = 5;
-            this.pbxPeli3.TabStop = false;
-            this.pbxPeli3.Click += new System.EventHandler(this.pbxPeli3_Click);
-            // 
-            // pbxPeli4
-            // 
-            this.pbxPeli4.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli4.Image")));
-            this.pbxPeli4.Location = new System.Drawing.Point(563, 144);
-            this.pbxPeli4.Name = "pbxPeli4";
-            this.pbxPeli4.Size = new System.Drawing.Size(165, 257);
-            this.pbxPeli4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxPeli4.TabIndex = 6;
-            this.pbxPeli4.TabStop = false;
-            this.pbxPeli4.Click += new System.EventHandler(this.pbxPeli4_Click);
-            // 
-            // pbxPeli5
-            // 
-            this.pbxPeli5.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli5.Image")));
-            this.pbxPeli5.Location = new System.Drawing.Point(745, 144);
-            this.pbxPeli5.Name = "pbxPeli5";
-            this.pbxPeli5.Size = new System.Drawing.Size(165, 257);
-            this.pbxPeli5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxPeli5.TabIndex = 7;
-            this.pbxPeli5.TabStop = false;
-            this.pbxPeli5.Click += new System.EventHandler(this.pbxPeli5_Click);
             // 
             // label3
             // 
@@ -156,7 +103,7 @@
             // 
             // pbrTickets
             // 
-            this.pbrTickets.Location = new System.Drawing.Point(319, 51);
+            this.pbrTickets.Location = new System.Drawing.Point(316, 51);
             this.pbrTickets.Name = "pbrTickets";
             this.pbrTickets.Size = new System.Drawing.Size(294, 10);
             this.pbrTickets.TabIndex = 10;
@@ -224,12 +171,81 @@
             this.label8.Text = "SELECCIONE FUNCIÓN";
             this.label8.Visible = false;
             // 
+            // pbxPeli5
+            // 
+            this.pbxPeli5.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli5.Image")));
+            this.pbxPeli5.Location = new System.Drawing.Point(745, 144);
+            this.pbxPeli5.Name = "pbxPeli5";
+            this.pbxPeli5.Size = new System.Drawing.Size(165, 257);
+            this.pbxPeli5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxPeli5.TabIndex = 7;
+            this.pbxPeli5.TabStop = false;
+            this.pbxPeli5.Click += new System.EventHandler(this.pbxPeli5_Click);
+            // 
+            // pbxPeli4
+            // 
+            this.pbxPeli4.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli4.Image")));
+            this.pbxPeli4.Location = new System.Drawing.Point(563, 144);
+            this.pbxPeli4.Name = "pbxPeli4";
+            this.pbxPeli4.Size = new System.Drawing.Size(165, 257);
+            this.pbxPeli4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxPeli4.TabIndex = 6;
+            this.pbxPeli4.TabStop = false;
+            this.pbxPeli4.Click += new System.EventHandler(this.pbxPeli4_Click);
+            // 
+            // pbxPeli3
+            // 
+            this.pbxPeli3.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli3.Image")));
+            this.pbxPeli3.Location = new System.Drawing.Point(381, 144);
+            this.pbxPeli3.Name = "pbxPeli3";
+            this.pbxPeli3.Size = new System.Drawing.Size(165, 257);
+            this.pbxPeli3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxPeli3.TabIndex = 5;
+            this.pbxPeli3.TabStop = false;
+            this.pbxPeli3.Click += new System.EventHandler(this.pbxPeli3_Click);
+            // 
+            // pbxPeli2
+            // 
+            this.pbxPeli2.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli2.Image")));
+            this.pbxPeli2.Location = new System.Drawing.Point(199, 144);
+            this.pbxPeli2.Name = "pbxPeli2";
+            this.pbxPeli2.Size = new System.Drawing.Size(165, 257);
+            this.pbxPeli2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxPeli2.TabIndex = 4;
+            this.pbxPeli2.TabStop = false;
+            this.pbxPeli2.Click += new System.EventHandler(this.pbxPeli2_Click);
+            // 
+            // pbxPeli1
+            // 
+            this.pbxPeli1.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli1.Image")));
+            this.pbxPeli1.Location = new System.Drawing.Point(17, 144);
+            this.pbxPeli1.Name = "pbxPeli1";
+            this.pbxPeli1.Size = new System.Drawing.Size(165, 257);
+            this.pbxPeli1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxPeli1.TabIndex = 3;
+            this.pbxPeli1.TabStop = false;
+            this.pbxPeli1.Click += new System.EventHandler(this.pbxPeli1_Click);
+            // 
+            // pbAtras
+            // 
+            this.pbAtras.BackColor = System.Drawing.Color.Transparent;
+            this.pbAtras.BackgroundImage = global::CineFront.Properties.Resources._580b57fcd9996e24bc43c44c1;
+            this.pbAtras.Image = global::CineFront.Properties.Resources._580b57fcd9996e24bc43c44c1;
+            this.pbAtras.Location = new System.Drawing.Point(10, 9);
+            this.pbAtras.Name = "pbAtras";
+            this.pbAtras.Size = new System.Drawing.Size(72, 64);
+            this.pbAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAtras.TabIndex = 16;
+            this.pbAtras.TabStop = false;
+            this.pbAtras.Click += new System.EventHandler(this.pbAtras_Click);
+            // 
             // SeleccionPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(924, 749);
+            this.Controls.Add(this.pbAtras);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -247,11 +263,12 @@
             this.Controls.Add(this.label1);
             this.Name = "SeleccionPelicula";
             this.Text = "Comprar Tickets";
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPeli5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPeli1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAtras)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,5 +291,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pbAtras;
     }
 }

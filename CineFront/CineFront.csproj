@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Presentacion\RegistroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\RegistroUsuario.Designer.cs">
+      <DependentUpon>RegistroUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\SeleccionPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentacion\RegistroUsuario.resx">
+      <DependentUpon>RegistroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\SeleccionPelicula.resx">
       <DependentUpon>SeleccionPelicula.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +98,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -120,6 +130,18 @@
       <Project>{F5C7B31E-5013-487C-970C-3DAFAC894E90}</Project>
       <Name>DataApi</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presentacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\580b57fcd9996e24bc43c44c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\580b57fcd9996e24bc43c44c1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -67,5 +67,10 @@ namespace CineFront.Presentacion
             MostrarCampos();
            
         }
+
+        private void pbAtras_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
