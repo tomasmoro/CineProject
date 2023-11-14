@@ -115,5 +115,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataApi\DataApi.csproj">
+      <Project>{F5C7B31E-5013-487C-970C-3DAFAC894E90}</Project>
+      <Name>DataApi</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

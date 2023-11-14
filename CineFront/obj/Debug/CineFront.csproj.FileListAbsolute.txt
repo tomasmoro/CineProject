@@ -10,3 +10,7 @@ D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFro
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.csproj.CoreCompileInputs.cache
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.exe
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.pdb
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\DataApi.exe
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\DataApi.pdb
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\DataApi.exe.config
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.csproj.CopyComplete

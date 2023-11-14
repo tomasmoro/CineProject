@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataApi.Dominio
 {
-    internal class Pelicula
+    public class Pelicula
     {
         public int id_pelicula { get; set; }
         public string titulo { get; set; }
