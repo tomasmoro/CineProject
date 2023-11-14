@@ -46,6 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dominio\Actor.cs" />
+    <Compile Include="Dominio\Barrio.cs" />
+    <Compile Include="Dominio\Butaca.cs" />
+    <Compile Include="Dominio\Categoria.cs" />
+    <Compile Include="Dominio\Cliente.cs" />
+    <Compile Include="Dominio\Director.cs" />
+    <Compile Include="Dominio\Factura.cs" />
+    <Compile Include="Dominio\FormaPago.cs" />
+    <Compile Include="Dominio\Funcion.cs" />
+    <Compile Include="Dominio\Genero.cs" />
+    <Compile Include="Dominio\Lenguaje.cs" />
+    <Compile Include="Dominio\Pelicula.cs" />
+    <Compile Include="Dominio\Producto.cs" />
+    <Compile Include="Dominio\ProductoDetalle.cs" />
+    <Compile Include="Dominio\PromocionCodigo.cs" />
+    <Compile Include="Dominio\PromocionEdad.cs" />
+    <Compile Include="Dominio\Sala.cs" />
+    <Compile Include="Dominio\TicketDetalle.cs" />
+    <Compile Include="Dominio\TipoSala.cs" />
+    <Compile Include="Dominio\Vendedor.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
