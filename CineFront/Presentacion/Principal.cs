@@ -55,5 +55,6 @@ namespace CineFront
             registroUsuario = new RegistroUsuario();
             registroUsuario.Show();
         }
+
     }
 }
