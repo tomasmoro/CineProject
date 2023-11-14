@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomas.moro\\source\\repos\\CineFront\\ApiCine\\ApiCine.csproj": {}
+    "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\ApiCine\\ApiCine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomas.moro\\source\\repos\\CineFront\\ApiCine\\ApiCine.csproj": {
+    "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\ApiCine\\ApiCine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomas.moro\\source\\repos\\CineFront\\ApiCine\\ApiCine.csproj",
+        "projectUniqueName": "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\ApiCine\\ApiCine.csproj",
         "projectName": "ApiCine",
-        "projectPath": "C:\\Users\\tomas.moro\\source\\repos\\CineFront\\ApiCine\\ApiCine.csproj",
-        "packagesPath": "C:\\Users\\tomas.moro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomas.moro\\source\\repos\\CineFront\\ApiCine\\obj\\",
+        "projectPath": "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\ApiCine\\ApiCine.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\ApiCine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tomas.moro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
