@@ -18,6 +18,7 @@ namespace CineFront.Presentacion
         public SeleccionPelicula()
         {
             InitializeComponent();
+            txtNombrePeli.Visible = false;
             cboTipoEntrada.Items.Clear();
             cboTipoEntrada.Visible = false;
             cboTipoEntrada.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -36,6 +37,8 @@ namespace CineFront.Presentacion
             label7.Visible = true;
             label7.Text = p.titulo;
             label8.Visible = true;
+            txtNombrePeli.Visible = true;
+            txtNombrePeli.Enabled = false;
             cboFuncion.Visible = true;
             btnAsientos.Visible = true;//una vez cargada la BD, podemos eliminar esto ya que ValidarDatos() chequea si está.
         }
@@ -64,32 +67,35 @@ namespace CineFront.Presentacion
         private void pbxPeli1_Click(object sender, EventArgs e)
         {
             MostrarCampos();
-            
+            txtNombrePeli.Text = "THE MARVELS";
             
         }
 
         private void pbxPeli2_Click(object sender, EventArgs e)
         {
             MostrarCampos();
-            
+            txtNombrePeli.Text = "LOS JUEGOS DEL HAMBRE";
+
         }
 
         private void pbxPeli3_Click(object sender, EventArgs e)
         {
             MostrarCampos();
-            
+            txtNombrePeli.Text = "NAPOLEON";
+
         }
 
         private void pbxPeli4_Click(object sender, EventArgs e)
         {
             MostrarCampos();
-            
+            txtNombrePeli.Text = "AVATAR";
+
         }
 
         private void pbxPeli5_Click(object sender, EventArgs e)
         {
             MostrarCampos();
-           
+            txtNombrePeli.Text = "BARBIE";
         }
 
         private void pbAtras_Click(object sender, EventArgs e)

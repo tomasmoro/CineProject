@@ -47,6 +47,7 @@
             this.pbAtras = new System.Windows.Forms.PictureBox();
             this.cboFuncion = new System.Windows.Forms.ComboBox();
             this.btnAsientos = new System.Windows.Forms.Button();
+            this.txtNombrePeli = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPeli5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPeli4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPeli3)).BeginInit();
@@ -58,6 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gold;
             this.label1.Location = new System.Drawing.Point(309, 9);
@@ -69,6 +71,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gold;
             this.label2.Location = new System.Drawing.Point(12, 103);
@@ -129,6 +132,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gold;
             this.label5.Location = new System.Drawing.Point(12, 531);
@@ -141,6 +145,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gold;
             this.label6.Location = new System.Drawing.Point(16, 465);
@@ -164,6 +169,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gold;
             this.label8.Location = new System.Drawing.Point(282, 531);
@@ -270,12 +276,24 @@
             this.btnAsientos.Visible = false;
             this.btnAsientos.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtNombrePeli
+            // 
+            this.txtNombrePeli.BackColor = System.Drawing.Color.White;
+            this.txtNombrePeli.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombrePeli.ForeColor = System.Drawing.Color.Maroon;
+            this.txtNombrePeli.Location = new System.Drawing.Point(117, 466);
+            this.txtNombrePeli.Name = "txtNombrePeli";
+            this.txtNombrePeli.Size = new System.Drawing.Size(226, 24);
+            this.txtNombrePeli.TabIndex = 18;
+            // 
             // SeleccionPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
+            this.BackgroundImage = global::CineFront.Properties.Resources.Fondo;
             this.ClientSize = new System.Drawing.Size(924, 749);
+            this.Controls.Add(this.txtNombrePeli);
             this.Controls.Add(this.btnAsientos);
             this.Controls.Add(this.cboFuncion);
             this.Controls.Add(this.pbAtras);
@@ -328,5 +346,6 @@
         private System.Windows.Forms.PictureBox pbAtras;
         private System.Windows.Forms.ComboBox cboFuncion;
         private System.Windows.Forms.Button btnAsientos;
+        private System.Windows.Forms.TextBox txtNombrePeli;
     }
 }
