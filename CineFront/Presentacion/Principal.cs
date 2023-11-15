@@ -1,4 +1,5 @@
 ﻿using CineFront.Presentacion;
+using CineFront.Presentacion.Registros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace CineFront
     {
         SeleccionPelicula seleccionPelicula;
         RegistroUsuario registroUsuario;
+        RegistroVendedor registroVendedor;
 
         public Principal()
         {
@@ -56,5 +58,16 @@ namespace CineFront
             registroUsuario.Show();
         }
 
+        private void vendedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            registroVendedor = new RegistroVendedor();
+            registroVendedor.Show();
+        }
+
+        private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            registroUsuario = new RegistroUsuario();
+            registroUsuario.Show();
+        }
     }
 }

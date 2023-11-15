@@ -16,5 +16,26 @@ namespace CineFront.Presentacion.Registros
         {
             InitializeComponent();
         }
+        public void limpiar()
+        {
+            txtCodigo.Text = string.Empty;
+            txtApellido.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtCorreo.Text = string.Empty;
+            txtTelefono.Text = string.Empty;
+            dtpFechaNac.Value = DateTime.Today;
+        }
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Seguro que quiere cancelar?", "CANCELAR", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                limpiar();
+            }
+        }
+
+        private void pbAtras_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
