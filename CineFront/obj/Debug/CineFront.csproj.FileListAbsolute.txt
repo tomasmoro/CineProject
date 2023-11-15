@@ -30,3 +30,5 @@ C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\C
 C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.csproj.CopyComplete
 C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.exe
 C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.pdb
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.RegistroUsuario.resources
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Registros.RegistroVendedor.resources

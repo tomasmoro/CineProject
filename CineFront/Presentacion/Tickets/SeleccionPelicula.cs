@@ -28,13 +28,37 @@ namespace CineFront.Presentacion
 
         private void MostrarCampos()
         {
-            pbrTickets.Value = 20;
+            pbrTickets.Value = 25;
             cboTipoEntrada.Visible = true;
             cboTipoEntrada.Enabled = true;
             label5.Visible = true;
             label6.Visible = true;
             label7.Visible = true;
             label7.Text = p.titulo;
+            label8.Visible = true;
+            cboFuncion.Visible = true;
+            btnAsientos.Visible = true;//una vez cargada la BD, podemos eliminar esto ya que ValidarDatos() chequea si está.
+        }
+
+        private bool ValidarDatos()
+        {
+            bool  validado = true;
+            if(label7.Text == "" )
+            {
+                MessageBox.Show("Debe seleccionar una pelicula.");
+                validado = false;
+            }
+            else if (cboTipoEntrada.SelectedIndex == -1)
+            {
+                MessageBox.Show("Debe seleccionar un tipo de entrada.");
+                validado = false;
+            }
+            else if(cboFuncion.SelectedIndex == -1)
+            {
+                MessageBox.Show("Debe seleccionar una función.");
+                validado = false;
+            }
+            return validado;
         }
 
         private void pbxPeli1_Click(object sender, EventArgs e)
@@ -71,6 +95,27 @@ namespace CineFront.Presentacion
         private void pbAtras_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void SeleccionPelicula_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboFuncion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnAsientos.Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(ValidarDatos())
+            {
+                pbrTickets.Value = 50;
+            }
+            
+            //Abre el formulario para elegir asientos y posteriormente realizar el pago de las entradas.
+                        
         }
     }
 }

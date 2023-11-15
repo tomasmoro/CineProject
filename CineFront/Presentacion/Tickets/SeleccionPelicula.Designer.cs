@@ -45,6 +45,8 @@
             this.pbxPeli2 = new System.Windows.Forms.PictureBox();
             this.pbxPeli1 = new System.Windows.Forms.PictureBox();
             this.pbAtras = new System.Windows.Forms.PictureBox();
+            this.cboFuncion = new System.Windows.Forms.ComboBox();
+            this.btnAsientos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPeli5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPeli4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPeli3)).BeginInit();
@@ -61,7 +63,7 @@
             this.label1.Location = new System.Drawing.Point(309, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(307, 39);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 0;
             this.label1.Text = "VENTA DE  TICKETS";
             // 
             // label2
@@ -106,7 +108,7 @@
             this.pbrTickets.Location = new System.Drawing.Point(316, 51);
             this.pbrTickets.Name = "pbrTickets";
             this.pbrTickets.Size = new System.Drawing.Size(294, 10);
-            this.pbrTickets.TabIndex = 10;
+            this.pbrTickets.TabIndex = 1;
             // 
             // cboTipoEntrada
             // 
@@ -121,7 +123,7 @@
             this.cboTipoEntrada.Name = "cboTipoEntrada";
             this.cboTipoEntrada.Size = new System.Drawing.Size(185, 21);
             this.cboTipoEntrada.Sorted = true;
-            this.cboTipoEntrada.TabIndex = 11;
+            this.cboTipoEntrada.TabIndex = 6;
             this.cboTipoEntrada.Visible = false;
             // 
             // label5
@@ -132,7 +134,7 @@
             this.label5.Location = new System.Drawing.Point(12, 531);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(196, 22);
-            this.label5.TabIndex = 12;
+            this.label5.TabIndex = 5;
             this.label5.Text = "SELECCIONE ENTRADA";
             this.label5.Visible = false;
             // 
@@ -144,7 +146,7 @@
             this.label6.Location = new System.Drawing.Point(16, 465);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(98, 22);
-            this.label6.TabIndex = 13;
+            this.label6.TabIndex = 3;
             this.label6.Text = "PELÍCULA: ";
             this.label6.Visible = false;
             // 
@@ -156,7 +158,7 @@
             this.label7.Location = new System.Drawing.Point(110, 465);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 22);
-            this.label7.TabIndex = 14;
+            this.label7.TabIndex = 4;
             this.label7.Visible = false;
             // 
             // label8
@@ -167,7 +169,7 @@
             this.label8.Location = new System.Drawing.Point(282, 531);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(193, 22);
-            this.label8.TabIndex = 15;
+            this.label8.TabIndex = 7;
             this.label8.Text = "SELECCIONE FUNCIÓN";
             this.label8.Visible = false;
             // 
@@ -239,12 +241,43 @@
             this.pbAtras.TabStop = false;
             this.pbAtras.Click += new System.EventHandler(this.pbAtras_Click);
             // 
+            // cboFuncion
+            // 
+            this.cboFuncion.BackColor = System.Drawing.Color.Maroon;
+            this.cboFuncion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboFuncion.Enabled = false;
+            this.cboFuncion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cboFuncion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboFuncion.ForeColor = System.Drawing.Color.Gold;
+            this.cboFuncion.FormattingEnabled = true;
+            this.cboFuncion.Location = new System.Drawing.Point(286, 560);
+            this.cboFuncion.Name = "cboFuncion";
+            this.cboFuncion.Size = new System.Drawing.Size(185, 21);
+            this.cboFuncion.Sorted = true;
+            this.cboFuncion.TabIndex = 8;
+            this.cboFuncion.Visible = false;
+            this.cboFuncion.SelectedIndexChanged += new System.EventHandler(this.cboFuncion_SelectedIndexChanged);
+            // 
+            // btnAsientos
+            // 
+            this.btnAsientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsientos.Location = new System.Drawing.Point(518, 551);
+            this.btnAsientos.Name = "btnAsientos";
+            this.btnAsientos.Size = new System.Drawing.Size(178, 35);
+            this.btnAsientos.TabIndex = 17;
+            this.btnAsientos.Text = "Seleccionar Asientos";
+            this.btnAsientos.UseVisualStyleBackColor = true;
+            this.btnAsientos.Visible = false;
+            this.btnAsientos.Click += new System.EventHandler(this.button1_Click);
+            // 
             // SeleccionPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(924, 749);
+            this.Controls.Add(this.btnAsientos);
+            this.Controls.Add(this.cboFuncion);
             this.Controls.Add(this.pbAtras);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -263,6 +296,7 @@
             this.Controls.Add(this.label1);
             this.Name = "SeleccionPelicula";
             this.Text = "Comprar Tickets";
+            this.Load += new System.EventHandler(this.SeleccionPelicula_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxPeli5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPeli4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPeli3)).EndInit();
@@ -292,5 +326,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pbAtras;
+        private System.Windows.Forms.ComboBox cboFuncion;
+        private System.Windows.Forms.Button btnAsientos;
     }
 }

@@ -73,10 +73,16 @@
     <Compile Include="Presentacion\Registros\RegistroVendedor.Designer.cs">
       <DependentUpon>RegistroVendedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\SeleccionPelicula.cs">
+    <Compile Include="Presentacion\Tickets\Pago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\SeleccionPelicula.Designer.cs">
+    <Compile Include="Presentacion\Tickets\Pago.Designer.cs">
+      <DependentUpon>Pago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Tickets\SeleccionPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Tickets\SeleccionPelicula.Designer.cs">
       <DependentUpon>SeleccionPelicula.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Principal.cs">
@@ -93,7 +99,10 @@
     <EmbeddedResource Include="Presentacion\Registros\RegistroVendedor.resx">
       <DependentUpon>RegistroVendedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\SeleccionPelicula.resx">
+    <EmbeddedResource Include="Presentacion\Tickets\Pago.resx">
+      <DependentUpon>Pago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Tickets\SeleccionPelicula.resx">
       <DependentUpon>SeleccionPelicula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Principal.resx">
