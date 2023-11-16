@@ -262,7 +262,7 @@
             this.cboFuncion.Sorted = true;
             this.cboFuncion.TabIndex = 8;
             this.cboFuncion.Visible = false;
-            this.cboFuncion.SelectedIndexChanged += new System.EventHandler(this.cboFuncion_SelectedIndexChanged);
+
             // 
             // btnAsientos
             // 

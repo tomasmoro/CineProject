@@ -1,4 +1,6 @@
-﻿using DataApi.Dominio;
+﻿using DataApi.DAO.Funciones;
+using DataApi.Dominio;
+using DataAPI.Datos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +17,8 @@ namespace CineFront.Presentacion
     public partial class SeleccionPelicula : Form
     {
         private Pelicula p = new Pelicula();
+        FuncionesService fService;
+
         public SeleccionPelicula()
         {
             InitializeComponent();
@@ -25,6 +29,7 @@ namespace CineFront.Presentacion
 
             cboTipoEntrada.Items.Add("2D");
             cboTipoEntrada.Items.Add("3D");
+            fService = new FuncionesService();
         }
 
         private void MostrarCampos()
@@ -108,10 +113,6 @@ namespace CineFront.Presentacion
 
         }
 
-        private void cboFuncion_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            btnAsientos.Visible = true;
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -123,5 +124,6 @@ namespace CineFront.Presentacion
             //Abre el formulario para elegir asientos y posteriormente realizar el pago de las entradas.
                         
         }
+
     }
 }

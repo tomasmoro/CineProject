@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataApi.Dominio
 {
-    internal class Funcion
+    public class Funcion
     {
         public int id { get; set; }
         public Sala sala { get; set; }
@@ -15,5 +15,15 @@ namespace DataApi.Dominio
         public DateTime fecha { get; set; }
         public float precio_gral { get; set; }
 
+        public Funcion(int id, Sala sala, Pelicula pelicula, Lenguaje lenguaje, DateTime fecha, float precio_gral)
+        {
+            this.id = id;
+            this.sala = sala;
+            this.pelicula = pelicula;
+            this.lenguaje = lenguaje;
+            this.fecha = fecha;
+            this.precio_gral = precio_gral;
+        }
     }
+
 }

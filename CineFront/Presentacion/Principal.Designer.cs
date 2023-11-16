@@ -52,6 +52,7 @@
             this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.linkPáginaAyudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesMasCompraronToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -187,7 +188,8 @@
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productoMasVendidoToolStripMenuItem,
-            this.peliculaMasVistaToolStripMenuItem});
+            this.peliculaMasVistaToolStripMenuItem,
+            this.clientesMasCompraronToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reportesToolStripMenuItem.Text = "Reportes";
@@ -195,14 +197,14 @@
             // productoMasVendidoToolStripMenuItem
             // 
             this.productoMasVendidoToolStripMenuItem.Name = "productoMasVendidoToolStripMenuItem";
-            this.productoMasVendidoToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.productoMasVendidoToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.productoMasVendidoToolStripMenuItem.Text = "Producto Mas Vendido";
             this.productoMasVendidoToolStripMenuItem.Click += new System.EventHandler(this.productoMasVendidoToolStripMenuItem_Click);
             // 
             // peliculaMasVistaToolStripMenuItem
             // 
             this.peliculaMasVistaToolStripMenuItem.Name = "peliculaMasVistaToolStripMenuItem";
-            this.peliculaMasVistaToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.peliculaMasVistaToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.peliculaMasVistaToolStripMenuItem.Text = "Pelicula Mas Vista";
             this.peliculaMasVistaToolStripMenuItem.Click += new System.EventHandler(this.peliculaMasVistaToolStripMenuItem_Click);
             // 
@@ -263,6 +265,13 @@
             this.linkPáginaAyudaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.linkPáginaAyudaToolStripMenuItem.Text = "[Link página ayuda]";
             // 
+            // clientesMasCompraronToolStripMenuItem
+            // 
+            this.clientesMasCompraronToolStripMenuItem.Name = "clientesMasCompraronToolStripMenuItem";
+            this.clientesMasCompraronToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.clientesMasCompraronToolStripMenuItem.Text = "Clientes Mas Compraron";
+            this.clientesMasCompraronToolStripMenuItem.Click += new System.EventHandler(this.clientesMasCompraronToolStripMenuItem_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,6 +325,7 @@
         private System.Windows.Forms.ToolStripMenuItem linkPáginaAyudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productoMasVendidoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem peliculaMasVistaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesMasCompraronToolStripMenuItem;
     }
 }
 

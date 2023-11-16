@@ -70,6 +70,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CINE_BUTAKERADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CINE_BUTAKERADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\Funciones\FuncionDAO.cs" />
+    <Compile Include="DAO\Funciones\FuncionesService.cs" />
+    <Compile Include="DAO\Funciones\IFuncionDAO.cs" />
+    <Compile Include="DAO\Usuarios\IClientesDAO.cs" />
+    <Compile Include="DAO\Usuarios\UsuariosDAO.cs" />
+    <Compile Include="Datos\HelperDAO.cs" />
+    <Compile Include="Datos\Parametro.cs" />
     <Compile Include="Dominio\Actor.cs" />
     <Compile Include="Dominio\Barrio.cs" />
     <Compile Include="Dominio\Butaca.cs" />
@@ -108,6 +120,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="CINE_BUTAKERADataSet.xsc">
+      <DependentUpon>CINE_BUTAKERADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CINE_BUTAKERADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CINE_BUTAKERADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CINE_BUTAKERADataSet.xss">
+      <DependentUpon>CINE_BUTAKERADataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

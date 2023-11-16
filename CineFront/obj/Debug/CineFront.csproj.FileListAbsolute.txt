@@ -123,3 +123,4 @@ C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\C
 C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Reportes.ReportesProducto.resources
 C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Reportes.ReportePelicula.ReportePelicula.resources
+C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Reportes.ReporteCliente.ReporteCliente.resources

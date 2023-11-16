@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Cliente" targetNamespace="http://tempuri.org/Cliente.xsd" xmlns:mstns="http://tempuri.org/Cliente.xsd" xmlns="http://tempuri.org/Cliente.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CINE_BUTAKERAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CINE_BUTAKERAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CineFront.Properties.Settings.GlobalReference.Default.CINE_BUTAKERAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CINE_BUTAKERAConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT	CLI.id_cliente, CLI.apellido+', '+ nombre 'CLIENTES',
+		 CLI.mail CONTACTO,
+		 B.barrio BARRIO,
+					(SELECT COUNT(COM1.id_forma_pago) FROM COMPROBANTES COM1 WHERE COM1.id_forma_pago = 1 AND CLI.id_cliente = COM1.id_cliente) 'EFECTIVO',
+					(SELECT COUNT(COM1.id_forma_pago) FROM COMPROBANTES COM1  WHERE COM1.id_forma_pago = 2 AND CLI.id_cliente = COM1.id_cliente) 'TARJETA',
+					(SELECT COUNT(COM1.id_forma_pago) FROM COMPROBANTES COM1  WHERE COM1.id_forma_pago = 3 AND CLI.id_cliente = COM1.id_cliente) 'TRANSFERENCIA'
+					
+FROM CLIENTES CLI
+JOIN BARRIOS B ON B.id_barrio = CLI.id_barrio
+JOIN COMPROBANTES COM ON COM.id_cliente = CLI.id_cliente
+JOIN TICKETS T ON T.id_comprobante = COM.id_comprobante
+WHERE YEAR(COM.fecha) = YEAR(GETDATE())
+GROUP BY CLI.id_cliente, CLI.apellido+', '+ nombre, CLI.mail, B.barrio
+order by 1
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_cliente" DataSetColumn="id_cliente" />
+              <Mapping SourceColumn="CLIENTES" DataSetColumn="CLIENTES" />
+              <Mapping SourceColumn="CONTACTO" DataSetColumn="CONTACTO" />
+              <Mapping SourceColumn="BARRIO" DataSetColumn="BARRIO" />
+              <Mapping SourceColumn="EFECTIVO" DataSetColumn="EFECTIVO" />
+              <Mapping SourceColumn="TARJETA" DataSetColumn="TARJETA" />
+              <Mapping SourceColumn="TRANSFERENCIA" DataSetColumn="TRANSFERENCIA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Cliente" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="Cliente" msprop:Generator_DataSetName="Cliente">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_UserTableName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_cliente" msprop:Generator_ColumnPropNameInRow="id_cliente" msprop:Generator_ColumnPropNameInTable="id_clienteColumn" msprop:Generator_ColumnVarNameInTable="columnid_cliente" msprop:Generator_UserColumnName="id_cliente" type="xs:int" />
+              <xs:element name="CLIENTES" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="CLIENTES" msprop:Generator_ColumnPropNameInTable="CLIENTESColumn" msprop:Generator_ColumnVarNameInTable="columnCLIENTES" msprop:Generator_UserColumnName="CLIENTES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="302" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONTACTO" msprop:Generator_ColumnPropNameInRow="CONTACTO" msprop:Generator_ColumnPropNameInTable="CONTACTOColumn" msprop:Generator_ColumnVarNameInTable="columnCONTACTO" msprop:Generator_UserColumnName="CONTACTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BARRIO" msprop:Generator_ColumnPropNameInRow="BARRIO" msprop:Generator_ColumnPropNameInTable="BARRIOColumn" msprop:Generator_ColumnVarNameInTable="columnBARRIO" msprop:Generator_UserColumnName="BARRIO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EFECTIVO" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="EFECTIVO" msprop:Generator_ColumnPropNameInTable="EFECTIVOColumn" msprop:Generator_ColumnVarNameInTable="columnEFECTIVO" msprop:Generator_UserColumnName="EFECTIVO" type="xs:int" minOccurs="0" />
+              <xs:element name="TARJETA" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TARJETA" msprop:Generator_ColumnPropNameInTable="TARJETAColumn" msprop:Generator_ColumnVarNameInTable="columnTARJETA" msprop:Generator_UserColumnName="TARJETA" type="xs:int" minOccurs="0" />
+              <xs:element name="TRANSFERENCIA" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TRANSFERENCIA" msprop:Generator_ColumnPropNameInTable="TRANSFERENCIAColumn" msprop:Generator_ColumnVarNameInTable="columnTRANSFERENCIA" msprop:Generator_UserColumnName="TRANSFERENCIA" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:id_cliente" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

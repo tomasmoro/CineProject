@@ -97,6 +97,17 @@
     <Compile Include="Presentacion\Registros\RegistroVendedor.Designer.cs">
       <DependentUpon>RegistroVendedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Reportes\ReporteCliente\Cliente.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cliente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Reportes\ReporteCliente\ReporteCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Reportes\ReporteCliente\ReporteCliente.Designer.cs">
+      <DependentUpon>ReporteCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Reportes\ReportePelicula\Pelicula.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -146,6 +157,10 @@
     <EmbeddedResource Include="Presentacion\Registros\RegistroVendedor.resx">
       <DependentUpon>RegistroVendedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Reportes\ReporteCliente\ReportClient.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\ReporteCliente\ReporteCliente.resx">
+      <DependentUpon>ReporteCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Reportes\ReportePelicula\InformePelicula.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\ReportePelicula\ReportePelicula.resx">
       <DependentUpon>ReportePelicula.cs</DependentUpon>
@@ -174,6 +189,17 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Presentacion\Reportes\ReporteCliente\Cliente.xsc">
+      <DependentUpon>Cliente.xsd</DependentUpon>
+    </None>
+    <None Include="Presentacion\Reportes\ReporteCliente\Cliente.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cliente.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentacion\Reportes\ReporteCliente\Cliente.xss">
+      <DependentUpon>Cliente.xsd</DependentUpon>
+    </None>
     <None Include="Presentacion\Reportes\ReportePelicula\Pelicula.xsc">
       <DependentUpon>Pelicula.xsd</DependentUpon>
     </None>

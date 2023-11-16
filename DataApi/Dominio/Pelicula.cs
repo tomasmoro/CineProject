@@ -17,7 +17,16 @@ namespace DataApi.Dominio
         public List<Director> categorias { get; set; }
         public List<Categoria> directores { get; set; }
 
+        public Pelicula(int id_pelicula, string titulo, DateTime fecha_estreno, int duracion)
+        {
+            this.id_pelicula = id_pelicula;
+            this.titulo = titulo;
+            this.fecha_estreno = fecha_estreno;
+            this.duracion = duracion;
+        }
 
-
+        public Pelicula()
+        {
+        }
     }
 }

@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace DataApi.Dominio
 {
-    internal class Sala
+    public class Sala
     {
+        private int nro_sala;
+        private TipoSala tipoSala;
+
+        public Sala(int nro_sala, TipoSala tipoSala)
+        {
+            this.nro_sala = nro_sala;
+            this.tipoSala = tipoSala;
+        }
+
         public int id { get; set; }
         public TipoSala tipo { get; set; }
 
