@@ -42,6 +42,8 @@
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productoMasVendidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.peliculaMasVistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.soporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -155,7 +157,7 @@
             // ventaDeTicketsToolStripMenuItem
             // 
             this.ventaDeTicketsToolStripMenuItem.Name = "ventaDeTicketsToolStripMenuItem";
-            this.ventaDeTicketsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.ventaDeTicketsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ventaDeTicketsToolStripMenuItem.Text = "Venta de Tickets";
             // 
             // registrarToolStripMenuItem
@@ -164,7 +166,7 @@
             this.usuarioToolStripMenuItem,
             this.vendedorToolStripMenuItem});
             this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
-            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registrarToolStripMenuItem.Text = "Registrar";
             // 
             // usuarioToolStripMenuItem
@@ -183,14 +185,31 @@
             // 
             // reportesToolStripMenuItem
             // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.productoMasVendidoToolStripMenuItem,
+            this.peliculaMasVistaToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
+            // productoMasVendidoToolStripMenuItem
+            // 
+            this.productoMasVendidoToolStripMenuItem.Name = "productoMasVendidoToolStripMenuItem";
+            this.productoMasVendidoToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.productoMasVendidoToolStripMenuItem.Text = "Producto Mas Vendido";
+            this.productoMasVendidoToolStripMenuItem.Click += new System.EventHandler(this.productoMasVendidoToolStripMenuItem_Click);
+            // 
+            // peliculaMasVistaToolStripMenuItem
+            // 
+            this.peliculaMasVistaToolStripMenuItem.Name = "peliculaMasVistaToolStripMenuItem";
+            this.peliculaMasVistaToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.peliculaMasVistaToolStripMenuItem.Text = "Pelicula Mas Vista";
+            this.peliculaMasVistaToolStripMenuItem.Click += new System.EventHandler(this.peliculaMasVistaToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -295,6 +314,8 @@
         private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem linkPáginaAyudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productoMasVendidoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem peliculaMasVistaToolStripMenuItem;
     }
 }
 

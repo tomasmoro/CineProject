@@ -26,6 +26,269 @@
           }
         }
       },
+      "Microsoft.ReportingServices.ReportViewerControl.WebForms/140.340.80": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.SqlServer.Types": "14.0.0"
+        },
+        "compile": {
+          "lib/net40/Microsoft.ReportViewer.Common.dll": {},
+          "lib/net40/Microsoft.ReportViewer.Common.resources.dll": {},
+          "lib/net40/Microsoft.ReportViewer.DataVisualization.dll": {},
+          "lib/net40/Microsoft.ReportViewer.DataVisualization.resources.dll": {},
+          "lib/net40/Microsoft.ReportViewer.Design.dll": {},
+          "lib/net40/Microsoft.ReportViewer.Design.resources.dll": {},
+          "lib/net40/Microsoft.ReportViewer.ProcessingObjectModel.dll": {},
+          "lib/net40/Microsoft.ReportViewer.WebDesign.dll": {},
+          "lib/net40/Microsoft.ReportViewer.WebDesign.resources.dll": {},
+          "lib/net40/Microsoft.ReportViewer.WebForms.dll": {},
+          "lib/net40/Microsoft.ReportViewer.WebForms.resources.dll": {},
+          "lib/net40/Microsoft.ReportViewer.WinForms.dll": {},
+          "lib/net40/Microsoft.ReportViewer.WinForms.resources.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.ReportViewer.Common.dll": {},
+          "lib/net40/Microsoft.ReportViewer.Common.resources.dll": {},
+          "lib/net40/Microsoft.ReportViewer.DataVisualization.dll": {},
+          "lib/net40/Microsoft.ReportViewer.DataVisualization.resources.dll": {},
+          "lib/net40/Microsoft.ReportViewer.Design.dll": {},
+          "lib/net40/Microsoft.ReportViewer.Design.resources.dll": {},
+          "lib/net40/Microsoft.ReportViewer.ProcessingObjectModel.dll": {},
+          "lib/net40/Microsoft.ReportViewer.WebDesign.dll": {},
+          "lib/net40/Microsoft.ReportViewer.WebDesign.resources.dll": {},
+          "lib/net40/Microsoft.ReportViewer.WebForms.dll": {},
+          "lib/net40/Microsoft.ReportViewer.WebForms.resources.dll": {},
+          "lib/net40/Microsoft.ReportViewer.WinForms.dll": {},
+          "lib/net40/Microsoft.ReportViewer.WinForms.resources.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Microsoft.ReportViewer.Common.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/de/Microsoft.ReportViewer.DataVisualization.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/de/Microsoft.ReportViewer.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/de/Microsoft.ReportViewer.WebDesign.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/de/Microsoft.ReportViewer.WebForms.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/de/Microsoft.ReportViewer.WinForms.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Microsoft.ReportViewer.Common.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/es/Microsoft.ReportViewer.DataVisualization.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/es/Microsoft.ReportViewer.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/es/Microsoft.ReportViewer.WebDesign.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/es/Microsoft.ReportViewer.WebForms.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/es/Microsoft.ReportViewer.WinForms.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Microsoft.ReportViewer.Common.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/fr/Microsoft.ReportViewer.DataVisualization.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/fr/Microsoft.ReportViewer.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/fr/Microsoft.ReportViewer.WebDesign.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/fr/Microsoft.ReportViewer.WebForms.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/fr/Microsoft.ReportViewer.WinForms.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/it/Microsoft.ReportViewer.Common.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/it/Microsoft.ReportViewer.DataVisualization.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/it/Microsoft.ReportViewer.Design.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/it/Microsoft.ReportViewer.WebDesign.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/it/Microsoft.ReportViewer.WebForms.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/it/Microsoft.ReportViewer.WinForms.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/ja/Microsoft.ReportViewer.Common.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net40/ja/Microsoft.ReportViewer.DataVisualization.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net40/ja/Microsoft.ReportViewer.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net40/ja/Microsoft.ReportViewer.WebDesign.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net40/ja/Microsoft.ReportViewer.WebForms.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net40/ja/Microsoft.ReportViewer.WinForms.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net40/ko/Microsoft.ReportViewer.Common.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net40/ko/Microsoft.ReportViewer.DataVisualization.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net40/ko/Microsoft.ReportViewer.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net40/ko/Microsoft.ReportViewer.WebDesign.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net40/ko/Microsoft.ReportViewer.WebForms.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net40/ko/Microsoft.ReportViewer.WinForms.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net40/pt/Microsoft.ReportViewer.Common.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net40/pt/Microsoft.ReportViewer.DataVisualization.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net40/pt/Microsoft.ReportViewer.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net40/pt/Microsoft.ReportViewer.WebDesign.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net40/pt/Microsoft.ReportViewer.WebForms.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net40/pt/Microsoft.ReportViewer.WinForms.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net40/ru/Microsoft.ReportViewer.Common.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/ru/Microsoft.ReportViewer.DataVisualization.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/ru/Microsoft.ReportViewer.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/ru/Microsoft.ReportViewer.WebDesign.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/ru/Microsoft.ReportViewer.WebForms.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/ru/Microsoft.ReportViewer.WinForms.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/zh-CHS/Microsoft.ReportViewer.Common.resources.dll": {
+            "locale": "zh-CHS"
+          },
+          "lib/net40/zh-CHS/Microsoft.ReportViewer.DataVisualization.resources.dll": {
+            "locale": "zh-CHS"
+          },
+          "lib/net40/zh-CHS/Microsoft.ReportViewer.Design.resources.dll": {
+            "locale": "zh-CHS"
+          },
+          "lib/net40/zh-CHS/Microsoft.ReportViewer.WebDesign.resources.dll": {
+            "locale": "zh-CHS"
+          },
+          "lib/net40/zh-CHS/Microsoft.ReportViewer.WebForms.resources.dll": {
+            "locale": "zh-CHS"
+          },
+          "lib/net40/zh-CHS/Microsoft.ReportViewer.WinForms.resources.dll": {
+            "locale": "zh-CHS"
+          },
+          "lib/net40/zh-CHT/Microsoft.ReportViewer.Common.resources.dll": {
+            "locale": "zh-CHT"
+          },
+          "lib/net40/zh-CHT/Microsoft.ReportViewer.DataVisualization.resources.dll": {
+            "locale": "zh-CHT"
+          },
+          "lib/net40/zh-CHT/Microsoft.ReportViewer.Design.resources.dll": {
+            "locale": "zh-CHT"
+          },
+          "lib/net40/zh-CHT/Microsoft.ReportViewer.WebDesign.resources.dll": {
+            "locale": "zh-CHT"
+          },
+          "lib/net40/zh-CHT/Microsoft.ReportViewer.WebForms.resources.dll": {
+            "locale": "zh-CHT"
+          },
+          "lib/net40/zh-CHT/Microsoft.ReportViewer.WinForms.resources.dll": {
+            "locale": "zh-CHT"
+          },
+          "lib/net40/zh-HANS/Microsoft.ReportViewer.Common.resources.dll": {
+            "locale": "zh-HANS"
+          },
+          "lib/net40/zh-HANS/Microsoft.ReportViewer.DataVisualization.resources.dll": {
+            "locale": "zh-HANS"
+          },
+          "lib/net40/zh-HANS/Microsoft.ReportViewer.Design.resources.dll": {
+            "locale": "zh-HANS"
+          },
+          "lib/net40/zh-HANS/Microsoft.ReportViewer.WebDesign.resources.dll": {
+            "locale": "zh-HANS"
+          },
+          "lib/net40/zh-HANS/Microsoft.ReportViewer.WebForms.resources.dll": {
+            "locale": "zh-HANS"
+          },
+          "lib/net40/zh-HANS/Microsoft.ReportViewer.WinForms.resources.dll": {
+            "locale": "zh-HANS"
+          },
+          "lib/net40/zh-HANT/Microsoft.ReportViewer.Common.resources.dll": {
+            "locale": "zh-HANT"
+          },
+          "lib/net40/zh-HANT/Microsoft.ReportViewer.DataVisualization.resources.dll": {
+            "locale": "zh-HANT"
+          },
+          "lib/net40/zh-HANT/Microsoft.ReportViewer.Design.resources.dll": {
+            "locale": "zh-HANT"
+          },
+          "lib/net40/zh-HANT/Microsoft.ReportViewer.WebDesign.resources.dll": {
+            "locale": "zh-HANT"
+          },
+          "lib/net40/zh-HANT/Microsoft.ReportViewer.WebForms.resources.dll": {
+            "locale": "zh-HANT"
+          },
+          "lib/net40/zh-HANT/Microsoft.ReportViewer.WinForms.resources.dll": {
+            "locale": "zh-HANT"
+          }
+        }
+      },
+      "Microsoft.SqlServer.Types/14.0.314.76": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.SqlServer.Types.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.SqlServer.Types.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "type": "package",
         "dependencies": {
@@ -136,6 +399,129 @@
         "microsoft.openapi.nuspec"
       ]
     },
+    "Microsoft.ReportingServices.ReportViewerControl.WebForms/140.340.80": {
+      "sha512": "nNWx/xcXY7NRN3+T3xOd52BLafGuqdmeYmaprF9AbnU1l6cpMD3Fw6/oJjN5sot4XsnPI4iRdVD41TcMTTvaGw==",
+      "type": "package",
+      "path": "microsoft.reportingservices.reportviewercontrol.webforms/140.340.80",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/web.config.install.xdt",
+        "lib/net40/Microsoft.ReportViewer.Common.dll",
+        "lib/net40/Microsoft.ReportViewer.Common.resources.dll",
+        "lib/net40/Microsoft.ReportViewer.DataVisualization.dll",
+        "lib/net40/Microsoft.ReportViewer.DataVisualization.resources.dll",
+        "lib/net40/Microsoft.ReportViewer.Design.dll",
+        "lib/net40/Microsoft.ReportViewer.Design.resources.dll",
+        "lib/net40/Microsoft.ReportViewer.ProcessingObjectModel.dll",
+        "lib/net40/Microsoft.ReportViewer.WebDesign.dll",
+        "lib/net40/Microsoft.ReportViewer.WebDesign.resources.dll",
+        "lib/net40/Microsoft.ReportViewer.WebForms.dll",
+        "lib/net40/Microsoft.ReportViewer.WebForms.resources.dll",
+        "lib/net40/Microsoft.ReportViewer.WinForms.dll",
+        "lib/net40/Microsoft.ReportViewer.WinForms.resources.dll",
+        "lib/net40/de/Microsoft.ReportViewer.Common.resources.dll",
+        "lib/net40/de/Microsoft.ReportViewer.DataVisualization.resources.dll",
+        "lib/net40/de/Microsoft.ReportViewer.Design.resources.dll",
+        "lib/net40/de/Microsoft.ReportViewer.WebDesign.resources.dll",
+        "lib/net40/de/Microsoft.ReportViewer.WebForms.resources.dll",
+        "lib/net40/de/Microsoft.ReportViewer.WinForms.resources.dll",
+        "lib/net40/es/Microsoft.ReportViewer.Common.resources.dll",
+        "lib/net40/es/Microsoft.ReportViewer.DataVisualization.resources.dll",
+        "lib/net40/es/Microsoft.ReportViewer.Design.resources.dll",
+        "lib/net40/es/Microsoft.ReportViewer.WebDesign.resources.dll",
+        "lib/net40/es/Microsoft.ReportViewer.WebForms.resources.dll",
+        "lib/net40/es/Microsoft.ReportViewer.WinForms.resources.dll",
+        "lib/net40/fr/Microsoft.ReportViewer.Common.resources.dll",
+        "lib/net40/fr/Microsoft.ReportViewer.DataVisualization.resources.dll",
+        "lib/net40/fr/Microsoft.ReportViewer.Design.resources.dll",
+        "lib/net40/fr/Microsoft.ReportViewer.WebDesign.resources.dll",
+        "lib/net40/fr/Microsoft.ReportViewer.WebForms.resources.dll",
+        "lib/net40/fr/Microsoft.ReportViewer.WinForms.resources.dll",
+        "lib/net40/it/Microsoft.ReportViewer.Common.resources.dll",
+        "lib/net40/it/Microsoft.ReportViewer.DataVisualization.resources.dll",
+        "lib/net40/it/Microsoft.ReportViewer.Design.resources.dll",
+        "lib/net40/it/Microsoft.ReportViewer.WebDesign.resources.dll",
+        "lib/net40/it/Microsoft.ReportViewer.WebForms.resources.dll",
+        "lib/net40/it/Microsoft.ReportViewer.WinForms.resources.dll",
+        "lib/net40/ja/Microsoft.ReportViewer.Common.resources.dll",
+        "lib/net40/ja/Microsoft.ReportViewer.DataVisualization.resources.dll",
+        "lib/net40/ja/Microsoft.ReportViewer.Design.resources.dll",
+        "lib/net40/ja/Microsoft.ReportViewer.WebDesign.resources.dll",
+        "lib/net40/ja/Microsoft.ReportViewer.WebForms.resources.dll",
+        "lib/net40/ja/Microsoft.ReportViewer.WinForms.resources.dll",
+        "lib/net40/ko/Microsoft.ReportViewer.Common.resources.dll",
+        "lib/net40/ko/Microsoft.ReportViewer.DataVisualization.resources.dll",
+        "lib/net40/ko/Microsoft.ReportViewer.Design.resources.dll",
+        "lib/net40/ko/Microsoft.ReportViewer.WebDesign.resources.dll",
+        "lib/net40/ko/Microsoft.ReportViewer.WebForms.resources.dll",
+        "lib/net40/ko/Microsoft.ReportViewer.WinForms.resources.dll",
+        "lib/net40/pt/Microsoft.ReportViewer.Common.resources.dll",
+        "lib/net40/pt/Microsoft.ReportViewer.DataVisualization.resources.dll",
+        "lib/net40/pt/Microsoft.ReportViewer.Design.resources.dll",
+        "lib/net40/pt/Microsoft.ReportViewer.WebDesign.resources.dll",
+        "lib/net40/pt/Microsoft.ReportViewer.WebForms.resources.dll",
+        "lib/net40/pt/Microsoft.ReportViewer.WinForms.resources.dll",
+        "lib/net40/ru/Microsoft.ReportViewer.Common.resources.dll",
+        "lib/net40/ru/Microsoft.ReportViewer.DataVisualization.resources.dll",
+        "lib/net40/ru/Microsoft.ReportViewer.Design.resources.dll",
+        "lib/net40/ru/Microsoft.ReportViewer.WebDesign.resources.dll",
+        "lib/net40/ru/Microsoft.ReportViewer.WebForms.resources.dll",
+        "lib/net40/ru/Microsoft.ReportViewer.WinForms.resources.dll",
+        "lib/net40/zh-CHS/Microsoft.ReportViewer.Common.resources.dll",
+        "lib/net40/zh-CHS/Microsoft.ReportViewer.DataVisualization.resources.dll",
+        "lib/net40/zh-CHS/Microsoft.ReportViewer.Design.resources.dll",
+        "lib/net40/zh-CHS/Microsoft.ReportViewer.WebDesign.resources.dll",
+        "lib/net40/zh-CHS/Microsoft.ReportViewer.WebForms.resources.dll",
+        "lib/net40/zh-CHS/Microsoft.ReportViewer.WinForms.resources.dll",
+        "lib/net40/zh-CHT/Microsoft.ReportViewer.Common.resources.dll",
+        "lib/net40/zh-CHT/Microsoft.ReportViewer.DataVisualization.resources.dll",
+        "lib/net40/zh-CHT/Microsoft.ReportViewer.Design.resources.dll",
+        "lib/net40/zh-CHT/Microsoft.ReportViewer.WebDesign.resources.dll",
+        "lib/net40/zh-CHT/Microsoft.ReportViewer.WebForms.resources.dll",
+        "lib/net40/zh-CHT/Microsoft.ReportViewer.WinForms.resources.dll",
+        "lib/net40/zh-HANS/Microsoft.ReportViewer.Common.resources.dll",
+        "lib/net40/zh-HANS/Microsoft.ReportViewer.DataVisualization.resources.dll",
+        "lib/net40/zh-HANS/Microsoft.ReportViewer.Design.resources.dll",
+        "lib/net40/zh-HANS/Microsoft.ReportViewer.WebDesign.resources.dll",
+        "lib/net40/zh-HANS/Microsoft.ReportViewer.WebForms.resources.dll",
+        "lib/net40/zh-HANS/Microsoft.ReportViewer.WinForms.resources.dll",
+        "lib/net40/zh-HANT/Microsoft.ReportViewer.Common.resources.dll",
+        "lib/net40/zh-HANT/Microsoft.ReportViewer.DataVisualization.resources.dll",
+        "lib/net40/zh-HANT/Microsoft.ReportViewer.Design.resources.dll",
+        "lib/net40/zh-HANT/Microsoft.ReportViewer.WebDesign.resources.dll",
+        "lib/net40/zh-HANT/Microsoft.ReportViewer.WebForms.resources.dll",
+        "lib/net40/zh-HANT/Microsoft.ReportViewer.WinForms.resources.dll",
+        "license/License_ReportViewer.rtf",
+        "license/ThirdPartyNotices_ReportViewer.txt",
+        "microsoft.reportingservices.reportviewercontrol.webforms.140.340.80.nupkg.sha512",
+        "microsoft.reportingservices.reportviewercontrol.webforms.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "Microsoft.SqlServer.Types/14.0.314.76": {
+      "sha512": "gAekCmSfjtRBaiuuRIqJJV6cfEsEbYY5vI7Ssoc5sYI04JcyPrZ4C8RC3z7K9xfpr9ejQAQ1AtfvtgqEnjmwOw==",
+      "type": "package",
+      "path": "microsoft.sqlserver.types/14.0.314.76",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/SqlServerTypes/Loader.cs",
+        "content/SqlServerTypes/readme.htm",
+        "lib/net40/Microsoft.SqlServer.Types.dll",
+        "license/license_SysClrTypes.rtf",
+        "microsoft.sqlserver.types.14.0.314.76.nupkg.sha512",
+        "microsoft.sqlserver.types.nuspec",
+        "nativeBinaries/x64/SqlServerSpatial140.dll",
+        "nativeBinaries/x64/msvcr120.dll",
+        "nativeBinaries/x86/SqlServerSpatial140.dll",
+        "nativeBinaries/x86/msvcr120.dll",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.2.3": {
       "sha512": "cnzQDn0Le+hInsw2SYwlOhOCPXpYi/szcvnyqZJ12v+QyrLBwAmWXBg6RIyHB18s/mLeywC+Rg2O9ndz0IUNYQ==",
       "type": "package",
@@ -220,6 +606,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.ReportingServices.ReportViewerControl.WebForms >= 140.340.80",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -262,6 +649,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.ReportingServices.ReportViewerControl.WebForms": {
+            "target": "Package",
+            "version": "[140.340.80, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
@@ -289,5 +680,37 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.ReportingServices.ReportViewerControl.WebForms 140.340.80 depende de Microsoft.SqlServer.Types (>= 14.0.0), pero no se encontró Microsoft.SqlServer.Types 14.0.0. Se resolvió una mejor coincidencia aproximada de Microsoft.SqlServer.Types 14.0.314.76.",
+      "libraryId": "Microsoft.SqlServer.Types",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.ReportingServices.ReportViewerControl.WebForms 140.340.80\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.ReportingServices.ReportViewerControl.WebForms",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.SqlServer.Types 14.0.314.76\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.SqlServer.Types",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

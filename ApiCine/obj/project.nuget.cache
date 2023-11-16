@@ -1,15 +1,48 @@
 {
   "version": 2,
-  "dgSpecHash": "iEyiTH16pb6pSlbbQfBXWfFmWOa+591kQoi9u7ceSmEDXlnHVY6pOqXjB6tNCQsmZpXZNj8ggHZiDf5pRF9Hbw==",
+  "dgSpecHash": "jIJVvEFLSPoL0alY9PqvjplxJjW3GBa4b88dJgHAJR9ajANhje2fFqWZyab/XX6nQssKHhsiJkwNUAOkLcF0IQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Mariano\\Desktop\\Facultad\\2 Cuatrimestre\\Programacion 2\\Cine TP\\menus}\\CineProject\\ApiCine\\ApiCine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mariano\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Mariano\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Mariano\\.nuget\\packages\\microsoft.reportingservices.reportviewercontrol.webforms\\140.340.80\\microsoft.reportingservices.reportviewercontrol.webforms.140.340.80.nupkg.sha512",
+    "C:\\Users\\Mariano\\.nuget\\packages\\microsoft.sqlserver.types\\14.0.314.76\\microsoft.sqlserver.types.14.0.314.76.nupkg.sha512",
     "C:\\Users\\Mariano\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\Mariano\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\Mariano\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "C:\\Users\\Mariano\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.ReportingServices.ReportViewerControl.WebForms 140.340.80 depende de Microsoft.SqlServer.Types (>= 14.0.0), pero no se encontró Microsoft.SqlServer.Types 14.0.0. Se resolvió una mejor coincidencia aproximada de Microsoft.SqlServer.Types 14.0.314.76.",
+      "libraryId": "Microsoft.SqlServer.Types",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.ReportingServices.ReportViewerControl.WebForms 140.340.80\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.ReportingServices.ReportViewerControl.WebForms",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.SqlServer.Types 14.0.314.76\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.SqlServer.Types",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
