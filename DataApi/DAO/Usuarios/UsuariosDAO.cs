@@ -9,12 +9,12 @@ namespace DataApi.DAO.Usuarios
 {
     internal class UsuariosDAO : IClientesDAO
     {
-        public List<Cliente> ObtenerCliente()
+        public List<Vendedor> ObtenerCliente()
         {
             throw new NotImplementedException();
         }
 
-        public bool SaveCliente(Cliente cliente)
+        public bool SaveCliente(Vendedor cliente)
         {
             throw new NotImplementedException();
         }

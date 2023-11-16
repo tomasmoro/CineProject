@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataApi.Dominio
 {
-    internal class PromocionEdad
+    public class PromocionEdad
     {
         public int id { get; set; }
         public double porcentaje { get; set; }

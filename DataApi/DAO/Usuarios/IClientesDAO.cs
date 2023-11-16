@@ -9,8 +9,8 @@ namespace DataApi.DAO.Usuarios
 {
     internal interface IClientesDAO
     {
-        List<Cliente> ObtenerCliente();
+        List<Vendedor> ObtenerCliente();
 
-        bool SaveCliente(Cliente cliente);
+        bool SaveCliente(Vendedor cliente);
     }
 }

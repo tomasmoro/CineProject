@@ -24,6 +24,11 @@ namespace DataApi.Dominio
             this.fecha_estreno = fecha_estreno;
             this.duracion = duracion;
         }
+        public Pelicula(int id_pelicula, string titulo)
+        {
+            this.id_pelicula = id_pelicula;
+            this.titulo = titulo;
+        }
 
         public Pelicula()
         {

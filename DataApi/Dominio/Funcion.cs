@@ -12,6 +12,10 @@ namespace DataApi.Dominio
         public Sala sala { get; set; }
         public Pelicula pelicula { get; set; }
         public Lenguaje lenguaje { get; set; }
+        public string cboText { get { 
+       
+            return this.fecha.ToString()+' '+this.lenguaje.lenguaje.ToString();
+            } }
         public DateTime fecha { get; set; }
         public float precio_gral { get; set; }
 
@@ -23,6 +27,11 @@ namespace DataApi.Dominio
             this.lenguaje = lenguaje;
             this.fecha = fecha;
             this.precio_gral = precio_gral;
+        }
+
+        public Funcion()
+        {
+            
         }
     }
 

@@ -87,6 +87,7 @@
     <Compile Include="Dominio\Butaca.cs" />
     <Compile Include="Dominio\Categoria.cs" />
     <Compile Include="Dominio\Cliente.cs" />
+    <Compile Include="Dominio\Comprobante.cs" />
     <Compile Include="Dominio\Director.cs" />
     <Compile Include="Dominio\Factura.cs" />
     <Compile Include="Dominio\FormaPago.cs" />

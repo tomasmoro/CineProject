@@ -133,4 +133,22 @@
   <data name="Fondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fondo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="armchair_ocupped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armchair_ocupped.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="armchair_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armchair_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="armchair_unselected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armchair_unselected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cinema_tickets_4998806" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cinema-tickets_4998806.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="film_reel_2590670" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\film-reel_2590670.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rating_4149882__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rating_4149882 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

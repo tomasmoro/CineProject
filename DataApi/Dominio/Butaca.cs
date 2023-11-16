@@ -2,7 +2,7 @@
 {
     public class Butaca
     {
-        private bool estaDisponible;
+        public bool estaDisponible { get; set; }
 
         public Butaca(int id, int asiento, int fila, bool estaDisponible)
         {
@@ -10,6 +10,12 @@
             this.asiento = asiento;
             this.fila = fila;
             this.estaDisponible = estaDisponible;
+        }
+        
+        public Butaca(int asiento, int fila)
+        {
+            this.asiento = asiento;
+            this.fila = fila;
         }
 
         public int id { get; set; } 

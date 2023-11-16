@@ -8,8 +8,8 @@ namespace DataApi.Dominio
 {
     public class Lenguaje
     {
-        private int id_lenguaje;
-        private string lenguaje;
+        public int id_lenguaje { get; set; }
+        public string lenguaje { get; set; }
 
         public Lenguaje(int id_lenguaje, string lenguaje)
         {
@@ -17,7 +17,5 @@ namespace DataApi.Dominio
             this.lenguaje = lenguaje;
         }
 
-        public int id { get; set; }
-        public string descripcion { get; set; }
     }
 }

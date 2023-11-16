@@ -11,7 +11,7 @@ namespace DataAPI.Datos
     public class HelperDAO
     {
         private SqlConnection conexion;
-        private string stringConexion = @"completar";
+        private string stringConexion = @"Data Source=EZE1-LLN-B05667\SQLEXPRESS;Initial Catalog=CINE_GRUPO20_1;Integrated Security=True";
         private static HelperDAO instancia;
 
         private HelperDAO()
@@ -43,19 +43,28 @@ namespace DataAPI.Datos
             conexion.Close();
         }
 
-        public int ObtenerEscalar(string sentencia, string nomParam)
+        public int ObtenerEscalar(string nombreSP, List<Parametro> lParams, string nomParam)
         {
             int aux = 0;
-            Conectar();
+
+            conexion.Open();
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
             comando.CommandType = CommandType.StoredProcedure;
-            comando.CommandText = sentencia;
+            comando.CommandText = nombreSP;
+            foreach (Parametro p in lParams)
+            {
+                comando.Parameters.AddWithValue(p.Nombre, p.Valor);
+            }
+
             SqlParameter param = new SqlParameter(nomParam, SqlDbType.Int);
             param.Direction = ParameterDirection.Output;
             comando.Parameters.Add(param);
-            comando.ExecuteNonQuery();
-            Desconectar();
+
+            DataTable tabla = new DataTable();
+            tabla.Load(comando.ExecuteReader());
+            conexion.Close();
+
             aux = (int)param.Value;
             return aux;
         }

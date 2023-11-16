@@ -35,8 +35,6 @@ namespace CineFront
             seleccionPelicula = new SeleccionPelicula();
             seleccionPelicula.Show();
             
-
-
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -85,13 +83,19 @@ namespace CineFront
         private void peliculaMasVistaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             reportePelicula = new ReportePelicula();
-            reportePelicula.Show();
+            reportePelicula.ShowDialog();
         }
 
         private void clientesMasCompraronToolStripMenuItem_Click(object sender, EventArgs e)
         {
             reporteCliente = new ReporteCliente();
-            reporteCliente.Show();
+            reporteCliente.ShowDialog();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Reportes reportes = new Reportes();
+            reportes.ShowDialog();
         }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mariano\\Desktop\\Facultad\\2 Cuatrimestre\\Programacion 2\\Cine TP\\menus}\\CineProject\\ApiCine\\ApiCine.csproj": {}
+    "C:\\Users\\tomas.moro\\Desktop\\Proyecto General\\Repo1\\CineProject\\ApiCine\\ApiCine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mariano\\Desktop\\Facultad\\2 Cuatrimestre\\Programacion 2\\Cine TP\\menus}\\CineProject\\ApiCine\\ApiCine.csproj": {
+    "C:\\Users\\tomas.moro\\Desktop\\Proyecto General\\Repo1\\CineProject\\ApiCine\\ApiCine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mariano\\Desktop\\Facultad\\2 Cuatrimestre\\Programacion 2\\Cine TP\\menus}\\CineProject\\ApiCine\\ApiCine.csproj",
+        "projectUniqueName": "C:\\Users\\tomas.moro\\Desktop\\Proyecto General\\Repo1\\CineProject\\ApiCine\\ApiCine.csproj",
         "projectName": "ApiCine",
-        "projectPath": "C:\\Users\\Mariano\\Desktop\\Facultad\\2 Cuatrimestre\\Programacion 2\\Cine TP\\menus}\\CineProject\\ApiCine\\ApiCine.csproj",
-        "packagesPath": "C:\\Users\\Mariano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mariano\\Desktop\\Facultad\\2 Cuatrimestre\\Programacion 2\\Cine TP\\menus}\\CineProject\\ApiCine\\obj\\",
+        "projectPath": "C:\\Users\\tomas.moro\\Desktop\\Proyecto General\\Repo1\\CineProject\\ApiCine\\ApiCine.csproj",
+        "packagesPath": "C:\\Users\\tomas.moro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tomas.moro\\Desktop\\Proyecto General\\Repo1\\CineProject\\ApiCine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mariano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tomas.moro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

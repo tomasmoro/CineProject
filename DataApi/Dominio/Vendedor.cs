@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataApi.Dominio
 {
-    internal class Vendedor
+    public class Vendedor
     {
         public int id { get; set; }
         public string nombre { get; set; }
@@ -15,5 +15,21 @@ namespace DataApi.Dominio
         public string mail { get; set; }
         public string telefono { get; set; }
         public Barrio barrio { get; set; }
+        public Vendedor(int id)
+        {
+            
+        }
+
+        public Vendedor(int id, string nombre, string apellido) 
+        {
+            this.id = id;
+            this.nombre = nombre;
+            this.apellido = apellido;
+        }
+
+        public override string ToString()
+        {
+            return nombre + " " + apellido;
+        }
     }
 }

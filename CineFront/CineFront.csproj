@@ -130,11 +130,18 @@
     <Compile Include="Presentacion\Reportes\ReportProduc\ReportesProducto.Designer.cs">
       <DependentUpon>ReportesProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Tickets\AsientoUI.cs" />
     <Compile Include="Presentacion\Tickets\Pago.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\Tickets\Pago.Designer.cs">
       <DependentUpon>Pago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Tickets\SeleccionAsientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Tickets\SeleccionAsientos.Designer.cs">
+      <DependentUpon>SeleccionAsientos.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Tickets\SeleccionPelicula.cs">
       <SubType>Form</SubType>
@@ -150,6 +157,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Presentacion\Registros\RegistroUsuario.resx">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
@@ -172,6 +185,9 @@
     <EmbeddedResource Include="Presentacion\Tickets\Pago.resx">
       <DependentUpon>Pago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Tickets\SeleccionAsientos.resx">
+      <DependentUpon>SeleccionAsientos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Tickets\SeleccionPelicula.resx">
       <DependentUpon>SeleccionPelicula.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +204,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Presentacion\Reportes\ReporteCliente\Cliente.xsc">
       <DependentUpon>Cliente.xsd</DependentUpon>
@@ -269,6 +288,12 @@
     <None Include="Resources\Fondo1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\armchair_ocupped.png" />
+    <None Include="Resources\armchair_selected.png" />
+    <None Include="Resources\armchair_unselected.png" />
+    <None Include="Resources\cinema-tickets_4998806.png" />
+    <None Include="Resources\film-reel_2590670.png" />
+    <None Include="Resources\rating_4149882 %281%29.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
