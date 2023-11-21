@@ -62,10 +62,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(464, 14);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(309, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(460, 58);
+            this.label1.Size = new System.Drawing.Size(307, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "VENTA DE  TICKETS";
             // 
@@ -75,10 +74,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gold;
-            this.label2.Location = new System.Drawing.Point(18, 158);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(12, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(366, 39);
+            this.label2.Size = new System.Drawing.Size(238, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "Seleccione una Película:";
             // 
@@ -89,10 +87,9 @@
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(914, 622);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(609, 404);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 29);
+            this.label3.Size = new System.Drawing.Size(72, 21);
             this.label3.TabIndex = 8;
             this.label3.Text = "ESTRENO";
             // 
@@ -103,19 +100,17 @@
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(640, 622);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(427, 404);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 29);
+            this.label4.Size = new System.Drawing.Size(72, 21);
             this.label4.TabIndex = 9;
             this.label4.Text = "ESTRENO";
             // 
             // pbrTickets
             // 
-            this.pbrTickets.Location = new System.Drawing.Point(474, 78);
-            this.pbrTickets.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbrTickets.Location = new System.Drawing.Point(316, 51);
             this.pbrTickets.Name = "pbrTickets";
-            this.pbrTickets.Size = new System.Drawing.Size(441, 15);
+            this.pbrTickets.Size = new System.Drawing.Size(294, 10);
             this.pbrTickets.TabIndex = 1;
             // 
             // cboTipoEntrada
@@ -127,10 +122,9 @@
             this.cboTipoEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTipoEntrada.ForeColor = System.Drawing.Color.Gold;
             this.cboTipoEntrada.FormattingEnabled = true;
-            this.cboTipoEntrada.Location = new System.Drawing.Point(26, 862);
-            this.cboTipoEntrada.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cboTipoEntrada.Location = new System.Drawing.Point(17, 560);
             this.cboTipoEntrada.Name = "cboTipoEntrada";
-            this.cboTipoEntrada.Size = new System.Drawing.Size(276, 28);
+            this.cboTipoEntrada.Size = new System.Drawing.Size(185, 21);
             this.cboTipoEntrada.Sorted = true;
             this.cboTipoEntrada.TabIndex = 6;
             this.cboTipoEntrada.Visible = false;
@@ -142,10 +136,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gold;
-            this.label5.Location = new System.Drawing.Point(18, 817);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(12, 531);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(291, 31);
+            this.label5.Size = new System.Drawing.Size(196, 22);
             this.label5.TabIndex = 5;
             this.label5.Text = "SELECCIONE ENTRADA";
             this.label5.Visible = false;
@@ -156,10 +149,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gold;
-            this.label6.Location = new System.Drawing.Point(24, 715);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(16, 465);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(145, 31);
+            this.label6.Size = new System.Drawing.Size(98, 22);
             this.label6.TabIndex = 3;
             this.label6.Text = "PELÍCULA: ";
             this.label6.Visible = false;
@@ -169,10 +161,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gold;
-            this.label7.Location = new System.Drawing.Point(165, 715);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(110, 465);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 31);
+            this.label7.Size = new System.Drawing.Size(0, 22);
             this.label7.TabIndex = 4;
             this.label7.Visible = false;
             // 
@@ -182,10 +173,9 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gold;
-            this.label8.Location = new System.Drawing.Point(423, 817);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(282, 531);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(286, 31);
+            this.label8.Size = new System.Drawing.Size(193, 22);
             this.label8.TabIndex = 7;
             this.label8.Text = "SELECCIONE FUNCIÓN";
             this.label8.Visible = false;
@@ -193,10 +183,9 @@
             // pbxPeli5
             // 
             this.pbxPeli5.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli5.Image")));
-            this.pbxPeli5.Location = new System.Drawing.Point(1118, 222);
-            this.pbxPeli5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxPeli5.Location = new System.Drawing.Point(745, 144);
             this.pbxPeli5.Name = "pbxPeli5";
-            this.pbxPeli5.Size = new System.Drawing.Size(248, 395);
+            this.pbxPeli5.Size = new System.Drawing.Size(165, 257);
             this.pbxPeli5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxPeli5.TabIndex = 7;
             this.pbxPeli5.TabStop = false;
@@ -205,10 +194,9 @@
             // pbxPeli4
             // 
             this.pbxPeli4.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli4.Image")));
-            this.pbxPeli4.Location = new System.Drawing.Point(844, 222);
-            this.pbxPeli4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxPeli4.Location = new System.Drawing.Point(563, 144);
             this.pbxPeli4.Name = "pbxPeli4";
-            this.pbxPeli4.Size = new System.Drawing.Size(248, 395);
+            this.pbxPeli4.Size = new System.Drawing.Size(165, 257);
             this.pbxPeli4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxPeli4.TabIndex = 6;
             this.pbxPeli4.TabStop = false;
@@ -217,10 +205,9 @@
             // pbxPeli3
             // 
             this.pbxPeli3.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli3.Image")));
-            this.pbxPeli3.Location = new System.Drawing.Point(572, 222);
-            this.pbxPeli3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxPeli3.Location = new System.Drawing.Point(381, 144);
             this.pbxPeli3.Name = "pbxPeli3";
-            this.pbxPeli3.Size = new System.Drawing.Size(248, 395);
+            this.pbxPeli3.Size = new System.Drawing.Size(165, 257);
             this.pbxPeli3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxPeli3.TabIndex = 5;
             this.pbxPeli3.TabStop = false;
@@ -229,10 +216,9 @@
             // pbxPeli2
             // 
             this.pbxPeli2.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli2.Image")));
-            this.pbxPeli2.Location = new System.Drawing.Point(298, 222);
-            this.pbxPeli2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxPeli2.Location = new System.Drawing.Point(199, 144);
             this.pbxPeli2.Name = "pbxPeli2";
-            this.pbxPeli2.Size = new System.Drawing.Size(248, 395);
+            this.pbxPeli2.Size = new System.Drawing.Size(165, 257);
             this.pbxPeli2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxPeli2.TabIndex = 4;
             this.pbxPeli2.TabStop = false;
@@ -241,10 +227,9 @@
             // pbxPeli1
             // 
             this.pbxPeli1.Image = ((System.Drawing.Image)(resources.GetObject("pbxPeli1.Image")));
-            this.pbxPeli1.Location = new System.Drawing.Point(26, 222);
-            this.pbxPeli1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxPeli1.Location = new System.Drawing.Point(17, 144);
             this.pbxPeli1.Name = "pbxPeli1";
-            this.pbxPeli1.Size = new System.Drawing.Size(248, 395);
+            this.pbxPeli1.Size = new System.Drawing.Size(165, 257);
             this.pbxPeli1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxPeli1.TabIndex = 3;
             this.pbxPeli1.TabStop = false;
@@ -255,10 +240,9 @@
             this.pbAtras.BackColor = System.Drawing.Color.Transparent;
             this.pbAtras.BackgroundImage = global::CineFront.Properties.Resources._580b57fcd9996e24bc43c44c1;
             this.pbAtras.Image = global::CineFront.Properties.Resources._580b57fcd9996e24bc43c44c1;
-            this.pbAtras.Location = new System.Drawing.Point(15, 14);
-            this.pbAtras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbAtras.Location = new System.Drawing.Point(10, 9);
             this.pbAtras.Name = "pbAtras";
-            this.pbAtras.Size = new System.Drawing.Size(108, 98);
+            this.pbAtras.Size = new System.Drawing.Size(72, 64);
             this.pbAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAtras.TabIndex = 16;
             this.pbAtras.TabStop = false;
@@ -273,10 +257,9 @@
             this.cboFuncion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboFuncion.ForeColor = System.Drawing.Color.Gold;
             this.cboFuncion.FormattingEnabled = true;
-            this.cboFuncion.Location = new System.Drawing.Point(429, 862);
-            this.cboFuncion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cboFuncion.Location = new System.Drawing.Point(286, 560);
             this.cboFuncion.Name = "cboFuncion";
-            this.cboFuncion.Size = new System.Drawing.Size(276, 28);
+            this.cboFuncion.Size = new System.Drawing.Size(244, 21);
             this.cboFuncion.Sorted = true;
             this.cboFuncion.TabIndex = 8;
             this.cboFuncion.Visible = false;
@@ -285,10 +268,9 @@
             // btnAsientos
             // 
             this.btnAsientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAsientos.Location = new System.Drawing.Point(777, 848);
-            this.btnAsientos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAsientos.Location = new System.Drawing.Point(609, 551);
             this.btnAsientos.Name = "btnAsientos";
-            this.btnAsientos.Size = new System.Drawing.Size(267, 54);
+            this.btnAsientos.Size = new System.Drawing.Size(178, 35);
             this.btnAsientos.TabIndex = 17;
             this.btnAsientos.Text = "Seleccionar Asientos";
             this.btnAsientos.UseVisualStyleBackColor = true;
@@ -300,19 +282,18 @@
             this.txtNombrePeli.BackColor = System.Drawing.Color.White;
             this.txtNombrePeli.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombrePeli.ForeColor = System.Drawing.Color.Maroon;
-            this.txtNombrePeli.Location = new System.Drawing.Point(176, 717);
-            this.txtNombrePeli.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNombrePeli.Location = new System.Drawing.Point(117, 466);
             this.txtNombrePeli.Name = "txtNombrePeli";
-            this.txtNombrePeli.Size = new System.Drawing.Size(337, 32);
+            this.txtNombrePeli.Size = new System.Drawing.Size(226, 24);
             this.txtNombrePeli.TabIndex = 18;
             // 
             // SeleccionPelicula
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.BackgroundImage = global::CineFront.Properties.Resources.Fondo;
-            this.ClientSize = new System.Drawing.Size(1386, 1050);
+            this.ClientSize = new System.Drawing.Size(924, 677);
             this.Controls.Add(this.txtNombrePeli);
             this.Controls.Add(this.btnAsientos);
             this.Controls.Add(this.cboFuncion);
@@ -332,8 +313,11 @@
             this.Controls.Add(this.pbxPeli1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(940, 716);
+            this.MinimumSize = new System.Drawing.Size(940, 716);
             this.Name = "SeleccionPelicula";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comprar Tickets";
             this.Load += new System.EventHandler(this.SeleccionPelicula_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxPeli5)).EndInit();

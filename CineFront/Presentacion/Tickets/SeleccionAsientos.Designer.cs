@@ -53,12 +53,13 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(27, 66);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 43);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(311, 352);
+            this.dataGridView1.Size = new System.Drawing.Size(207, 229);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
@@ -113,18 +114,20 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(434, 130);
+            this.listView1.Location = new System.Drawing.Point(289, 84);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(189, 288);
+            this.listView1.Size = new System.Drawing.Size(127, 189);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(659, 380);
+            this.button1.Location = new System.Drawing.Point(439, 247);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 38);
+            this.button1.Size = new System.Drawing.Size(68, 25);
             this.button1.TabIndex = 2;
             this.button1.Text = "Pagar";
             this.button1.UseVisualStyleBackColor = true;
@@ -133,17 +136,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(434, 78);
+            this.label1.Location = new System.Drawing.Point(289, 51);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 20);
+            this.label1.Size = new System.Drawing.Size(122, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Entradas Seleccionadas";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(659, 323);
+            this.button2.Location = new System.Drawing.Point(439, 210);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 38);
+            this.button2.Size = new System.Drawing.Size(68, 25);
             this.button2.TabIndex = 4;
             this.button2.Text = "Restaurar";
             this.button2.UseVisualStyleBackColor = true;
@@ -151,16 +156,21 @@
             // 
             // SeleccionAsientos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CineFront.Properties.Resources.Fondo;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(533, 319);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(549, 358);
+            this.MinimumSize = new System.Drawing.Size(549, 358);
             this.Name = "SeleccionAsientos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SeleccionAsientos";
             this.Load += new System.EventHandler(this.SeleccionAsientos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\ApiCine\\ApiCine.csproj": {}
+    "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\ApiCine\\ApiCine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\ApiCine\\ApiCine.csproj": {
+    "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\ApiCine\\ApiCine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\ApiCine\\ApiCine.csproj",
+        "projectUniqueName": "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\ApiCine\\ApiCine.csproj",
         "projectName": "ApiCine",
-        "projectPath": "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\ApiCine\\ApiCine.csproj",
-        "packagesPath": "C:\\Users\\tbrep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\ApiCine\\obj\\",
+        "projectPath": "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\ApiCine\\ApiCine.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\ApiCine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tbrep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\DataApi\\DataApiCine.csproj": {
-                "projectPath": "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\DataApi\\DataApiCine.csproj"
+              "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\DataApi\\DataApiCine.csproj": {
+                "projectPath": "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\DataApi\\DataApiCine.csproj"
               }
             }
           }
@@ -63,7 +63,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -75,15 +76,15 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\DataApi\\DataApiCine.csproj": {
+    "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\DataApi\\DataApiCine.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\DataApi\\DataApiCine.csproj",
+        "projectUniqueName": "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\DataApi\\DataApiCine.csproj",
         "projectName": "DataApiCine",
-        "projectPath": "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\DataApi\\DataApiCine.csproj",
+        "projectPath": "D:\\MARK\\UTN FRC\\Materias\\SEMESTRE 2\\PROGRAMACIÓN 2\\TP FINAL\\CineProject\\DataApi\\DataApiCine.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}

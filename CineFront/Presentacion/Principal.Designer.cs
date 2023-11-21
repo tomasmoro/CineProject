@@ -63,10 +63,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(188, 488);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(145, 240);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(321, 354);
+            this.pictureBox1.Size = new System.Drawing.Size(214, 230);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -76,10 +75,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(591, 488);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(414, 240);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(321, 354);
+            this.pictureBox2.Size = new System.Drawing.Size(214, 230);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -89,10 +87,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(994, 488);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox3.Location = new System.Drawing.Point(683, 240);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(321, 354);
+            this.pictureBox3.Size = new System.Drawing.Size(214, 230);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -103,10 +100,9 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Gold;
-            this.linkLabel1.Location = new System.Drawing.Point(242, 846);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(181, 473);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(213, 31);
+            this.linkLabel1.Size = new System.Drawing.Size(143, 22);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Venta de Tickets";
@@ -117,10 +113,9 @@
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkColor = System.Drawing.Color.Gold;
-            this.linkLabel2.Location = new System.Drawing.Point(639, 846);
-            this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel2.Location = new System.Drawing.Point(446, 473);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(225, 31);
+            this.linkLabel2.Size = new System.Drawing.Size(151, 22);
             this.linkLabel2.TabIndex = 6;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Registrar Usuario";
@@ -131,17 +126,15 @@
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel3.LinkColor = System.Drawing.Color.Gold;
-            this.linkLabel3.Location = new System.Drawing.Point(1077, 846);
-            this.linkLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel3.Location = new System.Drawing.Point(738, 473);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(154, 31);
+            this.linkLabel3.Size = new System.Drawing.Size(104, 22);
             this.linkLabel3.TabIndex = 7;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Estadísticas";
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
@@ -149,7 +142,8 @@
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1564, 35);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(1013, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -161,13 +155,13 @@
             this.reportesToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 22);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // ventaDeTicketsToolStripMenuItem
             // 
             this.ventaDeTicketsToolStripMenuItem.Name = "ventaDeTicketsToolStripMenuItem";
-            this.ventaDeTicketsToolStripMenuItem.Size = new System.Drawing.Size(241, 34);
+            this.ventaDeTicketsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.ventaDeTicketsToolStripMenuItem.Text = "Venta de Tickets";
             // 
             // registrarToolStripMenuItem
@@ -176,20 +170,20 @@
             this.usuarioToolStripMenuItem,
             this.vendedorToolStripMenuItem});
             this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
-            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(241, 34);
+            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.registrarToolStripMenuItem.Text = "Registrar";
             // 
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(191, 34);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.usuarioToolStripMenuItem.Text = "Usuario";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
             // vendedorToolStripMenuItem
             // 
             this.vendedorToolStripMenuItem.Name = "vendedorToolStripMenuItem";
-            this.vendedorToolStripMenuItem.Size = new System.Drawing.Size(191, 34);
+            this.vendedorToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.vendedorToolStripMenuItem.Text = "Vendedor";
             this.vendedorToolStripMenuItem.Click += new System.EventHandler(this.vendedorToolStripMenuItem_Click);
             // 
@@ -200,34 +194,34 @@
             this.peliculaMasVistaToolStripMenuItem,
             this.clientesMasCompraronToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(241, 34);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
             // productoMasVendidoToolStripMenuItem
             // 
             this.productoMasVendidoToolStripMenuItem.Name = "productoMasVendidoToolStripMenuItem";
-            this.productoMasVendidoToolStripMenuItem.Size = new System.Drawing.Size(309, 34);
+            this.productoMasVendidoToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.productoMasVendidoToolStripMenuItem.Text = "Producto Mas Vendido";
             this.productoMasVendidoToolStripMenuItem.Click += new System.EventHandler(this.productoMasVendidoToolStripMenuItem_Click);
             // 
             // peliculaMasVistaToolStripMenuItem
             // 
             this.peliculaMasVistaToolStripMenuItem.Name = "peliculaMasVistaToolStripMenuItem";
-            this.peliculaMasVistaToolStripMenuItem.Size = new System.Drawing.Size(309, 34);
+            this.peliculaMasVistaToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.peliculaMasVistaToolStripMenuItem.Text = "Pelicula Mas Vista";
             this.peliculaMasVistaToolStripMenuItem.Click += new System.EventHandler(this.peliculaMasVistaToolStripMenuItem_Click);
             // 
             // clientesMasCompraronToolStripMenuItem
             // 
             this.clientesMasCompraronToolStripMenuItem.Name = "clientesMasCompraronToolStripMenuItem";
-            this.clientesMasCompraronToolStripMenuItem.Size = new System.Drawing.Size(309, 34);
+            this.clientesMasCompraronToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.clientesMasCompraronToolStripMenuItem.Text = "Clientes Mas Compraron";
             this.clientesMasCompraronToolStripMenuItem.Click += new System.EventHandler(this.clientesMasCompraronToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(241, 34);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -236,7 +230,7 @@
             this.soporteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.modificarToolStripMenuItem});
             this.soporteToolStripMenuItem.Name = "soporteToolStripMenuItem";
-            this.soporteToolStripMenuItem.Size = new System.Drawing.Size(92, 29);
+            this.soporteToolStripMenuItem.Size = new System.Drawing.Size(60, 22);
             this.soporteToolStripMenuItem.Text = "Soporte";
             // 
             // modificarToolStripMenuItem
@@ -246,25 +240,25 @@
             this.usuarioToolStripMenuItem1,
             this.reporteToolStripMenuItem});
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(189, 34);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.modificarToolStripMenuItem.Text = "Modificar";
             // 
             // peliculaToolStripMenuItem
             // 
             this.peliculaToolStripMenuItem.Name = "peliculaToolStripMenuItem";
-            this.peliculaToolStripMenuItem.Size = new System.Drawing.Size(176, 34);
+            this.peliculaToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.peliculaToolStripMenuItem.Text = "Pelicula";
             // 
             // usuarioToolStripMenuItem1
             // 
             this.usuarioToolStripMenuItem1.Name = "usuarioToolStripMenuItem1";
-            this.usuarioToolStripMenuItem1.Size = new System.Drawing.Size(176, 34);
+            this.usuarioToolStripMenuItem1.Size = new System.Drawing.Size(115, 22);
             this.usuarioToolStripMenuItem1.Text = "Usuario";
             // 
             // reporteToolStripMenuItem
             // 
             this.reporteToolStripMenuItem.Name = "reporteToolStripMenuItem";
-            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(176, 34);
+            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.reporteToolStripMenuItem.Text = "Reporte";
             // 
             // ayudaToolStripMenuItem
@@ -272,22 +266,22 @@
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.linkPáginaAyudaToolStripMenuItem});
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(79, 29);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 22);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // linkPáginaAyudaToolStripMenuItem
             // 
             this.linkPáginaAyudaToolStripMenuItem.Name = "linkPáginaAyudaToolStripMenuItem";
-            this.linkPáginaAyudaToolStripMenuItem.Size = new System.Drawing.Size(267, 34);
+            this.linkPáginaAyudaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.linkPáginaAyudaToolStripMenuItem.Text = "[Link página ayuda]";
             // 
             // Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.BackgroundImage = global::CineFront.Properties.Resources.Presentacion;
-            this.ClientSize = new System.Drawing.Size(1564, 1048);
+            this.ClientSize = new System.Drawing.Size(1013, 518);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
@@ -297,7 +291,9 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1029, 557);
+            this.MinimumSize = new System.Drawing.Size(1029, 557);
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StarCineplex";
