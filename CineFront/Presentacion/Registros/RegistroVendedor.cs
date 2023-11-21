@@ -24,6 +24,7 @@ namespace CineFront.Presentacion.Registros
             txtCorreo.Text = string.Empty;
             txtTelefono.Text = string.Empty;
             dtpFechaNac.Value = DateTime.Today;
+            txtContraseña.Text = string.Empty;
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {

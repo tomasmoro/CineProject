@@ -24,6 +24,7 @@ namespace CineFront.Presentacion
             txtNombre.Text = string.Empty;
             txtCorreo.Text = string.Empty;
             dtpFechaNac.Value = DateTime.Today;
+            txtContraseña.Text = string.Empty;
         }
 
         private void pbAtras_Click(object sender, EventArgs e)
@@ -36,9 +37,36 @@ namespace CineFront.Presentacion
             if (MessageBox.Show("¿Seguro que quiere cancelar?", "CANCELAR", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 limpiar();
+            }            
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtCodigo.Text))
+            {
+                MessageBox.Show("Debe ingresar un codigo...", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
             }
-                
-            
+            if (string.IsNullOrEmpty(txtNombre.Text))
+            {
+                MessageBox.Show("Debe ingresar un nombre...", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (string.IsNullOrEmpty(txtApellido.Text))
+            {
+                MessageBox.Show("Debe ingresar un apellido...", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (string.IsNullOrEmpty(txtCorreo.Text))
+            {
+                MessageBox.Show("Debe ingresar un correo electronico...", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (string.IsNullOrEmpty(txtContraseña.Text))
+            {
+                MessageBox.Show("Debe ingresar una contraseña...", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
         }
     }
 }

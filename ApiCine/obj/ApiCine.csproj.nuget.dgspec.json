@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\ApiCine\\ApiCine.csproj": {}
+    "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\ApiCine\\ApiCine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\ApiCine\\ApiCine.csproj": {
+    "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\ApiCine\\ApiCine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\ApiCine\\ApiCine.csproj",
+        "projectUniqueName": "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\ApiCine\\ApiCine.csproj",
         "projectName": "ApiCine",
-        "projectPath": "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\ApiCine\\ApiCine.csproj",
-        "packagesPath": "C:\\Users\\tomas.moro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\ApiCine\\obj\\",
+        "projectPath": "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\ApiCine\\ApiCine.csproj",
+        "packagesPath": "C:\\Users\\tbrep\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\ApiCine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tomas.moro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tbrep\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\DataApi\\DataApiCine.csproj": {
-                "projectPath": "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\DataApi\\DataApiCine.csproj"
+              "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\DataApi\\DataApiCine.csproj": {
+                "projectPath": "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\DataApi\\DataApiCine.csproj"
               }
             }
           }
@@ -63,8 +63,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -76,15 +75,15 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\DataApi\\DataApiCine.csproj": {
+    "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\DataApi\\DataApiCine.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\DataApi\\DataApiCine.csproj",
+        "projectUniqueName": "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\DataApi\\DataApiCine.csproj",
         "projectName": "DataApiCine",
-        "projectPath": "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\DataApi\\DataApiCine.csproj",
+        "projectPath": "C:\\Users\\tbrep\\OneDrive\\Escritorio\\TPI_Progra\\CineProject\\DataApi\\DataApiCine.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}

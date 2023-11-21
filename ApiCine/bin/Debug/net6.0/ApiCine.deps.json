@@ -267,40 +267,40 @@
             "locale": "zh-CHT"
           },
           "lib/net40/zh-HANS/Microsoft.ReportViewer.Common.resources.dll": {
-            "locale": "zh-Hans"
+            "locale": "zh-HANS"
           },
           "lib/net40/zh-HANS/Microsoft.ReportViewer.DataVisualization.resources.dll": {
-            "locale": "zh-Hans"
+            "locale": "zh-HANS"
           },
           "lib/net40/zh-HANS/Microsoft.ReportViewer.Design.resources.dll": {
-            "locale": "zh-Hans"
+            "locale": "zh-HANS"
           },
           "lib/net40/zh-HANS/Microsoft.ReportViewer.WebDesign.resources.dll": {
-            "locale": "zh-Hans"
+            "locale": "zh-HANS"
           },
           "lib/net40/zh-HANS/Microsoft.ReportViewer.WebForms.resources.dll": {
-            "locale": "zh-Hans"
+            "locale": "zh-HANS"
           },
           "lib/net40/zh-HANS/Microsoft.ReportViewer.WinForms.resources.dll": {
-            "locale": "zh-Hans"
+            "locale": "zh-HANS"
           },
           "lib/net40/zh-HANT/Microsoft.ReportViewer.Common.resources.dll": {
-            "locale": "zh-Hant"
+            "locale": "zh-HANT"
           },
           "lib/net40/zh-HANT/Microsoft.ReportViewer.DataVisualization.resources.dll": {
-            "locale": "zh-Hant"
+            "locale": "zh-HANT"
           },
           "lib/net40/zh-HANT/Microsoft.ReportViewer.Design.resources.dll": {
-            "locale": "zh-Hant"
+            "locale": "zh-HANT"
           },
           "lib/net40/zh-HANT/Microsoft.ReportViewer.WebDesign.resources.dll": {
-            "locale": "zh-Hant"
+            "locale": "zh-HANT"
           },
           "lib/net40/zh-HANT/Microsoft.ReportViewer.WebForms.resources.dll": {
-            "locale": "zh-Hant"
+            "locale": "zh-HANT"
           },
           "lib/net40/zh-HANT/Microsoft.ReportViewer.WinForms.resources.dll": {
-            "locale": "zh-Hant"
+            "locale": "zh-HANT"
           }
         }
       },

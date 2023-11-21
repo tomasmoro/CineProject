@@ -46,7 +46,7 @@ namespace CineFront
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("¿Seguro que quiere salir?", "SALIR", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if(MessageBox.Show("¿Seguro que quiere salir?", "SALIR", MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
             Close();
         }
 

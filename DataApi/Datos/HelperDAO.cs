@@ -47,7 +47,7 @@ namespace DataAPI.Datos
         {
             int aux = 0;
 
-            conexion.Open();
+            Conectar();
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
             comando.CommandType = CommandType.StoredProcedure;
@@ -63,7 +63,7 @@ namespace DataAPI.Datos
 
             DataTable tabla = new DataTable();
             tabla.Load(comando.ExecuteReader());
-            conexion.Close();
+            Desconectar();
 
             aux = (int)param.Value;
             return aux;
@@ -71,20 +71,20 @@ namespace DataAPI.Datos
 
         internal DataTable Consultar(string nombreSP)
         {
-            conexion.Open();
+            Conectar();
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
             comando.CommandType = CommandType.StoredProcedure;
             comando.CommandText = nombreSP;
             DataTable tabla = new DataTable();
             tabla.Load(comando.ExecuteReader());
-            conexion.Close();
+            Desconectar();
             return tabla;
         }
 
         internal DataTable Consultar(string nombreSP, List<Parametro> lParams)
         {
-            conexion.Open();
+            Conectar();
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
             comando.CommandType = CommandType.StoredProcedure;
@@ -95,7 +95,7 @@ namespace DataAPI.Datos
             }
             DataTable tabla = new DataTable();
             tabla.Load(comando.ExecuteReader());
-            conexion.Close();
+            Desconectar();
             return tabla;
         }
 }
