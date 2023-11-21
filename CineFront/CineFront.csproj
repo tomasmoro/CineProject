@@ -88,11 +88,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Presentacion\Registros\Funciones.cs">
+    <Compile Include="Presentacion\Registros\NuevaFuncion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Registros\Funciones.Designer.cs">
-      <DependentUpon>Funciones.cs</DependentUpon>
+    <Compile Include="Presentacion\Registros\NuevaFuncion.Designer.cs">
+      <DependentUpon>NuevaFuncion.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Registros\RegistroUsuario.cs">
       <SubType>Form</SubType>
@@ -173,8 +173,8 @@
       <DependentUpon>Reportes.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <EmbeddedResource Include="Presentacion\Registros\Funciones.resx">
-      <DependentUpon>Funciones.cs</DependentUpon>
+    <EmbeddedResource Include="Presentacion\Registros\NuevaFuncion.resx">
+      <DependentUpon>NuevaFuncion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Registros\RegistroUsuario.resx">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>

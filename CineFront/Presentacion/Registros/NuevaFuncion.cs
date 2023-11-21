@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CineFront.Presentacion.Registros
 {
-    public partial class Funciones : Form
+    public partial class NuevaFuncion : Form
     {
-        public Funciones()
+        public NuevaFuncion()
         {
             InitializeComponent();
         }
