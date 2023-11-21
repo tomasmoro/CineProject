@@ -128,6 +128,17 @@
     <Compile Include="Presentacion\Reportes\ReportePelicula\ReportePelicula.Designer.cs">
       <DependentUpon>ReportePelicula.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Reportes\ReporteVendedor\ReporteVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Reportes\ReporteVendedor\ReporteVendedor.Designer.cs">
+      <DependentUpon>ReporteVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Reportes\ReporteVendedor\VENDEDOR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VENDEDOR.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Reportes\ReportProduc\Producto.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -182,15 +193,19 @@
     <EmbeddedResource Include="Presentacion\Registros\RegistroVendedor.resx">
       <DependentUpon>RegistroVendedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Reportes\ReporteCliente\ReportClient.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\ReporteCliente\ReporteCliente.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\ReporteCliente\ReporteCliente.resx">
       <DependentUpon>ReporteCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Reportes\ReportePelicula\InformePelicula.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\ReportePelicula\ReportePelicula.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\ReportePelicula\ReportePelicula.resx">
       <DependentUpon>ReportePelicula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Reportes\ReportProduc\InformeProducto.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\ReporteVendedor\ReporteVendedor.rdlc" />
+    <EmbeddedResource Include="Presentacion\Reportes\ReporteVendedor\ReporteVendedor.resx">
+      <DependentUpon>ReporteVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Reportes\ReportProduc\ReporteProducto.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\ReportProduc\ReportesProducto.resx">
       <DependentUpon>ReportesProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +256,17 @@
     </None>
     <None Include="Presentacion\Reportes\ReportePelicula\Pelicula.xss">
       <DependentUpon>Pelicula.xsd</DependentUpon>
+    </None>
+    <None Include="Presentacion\Reportes\ReporteVendedor\VENDEDOR.xsc">
+      <DependentUpon>VENDEDOR.xsd</DependentUpon>
+    </None>
+    <None Include="Presentacion\Reportes\ReporteVendedor\VENDEDOR.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VENDEDOR.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentacion\Reportes\ReporteVendedor\VENDEDOR.xss">
+      <DependentUpon>VENDEDOR.xsd</DependentUpon>
     </None>
     <None Include="Presentacion\Reportes\ReportProduc\Producto.xsc">
       <DependentUpon>Producto.xsd</DependentUpon>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VENDEDOR" targetNamespace="http://tempuri.org/VENDEDOR.xsd" xmlns:mstns="http://tempuri.org/VENDEDOR.xsd" xmlns="http://tempuri.org/VENDEDOR.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CINE_GRUPO21ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CINE_GRUPO21ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CineFront.Properties.Settings.GlobalReference.Default.CINE_GRUPO21ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VENDEDORESTableAdapter" GeneratorDataComponentClassName="VENDEDORESTableAdapter" Name="VENDEDORES" UserDataComponentName="VENDEDORESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CINE_GRUPO21ConnectionString (Settings)" DbObjectName="CINE_GRUPO21.dbo.VENDEDORES" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT V.id_vendedor 'ID',V.nombre +' '+ V.apellido  'VENDEDORES', mail 'CORREO', telefono 'TELEFONO',COUNT(id_ticket) 'VENTAS', sum(total) 'TOTAL' 
+FROM COMPROBANTES C, vendedores V, TICKETS T
+WHERE C.id_comprobante = T.id_comprobante 
+AND V.id_vendedor = C.id_vendedor
+GROUP BY v.id_vendedor,v.nombre + ' ' +v.apellido, v.mail, v.telefono
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="VENDEDORES" DataSetColumn="VENDEDORES" />
+              <Mapping SourceColumn="CORREO" DataSetColumn="CORREO" />
+              <Mapping SourceColumn="TELEFONO" DataSetColumn="TELEFONO" />
+              <Mapping SourceColumn="VENTAS" DataSetColumn="VENTAS" />
+              <Mapping SourceColumn="TOTAL" DataSetColumn="TOTAL" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VENDEDOR" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="VENDEDOR" msprop:Generator_DataSetName="VENDEDOR">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VENDEDORES" msprop:Generator_RowEvHandlerName="VENDEDORESRowChangeEventHandler" msprop:Generator_RowDeletedName="VENDEDORESRowDeleted" msprop:Generator_RowDeletingName="VENDEDORESRowDeleting" msprop:Generator_RowEvArgName="VENDEDORESRowChangeEvent" msprop:Generator_TablePropName="VENDEDORES" msprop:Generator_RowChangedName="VENDEDORESRowChanged" msprop:Generator_RowChangingName="VENDEDORESRowChanging" msprop:Generator_TableClassName="VENDEDORESDataTable" msprop:Generator_RowClassName="VENDEDORESRow" msprop:Generator_TableVarName="tableVENDEDORES" msprop:Generator_UserTableName="VENDEDORES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="VENDEDORES" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="VENDEDORES" msprop:Generator_ColumnPropNameInTable="VENDEDORESColumn" msprop:Generator_ColumnVarNameInTable="columnVENDEDORES" msprop:Generator_UserColumnName="VENDEDORES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="301" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CORREO" msprop:Generator_ColumnPropNameInRow="CORREO" msprop:Generator_ColumnPropNameInTable="CORREOColumn" msprop:Generator_ColumnVarNameInTable="columnCORREO" msprop:Generator_UserColumnName="CORREO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TELEFONO" msprop:Generator_ColumnPropNameInRow="TELEFONO" msprop:Generator_ColumnPropNameInTable="TELEFONOColumn" msprop:Generator_ColumnVarNameInTable="columnTELEFONO" msprop:Generator_UserColumnName="TELEFONO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VENTAS" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="VENTAS" msprop:Generator_ColumnPropNameInTable="VENTASColumn" msprop:Generator_ColumnVarNameInTable="columnVENTAS" msprop:Generator_UserColumnName="VENTAS" type="xs:int" minOccurs="0" />
+              <xs:element name="TOTAL" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TOTAL" msprop:Generator_ColumnPropNameInTable="TOTALColumn" msprop:Generator_ColumnVarNameInTable="columnTOTAL" msprop:Generator_UserColumnName="TOTAL" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VENDEDORES" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

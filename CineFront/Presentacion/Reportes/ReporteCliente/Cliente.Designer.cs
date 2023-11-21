@@ -293,6 +293,12 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente {
             
             private global::System.Data.DataColumn columnTRANSFERENCIA;
             
+            private global::System.Data.DataColumn columnEFECTIVO_TOTAL;
+            
+            private global::System.Data.DataColumn columnTARJETA_TOTAL;
+            
+            private global::System.Data.DataColumn columnTRANSFERECIA_TOTAL;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DataTable1DataTable() {
@@ -384,6 +390,30 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn EFECTIVO_TOTALColumn {
+                get {
+                    return this.columnEFECTIVO_TOTAL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TARJETA_TOTALColumn {
+                get {
+                    return this.columnTARJETA_TOTAL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TRANSFERECIA_TOTALColumn {
+                get {
+                    return this.columnTRANSFERECIA_TOTAL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -419,7 +449,7 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DataTable1Row AddDataTable1Row(int id_cliente, string CLIENTES, string CONTACTO, string BARRIO, int EFECTIVO, int TARJETA, int TRANSFERENCIA) {
+            public DataTable1Row AddDataTable1Row(int id_cliente, string CLIENTES, string CONTACTO, string BARRIO, int EFECTIVO, int TARJETA, int TRANSFERENCIA, decimal EFECTIVO_TOTAL, decimal TARJETA_TOTAL, decimal TRANSFERECIA_TOTAL) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id_cliente,
@@ -428,7 +458,10 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente {
                         BARRIO,
                         EFECTIVO,
                         TARJETA,
-                        TRANSFERENCIA};
+                        TRANSFERENCIA,
+                        EFECTIVO_TOTAL,
+                        TARJETA_TOTAL,
+                        TRANSFERECIA_TOTAL};
                 rowDataTable1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataTable1Row);
                 return rowDataTable1Row;
@@ -465,6 +498,9 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente {
                 this.columnEFECTIVO = base.Columns["EFECTIVO"];
                 this.columnTARJETA = base.Columns["TARJETA"];
                 this.columnTRANSFERENCIA = base.Columns["TRANSFERENCIA"];
+                this.columnEFECTIVO_TOTAL = base.Columns["EFECTIVO_TOTAL"];
+                this.columnTARJETA_TOTAL = base.Columns["TARJETA_TOTAL"];
+                this.columnTRANSFERECIA_TOTAL = base.Columns["TRANSFERECIA_TOTAL"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -484,6 +520,12 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente {
                 base.Columns.Add(this.columnTARJETA);
                 this.columnTRANSFERENCIA = new global::System.Data.DataColumn("TRANSFERENCIA", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTRANSFERENCIA);
+                this.columnEFECTIVO_TOTAL = new global::System.Data.DataColumn("EFECTIVO_TOTAL", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEFECTIVO_TOTAL);
+                this.columnTARJETA_TOTAL = new global::System.Data.DataColumn("TARJETA_TOTAL", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTARJETA_TOTAL);
+                this.columnTRANSFERECIA_TOTAL = new global::System.Data.DataColumn("TRANSFERECIA_TOTAL", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTRANSFERECIA_TOTAL);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_cliente}, true));
                 this.columnid_cliente.AllowDBNull = false;
@@ -495,6 +537,9 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente {
                 this.columnEFECTIVO.ReadOnly = true;
                 this.columnTARJETA.ReadOnly = true;
                 this.columnTRANSFERENCIA.ReadOnly = true;
+                this.columnEFECTIVO_TOTAL.ReadOnly = true;
+                this.columnTARJETA_TOTAL.ReadOnly = true;
+                this.columnTRANSFERECIA_TOTAL.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -744,6 +789,54 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal EFECTIVO_TOTAL {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableDataTable1.EFECTIVO_TOTALColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'EFECTIVO_TOTAL\' de la tabla \'DataTable1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.EFECTIVO_TOTALColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal TARJETA_TOTAL {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableDataTable1.TARJETA_TOTALColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'TARJETA_TOTAL\' de la tabla \'DataTable1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.TARJETA_TOTALColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal TRANSFERECIA_TOTAL {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableDataTable1.TRANSFERECIA_TOTALColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'TRANSFERECIA_TOTAL\' de la tabla \'DataTable1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.TRANSFERECIA_TOTALColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsCLIENTESNull() {
                 return this.IsNull(this.tableDataTable1.CLIENTESColumn);
             }
@@ -812,6 +905,42 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetTRANSFERENCIANull() {
                 this[this.tableDataTable1.TRANSFERENCIAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsEFECTIVO_TOTALNull() {
+                return this.IsNull(this.tableDataTable1.EFECTIVO_TOTALColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetEFECTIVO_TOTALNull() {
+                this[this.tableDataTable1.EFECTIVO_TOTALColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTARJETA_TOTALNull() {
+                return this.IsNull(this.tableDataTable1.TARJETA_TOTALColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTARJETA_TOTALNull() {
+                this[this.tableDataTable1.TARJETA_TOTALColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTRANSFERECIA_TOTALNull() {
+                return this.IsNull(this.tableDataTable1.TRANSFERECIA_TOTALColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTRANSFERECIA_TOTALNull() {
+                this[this.tableDataTable1.TRANSFERECIA_TOTALColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -981,6 +1110,9 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente.ClienteTableAdapters {
             tableMapping.ColumnMappings.Add("EFECTIVO", "EFECTIVO");
             tableMapping.ColumnMappings.Add("TARJETA", "TARJETA");
             tableMapping.ColumnMappings.Add("TRANSFERENCIA", "TRANSFERENCIA");
+            tableMapping.ColumnMappings.Add("EFECTIVO_TOTAL", "EFECTIVO_TOTAL");
+            tableMapping.ColumnMappings.Add("TARJETA_TOTAL", "TARJETA_TOTAL");
+            tableMapping.ColumnMappings.Add("TRANSFERECIA_TOTAL", "TRANSFERECIA_TOTAL");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -988,7 +1120,7 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente.ClienteTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::CineFront.Properties.Settings.Default.CINE_BUTAKERAConnectionString;
+            this._connection.ConnectionString = global::CineFront.Properties.Settings.Default.CINE_GRUPO21ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1001,8 +1133,11 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente.ClienteTableAdapters {
 		 CLI.mail CONTACTO,
 		 B.barrio BARRIO,
 					(SELECT COUNT(COM1.id_forma_pago) FROM COMPROBANTES COM1 WHERE COM1.id_forma_pago = 1 AND CLI.id_cliente = COM1.id_cliente) 'EFECTIVO',
+					(SELECT SUM(precio_gral ) FROM COMPROBANTES COM1, FUNCIONES FUN1 WHERE COM1.id_forma_pago = 1 AND CLI.id_cliente = COM1.id_cliente AND COM1.id_funcion = FUN1.id_funcion) 'EFECTIVO_TOTAL',
 					(SELECT COUNT(COM1.id_forma_pago) FROM COMPROBANTES COM1  WHERE COM1.id_forma_pago = 2 AND CLI.id_cliente = COM1.id_cliente) 'TARJETA',
-					(SELECT COUNT(COM1.id_forma_pago) FROM COMPROBANTES COM1  WHERE COM1.id_forma_pago = 3 AND CLI.id_cliente = COM1.id_cliente) 'TRANSFERENCIA'
+					(SELECT SUM(precio_gral ) FROM COMPROBANTES COM1, FUNCIONES FUN1 WHERE COM1.id_forma_pago = 2 AND CLI.id_cliente = COM1.id_cliente AND COM1.id_funcion = FUN1.id_funcion) 'TARJETA_TOTAL',
+					(SELECT COUNT(COM1.id_forma_pago) FROM COMPROBANTES COM1  WHERE COM1.id_forma_pago = 3 AND CLI.id_cliente = COM1.id_cliente) 'TRANSFERENCIA',
+					(SELECT SUM(precio_gral) FROM COMPROBANTES COM1, FUNCIONES FUN1 WHERE COM1.id_forma_pago = 3 AND CLI.id_cliente = COM1.id_cliente AND COM1.id_funcion = FUN1.id_funcion) 'TRANSFERECIA_TOTAL'
 					
 FROM CLIENTES CLI
 JOIN BARRIOS B ON B.id_barrio = CLI.id_barrio
@@ -1010,8 +1145,7 @@ JOIN COMPROBANTES COM ON COM.id_cliente = CLI.id_cliente
 JOIN TICKETS T ON T.id_comprobante = COM.id_comprobante
 WHERE YEAR(COM.fecha) = YEAR(GETDATE())
 GROUP BY CLI.id_cliente, CLI.apellido+', '+ nombre, CLI.mail, B.barrio
-order by 1
-";
+order by 1";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

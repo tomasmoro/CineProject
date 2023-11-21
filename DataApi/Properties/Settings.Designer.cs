@@ -33,5 +33,16 @@ namespace DataApi.Properties {
                 return ((string)(this["CINE_BUTAKERAConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-IEK74JK\\SQLEXPRESS;Initial Catalog=CINE_GRUPO21;Integrated Se" +
+            "curity=True")]
+        public string CINE_GRUPO21ConnectionString {
+            get {
+                return ((string)(this["CINE_GRUPO21ConnectionString"]));
+            }
+        }
     }
 }

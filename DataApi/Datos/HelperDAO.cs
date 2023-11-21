@@ -11,7 +11,7 @@ namespace DataAPI.Datos
     public class HelperDAO
     {
         private SqlConnection conexion;
-        private string stringConexion = @"Data Source=DESKTOP-VTP20P7\MSSQLSERVER01;Initial Catalog=CINE_GRUPO21;Integrated Security=True";
+        private string stringConexion = @"Data Source=DESKTOP-IEK74JK\SQLEXPRESS;Initial Catalog=CINE_GRUPO21;Integrated Security=True";
         private static HelperDAO instancia;
 
         private HelperDAO()

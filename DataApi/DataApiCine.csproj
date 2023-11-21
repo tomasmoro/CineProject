@@ -76,6 +76,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CINE_BUTAKERADataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CINE_GRUPO21DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CINE_GRUPO21DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DAO\Funciones\FuncionDAO.cs" />
     <Compile Include="Aplicacion\Aplicacion.cs" />
     <Compile Include="DAO\Funciones\IFuncionDAO.cs" />
@@ -127,6 +132,17 @@
     </None>
     <None Include="CINE_BUTAKERADataSet.xss">
       <DependentUpon>CINE_BUTAKERADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CINE_GRUPO21DataSet.xsc">
+      <DependentUpon>CINE_GRUPO21DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CINE_GRUPO21DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CINE_GRUPO21DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CINE_GRUPO21DataSet.xss">
+      <DependentUpon>CINE_GRUPO21DataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

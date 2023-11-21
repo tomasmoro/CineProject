@@ -285,6 +285,8 @@ namespace CineFront.Presentacion.Reportes.ReportePelicula {
             
             private global::System.Data.DataColumn columnCantidad;
             
+            private global::System.Data.DataColumn columnDirector;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PELICULASDataTable() {
@@ -344,6 +346,14 @@ namespace CineFront.Presentacion.Reportes.ReportePelicula {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DirectorColumn {
+                get {
+                    return this.columnDirector;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -379,12 +389,13 @@ namespace CineFront.Presentacion.Reportes.ReportePelicula {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PELICULASRow AddPELICULASRow(int id, string Descripción, int Cantidad) {
+            public PELICULASRow AddPELICULASRow(int id, string Descripción, int Cantidad, string Director) {
                 PELICULASRow rowPELICULASRow = ((PELICULASRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id,
                         Descripción,
-                        Cantidad};
+                        Cantidad,
+                        Director};
                 rowPELICULASRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPELICULASRow);
                 return rowPELICULASRow;
@@ -417,6 +428,7 @@ namespace CineFront.Presentacion.Reportes.ReportePelicula {
                 this.columnid = base.Columns["id"];
                 this.columnDescripción = base.Columns["Descripción"];
                 this.columnCantidad = base.Columns["Cantidad"];
+                this.columnDirector = base.Columns["Director"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -428,12 +440,16 @@ namespace CineFront.Presentacion.Reportes.ReportePelicula {
                 base.Columns.Add(this.columnDescripción);
                 this.columnCantidad = new global::System.Data.DataColumn("Cantidad", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCantidad);
+                this.columnDirector = new global::System.Data.DataColumn("Director", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDirector);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columnDescripción.MaxLength = 70;
                 this.columnCantidad.ReadOnly = true;
+                this.columnDirector.ReadOnly = true;
+                this.columnDirector.MaxLength = 121;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -619,6 +635,22 @@ namespace CineFront.Presentacion.Reportes.ReportePelicula {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Director {
+                get {
+                    try {
+                        return ((string)(this[this.tablePELICULAS.DirectorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Director\' de la tabla \'PELICULAS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePELICULAS.DirectorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsDescripciónNull() {
                 return this.IsNull(this.tablePELICULAS.DescripciónColumn);
             }
@@ -639,6 +671,18 @@ namespace CineFront.Presentacion.Reportes.ReportePelicula {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetCantidadNull() {
                 this[this.tablePELICULAS.CantidadColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDirectorNull() {
+                return this.IsNull(this.tablePELICULAS.DirectorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDirectorNull() {
+                this[this.tablePELICULAS.DirectorColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -804,6 +848,7 @@ namespace CineFront.Presentacion.Reportes.ReportePelicula.PeliculaTableAdapters 
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("Descripción", "Descripción");
             tableMapping.ColumnMappings.Add("Cantidad", "Cantidad");
+            tableMapping.ColumnMappings.Add("Director", "Director");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -811,7 +856,7 @@ namespace CineFront.Presentacion.Reportes.ReportePelicula.PeliculaTableAdapters 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::CineFront.Properties.Settings.Default.CINE_BUTAKERAConnectionString;
+            this._connection.ConnectionString = global::CineFront.Properties.Settings.Default.CINE_GRUPO21ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -820,14 +865,16 @@ namespace CineFront.Presentacion.Reportes.ReportePelicula.PeliculaTableAdapters 
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"select p.id_pelicula 'id', p.pelicula 'Descripción', COUNT(id_ticket) 'Cantidad'
+            this._commandCollection[0].CommandText = @"select p.id_pelicula 'id', p.pelicula 'Descripción',d.nombre + ' ' + d.apellido 'Director', COUNT(id_ticket) 'Cantidad'
 	from PELICULAS p
 	join FUNCIONES f on f.id_pelicula = p.id_pelicula
 	join COMPROBANTES c on c.id_funcion = f.id_funcion
 	join TICKETS t on t.id_comprobante = c.id_comprobante
+	join PELICULAS_DIRECTORES pd on pd.id_pelicula = p.id_pelicula
+	join DIRECTORES d on d.id_director = pd.id_director
 	where year(c.fecha) = year(GETDATE())
-	and MONTH(c.fecha) = month(getdate())
-	group by p.id_pelicula , p.pelicula
+	and MONTH(c.fecha) = month(getdate()) 
+	group by p.id_pelicula , p.pelicula,d.nombre + ' ' + d.apellido
 	order by 3";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }

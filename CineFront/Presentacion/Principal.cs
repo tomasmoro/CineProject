@@ -1,6 +1,7 @@
 ﻿using CineFront.Presentacion;
 using CineFront.Presentacion.Registros;
 using CineFront.Presentacion.Reportes;
+using CineFront.Presentacion.Reportes.ReporteVendedor;
 using CineFront.Presentacion.Reportes.ReporteCliente;
 using CineFront.Presentacion.Reportes.ReportePelicula;
 using System;
@@ -23,6 +24,7 @@ namespace CineFront
         ReportesProducto reportesProducto;
         ReportePelicula reportePelicula;
         ReporteCliente reporteCliente;
+        ReporteVendedor reporteVendedor; 
 
         public Principal()
         {
@@ -96,6 +98,12 @@ namespace CineFront
         {
             Reportes reportes = new Reportes();
             reportes.ShowDialog();
+        }
+
+        private void listaVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            reporteVendedor = new ReporteVendedor();
+            reporteVendedor.ShowDialog();
         }
     }
 }
