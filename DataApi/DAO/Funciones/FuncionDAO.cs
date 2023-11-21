@@ -13,44 +13,52 @@ namespace DataApi.DAO.Funciones
 {
     public class FuncionDAO : IFuncionDAO
     {
-        public void GenerateFactura(Factura factura)
+        public bool GenerateFactura(Factura factura)
         {
+            bool resultado = true;
             SqlTransaction transaccion = null;
             SqlConnection conexion = HelperDAO.ObtenerInstancia().ObtenerConexion();
             try
             {
                 conexion.Open();
-                //Abro la conexion y despues abro la transaccion bajo esa conexion!
                 transaccion = conexion.BeginTransaction();
-                //Al crear el comando le pasamos x parametro: el string del comando, la conexion y la transaccion
                 SqlCommand comando = new SqlCommand("SP_INSERTAR_COMPROBANTES", conexion, transaccion);
                 comando.CommandType = CommandType.StoredProcedure;
 
-                comando.Parameters.AddWithValue("@fecha", factura.fecha);
-                comando.Parameters.AddWithValue("@vendedor", factura.vendedor.id);
-                comando.Parameters.AddWithValue("@cliente", factura.cliente.id);
-                comando.Parameters.AddWithValue("@funcion", factura.funcion.id);
-                comando.Parameters.AddWithValue("@forma_pago", factura.formaPago.id);
+                comando.Parameters.AddWithValue("@vendedor", factura.vendedor.id_vendedor);
+                comando.Parameters.AddWithValue("@cliente", factura.cliente.id_cliente);
+                comando.Parameters.AddWithValue("@funcion", factura.funcion.id_funcion);
+                comando.Parameters.AddWithValue("@forma_pago", factura.formaPago.id_forma_pago);
+
+                SqlParameter parametro = new SqlParameter();
+                parametro.ParameterName = "@next";
+                parametro.SqlDbType = SqlDbType.Int;
+                parametro.Direction = ParameterDirection.Output;
+                comando.Parameters.Add(parametro);
+
                 comando.ExecuteNonQuery();
+
+                int facturaNro = (int)parametro.Value;
 
                 int i = 1;
                 foreach (TicketDetalle d in factura.tickets)
                 {
                     SqlCommand comandoCarga = new SqlCommand("INSERTAR_TICKET", conexion, transaccion);
                     comandoCarga.CommandType = CommandType.StoredProcedure;
-                    comandoCarga.Parameters.AddWithValue("@comprobante", factura.nro_factura);
-                    comandoCarga.Parameters.AddWithValue("@butaca_sala", d.butaca.id);
+                    comandoCarga.Parameters.AddWithValue("@comprobante", facturaNro);
+                    comandoCarga.Parameters.AddWithValue("@butaca_sala", d.butaca.id_butaca_sala);
                     comandoCarga.Parameters.AddWithValue("@total", d.total);
                     comandoCarga.ExecuteNonQuery();
                     i++;
                 }
                 transaccion.Commit();
             }
-            catch
+            catch(Exception ex)
             {
                 if (transaccion != null)
                 {
                     transaccion.Rollback();
+                    resultado = false;
                 }
             }
             finally
@@ -60,6 +68,8 @@ namespace DataApi.DAO.Funciones
                     conexion.Close();
                 }
             }
+            return resultado;
+
         }
 
         public List<Cliente> GetClientes()
@@ -94,15 +104,15 @@ namespace DataApi.DAO.Funciones
             return fp;
         }
 
-        public int GetIdButaca(int fila, int asiento, Sala sala)
+        public int GetIdButaca(int fila, int asiento, int sala)
         {
             List<Parametro> parametros = new List<Parametro>();
 
             parametros.Add(new Parametro("@fila", fila));
             parametros.Add(new Parametro("@asiento", asiento));
-            parametros.Add(new Parametro("@sala", sala.id));
+            parametros.Add(new Parametro("@sala", sala));
 
-            int resultado = HelperDAO.ObtenerInstancia().ObtenerEscalar("OBTENER_BUTACA", parametros, "id");
+            Int32 resultado = HelperDAO.ObtenerInstancia().ObtenerEscalar("OBTENER_BUTACA", parametros, "id");
             return resultado;
         }
 
@@ -123,13 +133,13 @@ namespace DataApi.DAO.Funciones
             return vendedores;
         }
 
-        public List<Butaca> ObtenerButacasDisponibles(Funcion funcion)
+        public List<Butaca> ObtenerButacasDisponibles(int funcion, int sala)
         {
             List<Butaca> butacas = new List<Butaca>();
             List<Parametro> parametros = new List<Parametro>();
 
-            parametros.Add(new Parametro("@id_funcion", funcion.id));
-            parametros.Add(new Parametro("@id_sala", funcion.sala.id));
+            parametros.Add(new Parametro("@id_funcion", funcion));
+            parametros.Add(new Parametro("@id_sala", sala));
                 
             DataTable tabla = HelperDAO.ObtenerInstancia().Consultar("SP_OBTENER_BUTACAS_DISPONIBLES", parametros);
             foreach (DataRow r in tabla.Rows)
@@ -146,13 +156,13 @@ namespace DataApi.DAO.Funciones
             return butacas;
         }
 
-        public List<Funcion> ObtenerFuncionesPorPelicula(Pelicula pelicula, TipoSala tipoSala)
+        public List<Funcion> ObtenerFuncionesPorPelicula(int pelicula, int tipoSala)
         {
             List<Funcion> funciones = new List<Funcion>();
             List<Parametro> parametros = new List<Parametro>();
 
-            parametros.Add(new Parametro("@id_pelicula", pelicula.id_pelicula));
-            parametros.Add(new Parametro("@id_tipo_sala", tipoSala.Id_tipo_sala));
+            parametros.Add(new Parametro("@id_pelicula", pelicula));
+            parametros.Add(new Parametro("@id_tipo_sala", tipoSala));
             DataTable tabla = HelperDAO.ObtenerInstancia().Consultar("SP_OBTENER_FUNCIONES_BY_PELICULA", parametros);
             foreach (DataRow r in tabla.Rows)
             {
@@ -168,7 +178,7 @@ namespace DataApi.DAO.Funciones
                 Lenguaje l = new Lenguaje(id_lenguaje, lenguaje);
                 Sala s = new Sala(nro_sala, new TipoSala(id_tipo_sala, tipo_sala));
 
-                funciones.Add(new Funcion(id_funcion, s,pelicula, l, fecha, precio_gral));
+                funciones.Add(new Funcion(id_funcion, s,new Pelicula(), l, fecha, precio_gral));
             }
             return funciones;
         }
@@ -191,12 +201,12 @@ namespace DataApi.DAO.Funciones
             return peliculas;
         }
 
-        public List<TipoSala> ObtenerTiposPorFuncion(Pelicula pelicula)
+        public List<TipoSala> ObtenerTiposPorFuncion(int pelicula)
         {
             List<TipoSala> tipos_sala = new List<TipoSala>();
             List<Parametro> parametros = new List<Parametro>();
 
-            parametros.Add(new Parametro("@id_pelicula", pelicula.id_pelicula));
+            parametros.Add(new Parametro("@id_pelicula", pelicula));
 
             DataTable tabla = HelperDAO.ObtenerInstancia().Consultar("sp_obtener_tipos_por_funcion", parametros);
             foreach (DataRow r in tabla.Rows)

@@ -8,20 +8,19 @@ namespace DataApi.Dominio
 {
     public class FormaPago
     {
-        private string nombre;
 
-        public FormaPago(int id, string nombre)
+        public FormaPago(int id_forma_pago, string forma_pago)
         {
-            this.id = id;
-            this.nombre = nombre;
+            this.id_forma_pago = id_forma_pago;
+            this.forma_pago = forma_pago;
         }
 
-        public int id { get; set; }
-        public string descripcion { get; set; }
+        public int id_forma_pago { get; set; }
+        public string forma_pago { get; set; }
 
         public override string ToString()
         {
-            return nombre;
+            return forma_pago;
         }
     }
 }

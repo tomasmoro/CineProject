@@ -8,21 +8,16 @@ namespace DataApi.Dominio
 {
     public class Vendedor
     {
-        public int id { get; set; }
+        public int id_vendedor { get; set; }
         public string nombre { get; set; }
         public string apellido { get; set; }
-        public DateTime nacimiento { get; set; }
+        public DateTime fecha_nacimiento { get; set; }
         public string mail { get; set; }
         public string telefono { get; set; }
         public Barrio barrio { get; set; }
-        public Vendedor(int id)
+        public Vendedor(int id_vendedor, string nombre, string apellido) 
         {
-            
-        }
-
-        public Vendedor(int id, string nombre, string apellido) 
-        {
-            this.id = id;
+            this.id_vendedor = id_vendedor;
             this.nombre = nombre;
             this.apellido = apellido;
         }

@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboClientes = new System.Windows.Forms.ComboBox();
+            this.lblentradas = new System.Windows.Forms.Label();
+            this.cboVendedores = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lbltotal = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cboFormaPago = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Entrada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.Entrada = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cboVendedores = new System.Windows.Forms.ComboBox();
-            this.lblentradas = new System.Windows.Forms.Label();
-            this.cboClientes = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +69,45 @@
             this.panel1.Size = new System.Drawing.Size(636, 649);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(46, 76);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 20);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "CLIENTE:";
+            // 
+            // cboClientes
+            // 
+            this.cboClientes.FormattingEnabled = true;
+            this.cboClientes.Location = new System.Drawing.Point(159, 73);
+            this.cboClientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cboClientes.Name = "cboClientes";
+            this.cboClientes.Size = new System.Drawing.Size(318, 28);
+            this.cboClientes.TabIndex = 25;
+            // 
+            // lblentradas
+            // 
+            this.lblentradas.AutoSize = true;
+            this.lblentradas.Location = new System.Drawing.Point(155, 135);
+            this.lblentradas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblentradas.Name = "lblentradas";
+            this.lblentradas.Size = new System.Drawing.Size(14, 20);
+            this.lblentradas.TabIndex = 23;
+            this.lblentradas.Text = "-";
+            // 
+            // cboVendedores
+            // 
+            this.cboVendedores.FormattingEnabled = true;
+            this.cboVendedores.Location = new System.Drawing.Point(159, 26);
+            this.cboVendedores.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cboVendedores.Name = "cboVendedores";
+            this.cboVendedores.Size = new System.Drawing.Size(318, 28);
+            this.cboVendedores.TabIndex = 19;
+            this.cboVendedores.SelectedIndexChanged += new System.EventHandler(this.cboVendedores_SelectedIndexChanged);
             // 
             // label17
             // 
@@ -125,13 +164,31 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Entrada,
             this.Precio});
+            this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(72, 232);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(478, 174);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Entrada
+            // 
+            this.Entrada.HeaderText = "Entrada";
+            this.Entrada.MinimumWidth = 8;
+            this.Entrada.Name = "Entrada";
+            this.Entrada.ReadOnly = true;
+            this.Entrada.Width = 150;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.MinimumWidth = 8;
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            this.Precio.Width = 150;
             // 
             // label5
             // 
@@ -175,59 +232,6 @@
             this.button1.Text = "ACEPTAR";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Entrada
-            // 
-            this.Entrada.HeaderText = "Entrada";
-            this.Entrada.MinimumWidth = 8;
-            this.Entrada.Name = "Entrada";
-            this.Entrada.Width = 150;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.MinimumWidth = 8;
-            this.Precio.Name = "Precio";
-            this.Precio.Width = 150;
-            // 
-            // cboVendedores
-            // 
-            this.cboVendedores.FormattingEnabled = true;
-            this.cboVendedores.Location = new System.Drawing.Point(159, 26);
-            this.cboVendedores.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cboVendedores.Name = "cboVendedores";
-            this.cboVendedores.Size = new System.Drawing.Size(318, 28);
-            this.cboVendedores.TabIndex = 19;
-            this.cboVendedores.SelectedIndexChanged += new System.EventHandler(this.cboVendedores_SelectedIndexChanged);
-            // 
-            // lblentradas
-            // 
-            this.lblentradas.AutoSize = true;
-            this.lblentradas.Location = new System.Drawing.Point(155, 135);
-            this.lblentradas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblentradas.Name = "lblentradas";
-            this.lblentradas.Size = new System.Drawing.Size(14, 20);
-            this.lblentradas.TabIndex = 23;
-            this.lblentradas.Text = "-";
-            // 
-            // cboClientes
-            // 
-            this.cboClientes.FormattingEnabled = true;
-            this.cboClientes.Location = new System.Drawing.Point(159, 73);
-            this.cboClientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cboClientes.Name = "cboClientes";
-            this.cboClientes.Size = new System.Drawing.Size(318, 28);
-            this.cboClientes.TabIndex = 25;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 76);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 20);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "CLIENTE:";
             // 
             // Pago
             // 

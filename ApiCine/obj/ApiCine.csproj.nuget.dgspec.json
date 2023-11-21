@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomas.moro\\Desktop\\Proyecto General\\Repo1\\CineProject\\ApiCine\\ApiCine.csproj": {}
+    "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\ApiCine\\ApiCine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomas.moro\\Desktop\\Proyecto General\\Repo1\\CineProject\\ApiCine\\ApiCine.csproj": {
+    "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\ApiCine\\ApiCine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomas.moro\\Desktop\\Proyecto General\\Repo1\\CineProject\\ApiCine\\ApiCine.csproj",
+        "projectUniqueName": "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\ApiCine\\ApiCine.csproj",
         "projectName": "ApiCine",
-        "projectPath": "C:\\Users\\tomas.moro\\Desktop\\Proyecto General\\Repo1\\CineProject\\ApiCine\\ApiCine.csproj",
+        "projectPath": "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\ApiCine\\ApiCine.csproj",
         "packagesPath": "C:\\Users\\tomas.moro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomas.moro\\Desktop\\Proyecto General\\Repo1\\CineProject\\ApiCine\\obj\\",
+        "outputPath": "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\ApiCine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomas.moro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,7 +27,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\DataApi\\DataApiCine.csproj": {
+                "projectPath": "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\DataApi\\DataApiCine.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -47,6 +51,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
@@ -70,6 +78,21 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\DataApi\\DataApiCine.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\DataApi\\DataApiCine.csproj",
+        "projectName": "DataApiCine",
+        "projectPath": "C:\\Users\\tomas.moro\\Desktop\\Proyecto Cine\\Proyecto1\\CineProject\\DataApi\\DataApiCine.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }

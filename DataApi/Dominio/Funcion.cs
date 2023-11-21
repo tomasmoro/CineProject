@@ -8,7 +8,7 @@ namespace DataApi.Dominio
 {
     public class Funcion
     {
-        public int id { get; set; }
+        public int id_funcion { get; set; }
         public Sala sala { get; set; }
         public Pelicula pelicula { get; set; }
         public Lenguaje lenguaje { get; set; }
@@ -21,7 +21,7 @@ namespace DataApi.Dominio
 
         public Funcion(int id, Sala sala, Pelicula pelicula, Lenguaje lenguaje, DateTime fecha, float precio_gral)
         {
-            this.id = id;
+            this.id_funcion = id;
             this.sala = sala;
             this.pelicula = pelicula;
             this.lenguaje = lenguaje;

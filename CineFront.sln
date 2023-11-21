@@ -5,9 +5,9 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CineFront", "CineFront\CineFront.csproj", "{D8A7B1B2-B650-475F-96F3-D59D2B83C924}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiCine", "ApiCine\ApiCine.csproj", "{D6EFAB17-A0CB-47BF-AD6C-EF9651FE3A3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiCine", "ApiCine\ApiCine.csproj", "{D6EFAB17-A0CB-47BF-AD6C-EF9651FE3A3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataApi", "DataApi\DataApi.csproj", "{F5C7B31E-5013-487C-970C-3DAFAC894E90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataApiCine", "DataApi\DataApiCine.csproj", "{F5C7B31E-5013-487C-970C-3DAFAC894E90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

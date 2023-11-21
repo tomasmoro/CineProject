@@ -8,8 +8,6 @@ namespace DataApi.Dominio
 {
     public class Sala
     {
-        private int nro_sala;
-        private TipoSala tipoSala;
 
         public Sala(int nro_sala, TipoSala tipoSala)
         {
@@ -17,8 +15,8 @@ namespace DataApi.Dominio
             this.tipoSala = tipoSala;
         }
 
-        public int id { get; set; }
-        public TipoSala tipo { get; set; }
+        public int nro_sala { get; set; }
+        public TipoSala tipoSala { get; set; }
 
         public List<Butaca> butacas { get; set; }
     }

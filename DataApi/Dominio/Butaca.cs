@@ -2,14 +2,13 @@
 {
     public class Butaca
     {
-        public bool estaDisponible { get; set; }
 
-        public Butaca(int id, int asiento, int fila, bool estaDisponible)
+        public Butaca(int id_butaca_sala, int asiento, int fila, bool esta_disponible)
         {
-            this.id = id;
+            this.id_butaca_sala = id_butaca_sala;
             this.asiento = asiento;
             this.fila = fila;
-            this.estaDisponible = estaDisponible;
+            this.esta_disponible = esta_disponible;
         }
         
         public Butaca(int asiento, int fila)
@@ -18,9 +17,14 @@
             this.fila = fila;
         }
 
-        public int id { get; set; } 
+        public Butaca()
+        {
+            
+        }
+        public int id_butaca_sala { get; set; } 
         public int asiento { get; set; } 
-        public int fila { get; set; } 
+        public int fila { get; set; }
+        public bool esta_disponible { get; set; }
 
     }
 }

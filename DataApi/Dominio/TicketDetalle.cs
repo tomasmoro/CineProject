@@ -10,16 +10,14 @@ namespace DataApi.Dominio
     {
 
         public int cod_ticket { get; set; }
-        public Butaca butaca { get; set; }
-        public PromocionCodigo id_promocion_codigo { get; set; }
-        public PromocionEdad id_promocion_edad { get; set; }
+        public ButacaSala butaca { get; set; }
         public double total { get; set; }
         public TicketDetalle()
         {
             
         }
 
-        public TicketDetalle( Butaca butaca,  double total)
+        public TicketDetalle(ButacaSala butaca,  double total)
         {
             this.butaca = butaca;
             this.total = total;

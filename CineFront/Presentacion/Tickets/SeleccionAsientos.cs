@@ -1,12 +1,14 @@
 ﻿using CineFront.Presentacion.PruebaAsientos;
 using DataApi.DAO.Funciones;
 using DataApi.Dominio;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,7 +17,7 @@ namespace CineFront.Presentacion.Tickets
 {
     public partial class SeleccionAsientos : Form
     {
-        FuncionesService service = new FuncionesService();
+
         Funcion newFuncion;
         List<Butaca> butacas = new List<Butaca>();
         public SeleccionAsientos(Funcion funcion)
@@ -70,10 +72,22 @@ namespace CineFront.Presentacion.Tickets
            
     }
 
-        private void SetEntradas()
+        private async void SetEntradas()
         {
             dataGridView1.Rows.Clear();
-            butacas = service.ObtenerButacas(newFuncion);
+
+            string url = "https://localhost:7229/butacas/"+newFuncion.id_funcion+"/"+newFuncion.sala.nro_sala;
+            using (var client = new HttpClient())
+            {
+                var result = await client.GetAsync(url);
+                var content = await result.Content.ReadAsStringAsync();
+                List<Butaca> b = JsonConvert.DeserializeObject<List<Butaca>>(content);
+
+                if (b != null)
+                {
+                    butacas = b;
+                }
+            }
             Image imageDef = AsientoUI.GetDefaultImage();
             Image imageOcupped = AsientoUI.GetOcuppedImage();
             for (int i = 0; i < 7; i++)
@@ -96,7 +110,7 @@ namespace CineFront.Presentacion.Tickets
             {
                 if (b.fila == fila && b.asiento ==asiento)
                 {
-                    if (!b.estaDisponible)
+                    if (!b.esta_disponible)
                         return AsientoUI.GetOcuppedImage();
                     else break;
                 }
@@ -105,17 +119,27 @@ namespace CineFront.Presentacion.Tickets
             return AsientoUI.GetDefaultImage();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private async void button1_Click_1(object sender, EventArgs e)
         {
             if (lButacasSeleccionadas.Count != 0)
             {
                 foreach(Butaca b in lButacasSeleccionadas)
                 {
 
-                    b.id = service.GetIdButaca(b.fila, b.asiento, newFuncion.sala);
-                    ltickets.Add(new TicketDetalle(b, newFuncion.precio_gral));
+                        string url = "https://localhost:7229/asientos/" + b.asiento + "/"+b.fila+"/"+newFuncion.sala.nro_sala;
+                    using (var client = new HttpClient())
+                    {
+                        var result = await client.GetAsync(url);
+                        var content = await result.Content.ReadAsStringAsync();
+                        Int32 id = JsonConvert.DeserializeObject<Int32>(content);
+
+                        if (id != null)
+                        {
+                            ButacaSala bs = new ButacaSala(id,b.asiento,b.fila,newFuncion.sala);
+                            ltickets.Add(new TicketDetalle(bs, newFuncion.precio_gral));
+                        }
+                    }
                 }
-               
 
                 Pago p = new Pago(new Factura(newFuncion, ltickets));
                 p.ShowDialog();

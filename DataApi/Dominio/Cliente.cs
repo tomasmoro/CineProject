@@ -8,17 +8,17 @@ namespace DataApi.Dominio
 {
     public class Cliente
     {
-        public Cliente(int id, string nombre, string apellido)
+        public Cliente(int id_cliente, string nombre, string apellido)
         {
-            this.id = id;
+            this.id_cliente = id_cliente;
             this.nombre = nombre;
             this.apellido = apellido;
         }
-
-        public int id { get; set; }
+        
+        public int id_cliente { get; set; }
         public string nombre { get; set; }
         public string apellido { get; set; }
-        public DateTime nacimiento { get; set; }
+        public DateTime fecha_nacimiento { get; set; }
         public string mail { get; set; }
         public string telefono { get; set; }
         public Barrio barrio { get; set; }

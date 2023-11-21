@@ -2,12 +2,16 @@
 using DataApi.DAO.Funciones;
 using DataApi.Dominio;
 using DataAPI.Datos;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,13 +25,10 @@ namespace CineFront.Presentacion
         private Funcion newFuncion = new Funcion();
         private Pelicula peliculaSeleccionada;
         private TipoSala tipoSalaSeleccionada;
-        FuncionesService fService;
 
         public SeleccionPelicula()
         {
             InitializeComponent();
-
-            fService = new FuncionesService();
         }
 
         private void MostrarCampos()
@@ -111,15 +112,27 @@ namespace CineFront.Presentacion
             CargarComboTipoSala();
         }
 
-        private void CargarComboTipoSala()
+        private async void CargarComboTipoSala()
         {
             cboTipoEntrada.DataSource = null;
-            List<TipoSala> tipos = fService.ObtenerTiposPorFuncion(peliculaSeleccionada);
-            cboTipoEntrada.DataSource = tipos;
 
-            cboTipoEntrada.DisplayMember = "Tipo_sala";
+            string url = "https://localhost:7229/tipo_sala/" + peliculaSeleccionada.id_pelicula;
+            using (var client = new HttpClient())
+            {
+                var result = await client.GetAsync(url);
+                var content = await result.Content.ReadAsStringAsync();
+                List<TipoSala> tipos = JsonConvert.DeserializeObject<List<TipoSala>>(content);
 
-            cboTipoEntrada.ValueMember = "Id_tipo_sala";
+                if (tipos != null)
+                {
+                    cboTipoEntrada.DataSource = tipos;
+
+                    cboTipoEntrada.DisplayMember = "Tipo_sala";
+
+                    cboTipoEntrada.ValueMember = "Id_tipo_sala";
+
+                }
+            }
 
         }
 
@@ -132,6 +145,17 @@ namespace CineFront.Presentacion
 
         private void SeleccionPelicula_Load(object sender, EventArgs e)
         {
+            Stream StreamImagen;
+            string elError = "";
+            StreamImagen = getUrl("https://static.wikia.nocookie.net/esharrypotter/images/3/35/Harry_Potter_y_el_Prisionero_de_Azkaban_%28DVD%29.png/revision/latest?cb=20110208175552");
+            if (elError == "")
+            {
+                pbxPeli1.Image = System.Drawing.Image.FromStream(StreamImagen);
+            }
+            else
+            {
+                //MsgBox(elError);
+            }
             txtNombrePeli.Visible = false;
             cboTipoEntrada.Items.Clear();
             cboTipoEntrada.Visible = false;
@@ -165,17 +189,32 @@ namespace CineFront.Presentacion
             }
         }
 
-        private void CargarComboFunciones()
+        private async void CargarComboFunciones()
         {
             cboFuncion.Enabled = true;
             cboFuncion.DropDownStyle = ComboBoxStyle.DropDownList;
-            List<Funcion> funciones = fService.GetFuncionesByPelicula(peliculaSeleccionada, tipoSalaSeleccionada);
 
-            cboFuncion.DataSource = funciones;
 
-            cboFuncion.DisplayMember = "cboText";
+            string url = "https://localhost:7229/peliculas/" + peliculaSeleccionada.id_pelicula + "/" + tipoSalaSeleccionada.Id_tipo_sala;
+            using (var client = new HttpClient())
+            {
+                var result = await client.GetAsync(url);
+                var content = await result.Content.ReadAsStringAsync();
+                List<Funcion> funciones = JsonConvert.DeserializeObject<List<Funcion>>(content);
 
-            cboFuncion.ValueMember = "id";
+                if (funciones != null) { 
+                foreach (Funcion f in funciones)
+                {
+                    f.pelicula = peliculaSeleccionada;
+                }
+
+                cboFuncion.DataSource = funciones;
+
+                cboFuncion.DisplayMember = "cboText";
+
+                cboFuncion.ValueMember = "id_funcion";
+            }
+            }
         }
 
         private void cboFuncion_SelectedIndexChanged(object sender, EventArgs e)
@@ -185,5 +224,28 @@ namespace CineFront.Presentacion
                 newFuncion = (Funcion)cboFuncion.SelectedItem;
             }
         }
+
+        private Stream getUrl(string URL)
+        {
+
+            string strResp = "";
+            HttpWebRequest request = ((HttpWebRequest)WebRequest.Create(URL));
+
+            HttpWebResponse response = ((HttpWebResponse)request.GetResponse());
+
+            try
+            {
+
+                return response.GetResponseStream();
+
+            }
+            catch
+            {
+                return response.GetResponseStream();
+                //elError = ex.ToString();
+            }
+
+        }
+    
     }
 }
