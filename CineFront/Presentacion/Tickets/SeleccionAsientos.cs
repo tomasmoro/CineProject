@@ -25,9 +25,9 @@ namespace CineFront.Presentacion.Tickets
             InitializeComponent();
             newFuncion = funcion;
         }
-        List<Butaca> lButacasSeleccionadas = new List<Butaca>();
-        List<TicketDetalle> ltickets = new List<TicketDetalle>();
-        
+        private List<Butaca> lButacasSeleccionadas = new List<Butaca>();
+        private List<TicketDetalle> ltickets = new List<TicketDetalle>();
+        private List<Butaca> lAsientosOcupados = new List<Butaca>();
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
@@ -35,19 +35,34 @@ namespace CineFront.Presentacion.Tickets
             Image imageSel = AsientoUI.GetSelectedImage();
             Image imageOcu = AsientoUI.GetOcuppedImage();
 
-            Butaca b = new Butaca(dataGridView1.CurrentCell.ColumnIndex, dataGridView1.CurrentCell.RowIndex);
+            Butaca b = new Butaca( dataGridView1.CurrentCell.ColumnIndex, dataGridView1.CurrentCell.RowIndex);
             bool estaEnLaLista = false;
-            foreach(Butaca but in lButacasSeleccionadas)
+            bool estaOcupada = false;
+            foreach (Butaca but in lButacasSeleccionadas)
             {
-                if(but.fila == b.fila && b.asiento == but.asiento)
+                if (but.fila == b.fila && b.asiento == but.asiento)
                 {
                     estaEnLaLista = true;
                     break;
                 }
+
             }
 
 
-            if (!estaEnLaLista)
+            foreach (Butaca but in lAsientosOcupados)
+            {
+                if (but.fila == b.fila && b.asiento == but.asiento)
+                {
+                    if (!but.esta_disponible)
+                        estaOcupada = true;
+
+                    break;
+                    
+                }
+            }
+
+
+            if (!estaEnLaLista && !estaOcupada)
             {
                 
                 dataGridView1.CurrentCell.Value = imageSel;
@@ -110,8 +125,13 @@ namespace CineFront.Presentacion.Tickets
             {
                 if (b.fila == fila && b.asiento ==asiento)
                 {
-                    if (!b.esta_disponible)
+                    if (!b.esta_disponible) {
+
+                        lAsientosOcupados.Add(b);
                         return AsientoUI.GetOcuppedImage();
+
+                    }
+                        
                     else break;
                 }
             }
@@ -155,6 +175,7 @@ namespace CineFront.Presentacion.Tickets
         {
             lButacasSeleccionadas = new List<Butaca>();
             listView1.Items.Clear();
+            lAsientosOcupados.Clear();
             SetEntradas();
         }
     }
