@@ -24,6 +24,25 @@ namespace DataApi.Dominio
         public Barrio barrio { get; set; }
 
 
+        public Cliente(int id_cliente, string nombre, string apellido, DateTime fecha_nacimiento, string mail, string telefono)
+        {
+            this.fecha_nacimiento = fecha_nacimiento;
+            this.mail = mail;
+            this.telefono = telefono;
+            this.id_cliente = id_cliente;
+            this.nombre = nombre;
+            this.apellido = apellido;
+        }
+        public Cliente()
+        {
+            
+        }
+
+        public Cliente(int id_cliente)
+        {
+            this.id_cliente = id_cliente;
+        }
+
         public override string ToString()
         {
             return nombre +" "+ apellido;

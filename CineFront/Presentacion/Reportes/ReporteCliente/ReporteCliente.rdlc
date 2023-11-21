@@ -954,21 +954,21 @@
           <DataField>EFECTIVO</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="TARJETA">
-          <DataField>TARJETA</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="TRANSFERENCIA">
-          <DataField>TRANSFERENCIA</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="EFECTIVO_TOTAL">
           <DataField>EFECTIVO_TOTAL</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="TARJETA">
+          <DataField>TARJETA</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="TARJETA_TOTAL">
           <DataField>TARJETA_TOTAL</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TRANSFERENCIA">
+          <DataField>TRANSFERENCIA</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="TRANSFERECIA_TOTAL">
           <DataField>TRANSFERECIA_TOTAL</DataField>
@@ -977,11 +977,11 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>Cliente</rd:DataSetName>
-        <rd:SchemaPath>F:\TProgra\NUEVO\CineProject\CineFront\Presentacion\Reportes\ReporteCliente\Cliente.xsd</rd:SchemaPath>
-        <rd:TableName>DataTable1</rd:TableName>
+        <rd:SchemaPath>C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\Presentacion\Reportes\ReporteCliente\Cliente.xsd</rd:SchemaPath>
+        <rd:TableName>DtCliente</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>DataTable1TableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>DtClienteTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

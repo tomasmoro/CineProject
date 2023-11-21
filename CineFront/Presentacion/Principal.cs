@@ -19,8 +19,8 @@ namespace CineFront
     public partial class Principal : Form
     {
         SeleccionPelicula seleccionPelicula;
-        RegistroUsuario registroUsuario;
-        RegistroVendedor registroVendedor;
+        RegistroCliente registroUsuario;
+        //RegistroVendedor registroVendedor;
         ReportesProducto reportesProducto;
         ReportePelicula reportePelicula;
         ReporteCliente reporteCliente;
@@ -54,25 +54,24 @@ namespace CineFront
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            registroUsuario = new RegistroUsuario();
+            registroUsuario = new RegistroCliente();
             registroUsuario.Show();
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            registroUsuario = new RegistroUsuario();
+            registroUsuario = new RegistroCliente();
             registroUsuario.Show();
         }
 
         private void vendedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            registroVendedor = new RegistroVendedor();
-            registroVendedor.Show();
+           
         }
 
         private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            registroUsuario = new RegistroUsuario();
+            registroUsuario = new RegistroCliente();
             registroUsuario.Show();
         }
 

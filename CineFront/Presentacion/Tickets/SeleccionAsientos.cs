@@ -35,7 +35,7 @@ namespace CineFront.Presentacion.Tickets
             Image imageSel = AsientoUI.GetSelectedImage();
             Image imageOcu = AsientoUI.GetOcuppedImage();
 
-            Butaca b = new Butaca( dataGridView1.CurrentCell.ColumnIndex, dataGridView1.CurrentCell.RowIndex);
+            Butaca b = new Butaca(dataGridView1.CurrentCell.ColumnIndex, dataGridView1.CurrentCell.RowIndex);
             bool estaEnLaLista = false;
             bool estaOcupada = false;
             foreach (Butaca but in lButacasSeleccionadas)
@@ -57,41 +57,41 @@ namespace CineFront.Presentacion.Tickets
                         estaOcupada = true;
 
                     break;
-                    
+
                 }
             }
 
 
             if (!estaEnLaLista && !estaOcupada)
             {
-                
+
                 dataGridView1.CurrentCell.Value = imageSel;
                 lButacasSeleccionadas.Add(b);
 
-                string title = b.asiento.ToString()+AsientoUI.getLetter(b.fila);
+                string title = b.asiento.ToString() + AsientoUI.getLetter(b.fila);
                 listView1.Items.Add(title);
 
             }
-                        
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
         }
-    
-    private void SeleccionAsientos_Load(object sender, EventArgs e)
+
+        private void SeleccionAsientos_Load(object sender, EventArgs e)
         {
-           
-           
+
+
             SetEntradas();
-           
-    }
+
+        }
 
         private async void SetEntradas()
         {
             dataGridView1.Rows.Clear();
 
-            string url = "https://localhost:7229/butacas/"+newFuncion.id_funcion+"/"+newFuncion.sala.nro_sala;
+            string url = "https://localhost:7229/butacas/" + newFuncion.id_funcion + "/" + newFuncion.sala.nro_sala;
             using (var client = new HttpClient())
             {
                 var result = await client.GetAsync(url);
@@ -123,15 +123,16 @@ namespace CineFront.Presentacion.Tickets
         {
             foreach (Butaca b in butacas)
             {
-                if (b.fila == fila && b.asiento ==asiento)
+                if (b.fila == fila && b.asiento == asiento)
                 {
-                    if (!b.esta_disponible) {
+                    if (!b.esta_disponible)
+                    {
 
                         lAsientosOcupados.Add(b);
                         return AsientoUI.GetOcuppedImage();
 
                     }
-                        
+
                     else break;
                 }
             }
@@ -143,10 +144,10 @@ namespace CineFront.Presentacion.Tickets
         {
             if (lButacasSeleccionadas.Count != 0)
             {
-                foreach(Butaca b in lButacasSeleccionadas)
+                foreach (Butaca b in lButacasSeleccionadas)
                 {
 
-                        string url = "https://localhost:7229/asientos/" + b.asiento + "/"+b.fila+"/"+newFuncion.sala.nro_sala;
+                    string url = "https://localhost:7229/asientos/" + b.asiento + "/" + b.fila + "/" + newFuncion.sala.nro_sala;
                     using (var client = new HttpClient())
                     {
                         var result = await client.GetAsync(url);
@@ -155,7 +156,7 @@ namespace CineFront.Presentacion.Tickets
 
                         if (id != null)
                         {
-                            ButacaSala bs = new ButacaSala(id,b.asiento,b.fila,newFuncion.sala);
+                            ButacaSala bs = new ButacaSala(id, b.asiento, b.fila, newFuncion.sala);
                             ltickets.Add(new TicketDetalle(bs, newFuncion.precio_gral));
                         }
                     }
@@ -173,7 +174,7 @@ namespace CineFront.Presentacion.Tickets
 
         private void button2_Click(object sender, EventArgs e)
         {
-            lButacasSeleccionadas = new List<Butaca>();
+            lButacasSeleccionadas.Clear();
             listView1.Items.Clear();
             lAsientosOcupados.Clear();
             SetEntradas();

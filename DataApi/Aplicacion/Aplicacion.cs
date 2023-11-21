@@ -1,4 +1,5 @@
 ﻿using DataApi.Aplicacion;
+using DataApi.DAO.Usuarios;
 using DataApi.Dominio;
 using System;
 using System.Collections.Generic;
@@ -11,9 +12,11 @@ namespace DataApi.DAO.Funciones
     public class Aplicacion: IAplicacion
     {
         private IFuncionDAO funcionDAO;
+        private IClientesDAO clienteDAO;
         public Aplicacion()
         {
             funcionDAO = new FuncionDAO();
+            clienteDAO = new UsuariosDAO();
         }
 
         public bool GenerateFactura(Factura newFactura)
@@ -24,6 +27,11 @@ namespace DataApi.DAO.Funciones
         public List<Cliente> GetClientes()
         {
             return funcionDAO.GetClientes();
+        }
+
+        public List<Cliente> GetClientes(int id_cliente)
+        {
+            return funcionDAO.GetClientes(id_cliente);
         }
 
         public List<FormaPago> GetFormasPago()
@@ -46,18 +54,31 @@ namespace DataApi.DAO.Funciones
             return funcionDAO.GetVendedores();
         }
 
-        public  List<Butaca> ObtenerButacasDisponibles(int f, int s)
+        public List<Butaca> ObtenerButacasDisponibles(int f, int s)
         {
             return funcionDAO.ObtenerButacasDisponibles(f, s);
         }
-        public  List<Pelicula> ObtenerPeliculas()
+        public List<Pelicula> ObtenerPeliculas()
         {
             return funcionDAO.ObtenerPeliculas();
         }
-        public  List<TipoSala> ObtenerTiposPorFuncion(int p)
+        public List<TipoSala> ObtenerTiposPorFuncion(int p)
         {
             return funcionDAO.ObtenerTiposPorFuncion(p);
         }
 
+        public bool CrearCliente(Cliente c)
+        {
+            return clienteDAO.SaveCliente(c);
+        }
+
+        public bool ModificarCliente(Cliente c)
+        {
+            return clienteDAO.ModificarCliente(c);
+        }
+        public bool BorrarCliente(Cliente c)
+        {
+            return clienteDAO.BorrarCliente(c);
+        }
     }
 }

@@ -56,9 +56,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::CineFront.Properties.Resources.cinema_tickets_4998806;
-            this.pictureBox1.Location = new System.Drawing.Point(694, 157);
+            this.pictureBox1.Location = new System.Drawing.Point(645, 105);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 134);
+            this.pictureBox1.Size = new System.Drawing.Size(184, 186);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -67,9 +67,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::CineFront.Properties.Resources.film_reel_2590670;
-            this.pictureBox2.Location = new System.Drawing.Point(438, 161);
+            this.pictureBox2.Location = new System.Drawing.Point(390, 105);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(130, 130);
+            this.pictureBox2.Size = new System.Drawing.Size(178, 186);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -78,9 +78,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::CineFront.Properties.Resources.rating_4149882__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(194, 161);
+            this.pictureBox3.Location = new System.Drawing.Point(153, 105);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(132, 131);
+            this.pictureBox3.Size = new System.Drawing.Size(173, 187);
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
@@ -90,39 +90,39 @@
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel3.LinkColor = System.Drawing.Color.Gold;
-            this.linkLabel3.Location = new System.Drawing.Point(188, 304);
+            this.linkLabel3.Location = new System.Drawing.Point(172, 304);
             this.linkLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(154, 31);
+            this.linkLabel3.Size = new System.Drawing.Size(110, 31);
             this.linkLabel3.TabIndex = 8;
             this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Estadísticas";
+            this.linkLabel3.Text = "Clientes";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Gold;
-            this.linkLabel1.Location = new System.Drawing.Point(688, 304);
+            this.linkLabel1.Location = new System.Drawing.Point(666, 304);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(154, 31);
+            this.linkLabel1.Size = new System.Drawing.Size(138, 31);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Estadísticas";
+            this.linkLabel1.Text = "Productos";
             // 
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkColor = System.Drawing.Color.Gold;
-            this.linkLabel2.Location = new System.Drawing.Point(422, 304);
+            this.linkLabel2.Location = new System.Drawing.Point(414, 304);
             this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(154, 31);
+            this.linkLabel2.Size = new System.Drawing.Size(119, 31);
             this.linkLabel2.TabIndex = 10;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Estadísticas";
+            this.linkLabel2.Text = "Peliculas";
             // 
             // Reportes
             // 

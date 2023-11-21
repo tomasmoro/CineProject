@@ -2,15 +2,16 @@
 <xs:schema id="Cliente" targetNamespace="http://tempuri.org/Cliente.xsd" xmlns:mstns="http://tempuri.org/Cliente.xsd" xmlns="http://tempuri.org/Cliente.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="2" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CINE_BUTAKERAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CINE_BUTAKERAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CineFront.Properties.Settings.GlobalReference.Default.CINE_BUTAKERAConnectionString" Provider="System.Data.SqlClient" />
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CINE_GRUPO21ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CINE_GRUPO21ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CineFront.Properties.Settings.GlobalReference.Default.CINE_GRUPO21ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CINE_GRUPO21ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CINE_GRUPO21ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CineFront.Properties.Settings.GlobalReference.Default.CINE_GRUPO21ConnectionString1" Provider="Microsoft.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DtClienteTableAdapter" GeneratorDataComponentClassName="DtClienteTableAdapter" Name="DtCliente" UserDataComponentName="DtClienteTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="CINE_GRUPO21ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="CINE_GRUPO21ConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT	CLI.id_cliente, CLI.apellido+', '+ nombre 'CLIENTES',
@@ -41,10 +42,10 @@ order by 1</CommandText>
               <Mapping SourceColumn="CONTACTO" DataSetColumn="CONTACTO" />
               <Mapping SourceColumn="BARRIO" DataSetColumn="BARRIO" />
               <Mapping SourceColumn="EFECTIVO" DataSetColumn="EFECTIVO" />
-              <Mapping SourceColumn="TARJETA" DataSetColumn="TARJETA" />
-              <Mapping SourceColumn="TRANSFERENCIA" DataSetColumn="TRANSFERENCIA" />
               <Mapping SourceColumn="EFECTIVO_TOTAL" DataSetColumn="EFECTIVO_TOTAL" />
+              <Mapping SourceColumn="TARJETA" DataSetColumn="TARJETA" />
               <Mapping SourceColumn="TARJETA_TOTAL" DataSetColumn="TARJETA_TOTAL" />
+              <Mapping SourceColumn="TRANSFERENCIA" DataSetColumn="TRANSFERENCIA" />
               <Mapping SourceColumn="TRANSFERECIA_TOTAL" DataSetColumn="TRANSFERECIA_TOTAL" />
             </Mappings>
             <Sources />
@@ -57,7 +58,7 @@ order by 1</CommandText>
   <xs:element name="Cliente" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Cliente" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Cliente">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DataTable1" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1">
+        <xs:element name="DtCliente" msprop:Generator_RowClassName="DtClienteRow" msprop:Generator_RowEvHandlerName="DtClienteRowChangeEventHandler" msprop:Generator_RowDeletedName="DtClienteRowDeleted" msprop:Generator_RowDeletingName="DtClienteRowDeleting" msprop:Generator_RowEvArgName="DtClienteRowChangeEvent" msprop:Generator_TablePropName="DtCliente" msprop:Generator_RowChangedName="DtClienteRowChanged" msprop:Generator_UserTableName="DtCliente" msprop:Generator_RowChangingName="DtClienteRowChanging" msprop:Generator_TableClassName="DtClienteDataTable" msprop:Generator_TableVarName="tableDtCliente">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_cliente" msprop:Generator_UserColumnName="id_cliente" msprop:Generator_ColumnPropNameInTable="id_clienteColumn" msprop:Generator_ColumnPropNameInRow="id_cliente" msprop:Generator_ColumnVarNameInTable="columnid_cliente" type="xs:int" />
@@ -83,18 +84,18 @@ order by 1</CommandText>
                 </xs:simpleType>
               </xs:element>
               <xs:element name="EFECTIVO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EFECTIVO" msprop:Generator_ColumnPropNameInTable="EFECTIVOColumn" msprop:Generator_ColumnPropNameInRow="EFECTIVO" msprop:Generator_ColumnVarNameInTable="columnEFECTIVO" type="xs:int" minOccurs="0" />
+              <xs:element name="EFECTIVO_TOTAL" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EFECTIVO_TOTAL" msprop:Generator_ColumnPropNameInTable="EFECTIVO_TOTALColumn" msprop:Generator_ColumnPropNameInRow="EFECTIVO_TOTAL" msprop:Generator_ColumnVarNameInTable="columnEFECTIVO_TOTAL" type="xs:decimal" minOccurs="0" />
               <xs:element name="TARJETA" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TARJETA" msprop:Generator_ColumnPropNameInTable="TARJETAColumn" msprop:Generator_ColumnPropNameInRow="TARJETA" msprop:Generator_ColumnVarNameInTable="columnTARJETA" type="xs:int" minOccurs="0" />
+              <xs:element name="TARJETA_TOTAL" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TARJETA_TOTAL" msprop:Generator_ColumnPropNameInTable="TARJETA_TOTALColumn" msprop:Generator_ColumnPropNameInRow="TARJETA_TOTAL" msprop:Generator_ColumnVarNameInTable="columnTARJETA_TOTAL" type="xs:decimal" minOccurs="0" />
               <xs:element name="TRANSFERENCIA" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TRANSFERENCIA" msprop:Generator_ColumnPropNameInTable="TRANSFERENCIAColumn" msprop:Generator_ColumnPropNameInRow="TRANSFERENCIA" msprop:Generator_ColumnVarNameInTable="columnTRANSFERENCIA" type="xs:int" minOccurs="0" />
-              <xs:element name="EFECTIVO_TOTAL" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="EFECTIVO_TOTAL" msprop:Generator_ColumnPropNameInTable="EFECTIVO_TOTALColumn" msprop:Generator_ColumnVarNameInTable="columnEFECTIVO_TOTAL" msprop:Generator_UserColumnName="EFECTIVO_TOTAL" type="xs:decimal" minOccurs="0" />
-              <xs:element name="TARJETA_TOTAL" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TARJETA_TOTAL" msprop:Generator_ColumnPropNameInTable="TARJETA_TOTALColumn" msprop:Generator_ColumnVarNameInTable="columnTARJETA_TOTAL" msprop:Generator_UserColumnName="TARJETA_TOTAL" type="xs:decimal" minOccurs="0" />
-              <xs:element name="TRANSFERECIA_TOTAL" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TRANSFERECIA_TOTAL" msprop:Generator_ColumnPropNameInTable="TRANSFERECIA_TOTALColumn" msprop:Generator_ColumnVarNameInTable="columnTRANSFERECIA_TOTAL" msprop:Generator_UserColumnName="TRANSFERECIA_TOTAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRANSFERECIA_TOTAL" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TRANSFERECIA_TOTAL" msprop:Generator_ColumnPropNameInTable="TRANSFERECIA_TOTALColumn" msprop:Generator_ColumnPropNameInRow="TRANSFERECIA_TOTAL" msprop:Generator_ColumnVarNameInTable="columnTRANSFERECIA_TOTAL" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:selector xpath=".//mstns:DtCliente" />
       <xs:field xpath="mstns:id_cliente" />
     </xs:unique>
   </xs:element>

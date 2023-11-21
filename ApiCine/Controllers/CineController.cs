@@ -10,6 +10,7 @@ namespace ApiCine.Controllers
     public class CineController : ControllerBase
     {
 
+
         private Aplicacion app;
 
         public CineController()
@@ -32,7 +33,7 @@ namespace ApiCine.Controllers
             {
                 return StatusCode(500, "Error interno!!! Intente luego...");
             }
-        }  
+        }
 
         // GET: api/<PresupuestoController>
         [HttpGet("/butacas/{id_funcion}/{id_sala}")]
@@ -49,8 +50,8 @@ namespace ApiCine.Controllers
             {
                 return StatusCode(500, "Error interno!!! Intente luego...");
             }
-        }  
-        
+        }
+
         // GET: api/<PresupuestoController>
         [HttpGet("/asientos/{asiento}/{fila}/{nro_sala}")]
         public IActionResult GetIdButaca(int asiento, int fila, int nro_sala)
@@ -59,7 +60,7 @@ namespace ApiCine.Controllers
             Int32 resultado = -1;
             try
             {
-                resultado = app.GetIdButaca(asiento, fila, nro_sala);
+                resultado = app.GetIdButaca(fila, asiento, nro_sala);
                 if (resultado != -1)
                     return Ok(resultado);
                 else
@@ -69,7 +70,7 @@ namespace ApiCine.Controllers
             {
                 return StatusCode(500, "Error interno!!! Intente luego...");
             }
-        }  
+        }
 
         // GET: api/<PresupuestoController>
         [HttpGet("/tipo_sala/{id_pelicula}")]
@@ -87,8 +88,8 @@ namespace ApiCine.Controllers
             {
                 return StatusCode(500, "Error interno!!! Intente luego...");
             }
-        }  
-        
+        }
+
         // GET: api/<PresupuestoController>
         [HttpGet("/vendedores")]
         public IActionResult GetVendedores()
@@ -104,7 +105,7 @@ namespace ApiCine.Controllers
             {
                 return StatusCode(500, "Error interno!!! Intente luego...");
             }
-        }     
+        }
         // GET: api/<PresupuestoController>
         [HttpGet("/clientes")]
         public IActionResult GetClientes()
@@ -120,7 +121,23 @@ namespace ApiCine.Controllers
             {
                 return StatusCode(500, "Error interno!!! Intente luego...");
             }
-        }     
+        }
+        // GET: api/<PresupuestoController>
+        [HttpGet("/clientes/{id_cliente}")]
+        public IActionResult GetClientes(int id_cliente)
+        {
+
+            List<Cliente> lst = null;
+            try
+            {
+                lst = app.GetClientes(id_cliente);
+                return Ok(lst);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno!!! Intente luego...");
+            }
+        }
         // GET: api/<PresupuestoController>
         [HttpGet("/formapago")]
         public IActionResult GetFormasPago()
@@ -144,11 +161,11 @@ namespace ApiCine.Controllers
         {
             try
             {
-                if(f != null)
+                if (f != null)
                 {
 
-                bool result = app.GenerateFactura(f);
-                    if(result)
+                    bool result = app.GenerateFactura(f);
+                    if (result)
                         return Ok("Se añadio correctamente!!");
                     else return BadRequest("Error interno!!!");
                 }
@@ -160,7 +177,71 @@ namespace ApiCine.Controllers
                 return StatusCode(500, "Error interno!!! Intente luego...");
             }
         }
-            
-        
+        // POST: api/<PresupuestoController>
+        [HttpPost("/clientes")]
+        public IActionResult SetCliente(Cliente c)
+        {
+            try
+            {
+                if (c != null)
+                {
+
+                    bool result = app.CrearCliente(c);
+                    if (result)
+                        return Ok("Se añadio correctamente!!");
+                    else return BadRequest("Error interno!!!");
+                }
+
+                return BadRequest("EL objeto es invalido!");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno!!! Intente luego...");
+            }
+        }        // POST: api/<PresupuestoController>
+
+        [HttpPut("/clientes")]
+        public IActionResult putCliente(Cliente c)
+        {
+            try
+            {
+                if (c != null)
+                {
+
+                    bool result = app.ModificarCliente(c);
+                    if (result)
+                        return Ok("Se modificó correctamente!!");
+                    else return BadRequest("Error interno!!!");
+                }
+
+                return BadRequest("EL objeto es invalido!");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno!!! Intente luego...");
+            }
+        }
+        [HttpPost("/del_clientes")]
+        public IActionResult deleteCliente(Cliente c)
+        {
+            try
+            {
+                if (c != null)
+                {
+
+                    bool result = app.BorrarCliente(c);
+                    if (result)
+                        return Ok("Se eliminó correctamente!!");
+                    else return BadRequest("Error interno!!!");
+                }
+
+                return BadRequest("EL objeto es invalido!");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno!!! Intente luego...");
+            }
+        }
+
     }
 }

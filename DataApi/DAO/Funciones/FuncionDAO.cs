@@ -53,7 +53,7 @@ namespace DataApi.DAO.Funciones
                 }
                 transaccion.Commit();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 if (transaccion != null)
                 {
@@ -72,6 +72,28 @@ namespace DataApi.DAO.Funciones
 
         }
 
+        public List<Cliente> GetClientes(int id_cliente)
+        {
+            List<Cliente> clientes = new List<Cliente>();
+            List<Parametro> parametros = new List<Parametro>();
+
+            parametros.Add(new Parametro("@id", id_cliente));
+
+            DataTable tabla = HelperDAO.ObtenerInstancia().Consultar("sp_obtener_clientes_by_id", parametros);
+            foreach (DataRow r in tabla.Rows)
+            {
+                int id = int.Parse(r["id_cliente"].ToString());
+                string nombre = r["nombre"].ToString();
+                string apellido = r["apellido"].ToString();
+                string mail = r["mail"].ToString();
+                DateTime fecha_nacimiento = DateTime.Parse(r["fecha_nacimiento"].ToString());
+                string telefono = r["telefono"].ToString();
+
+                clientes.Add(new Cliente(id, nombre, apellido, fecha_nacimiento, mail, telefono));
+            }
+            return clientes;
+        }
+
         public List<Cliente> GetClientes()
         {
             List<Cliente> clientes = new List<Cliente>();
@@ -82,9 +104,11 @@ namespace DataApi.DAO.Funciones
                 int id = int.Parse(r["id_cliente"].ToString());
                 string nombre = r["nombre"].ToString();
                 string apellido = r["apellido"].ToString();
+                string mail = r["mail"].ToString();
+                DateTime fecha_nacimiento = DateTime.Parse(r["fecha_nacimiento"].ToString());
+                string telefono = r["telefono"].ToString();
 
-
-                clientes.Add(new Cliente(id, nombre, apellido));
+                clientes.Add(new Cliente(id, nombre, apellido, fecha_nacimiento, mail, telefono));
             }
             return clientes;
         }
@@ -140,7 +164,7 @@ namespace DataApi.DAO.Funciones
 
             parametros.Add(new Parametro("@id_funcion", funcion));
             parametros.Add(new Parametro("@id_sala", sala));
-                
+
             DataTable tabla = HelperDAO.ObtenerInstancia().Consultar("SP_OBTENER_BUTACAS_DISPONIBLES", parametros);
             foreach (DataRow r in tabla.Rows)
             {
@@ -178,7 +202,7 @@ namespace DataApi.DAO.Funciones
                 Lenguaje l = new Lenguaje(id_lenguaje, lenguaje);
                 Sala s = new Sala(nro_sala, new TipoSala(id_tipo_sala, tipo_sala));
 
-                funciones.Add(new Funcion(id_funcion, s,new Pelicula(), l, fecha, precio_gral));
+                funciones.Add(new Funcion(id_funcion, s, new Pelicula(), l, fecha, precio_gral));
             }
             return funciones;
         }
@@ -196,7 +220,7 @@ namespace DataApi.DAO.Funciones
                 DateTime fecha_estreno = DateTime.Parse(r["fecha_estreno"].ToString());
                 string titulo = r["pelicula"].ToString();
 
-                peliculas.Add(new Pelicula(id,titulo,fecha_estreno,duracion));
+                peliculas.Add(new Pelicula(id, titulo, fecha_estreno, duracion));
             }
             return peliculas;
         }

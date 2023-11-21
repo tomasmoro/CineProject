@@ -145,7 +145,7 @@ namespace CineFront.Presentacion
 
         private void SeleccionPelicula_Load(object sender, EventArgs e)
         {
-            Stream StreamImagen;
+           /* Stream StreamImagen;
             string elError = "";
             StreamImagen = getUrl("https://static.wikia.nocookie.net/esharrypotter/images/3/35/Harry_Potter_y_el_Prisionero_de_Azkaban_%28DVD%29.png/revision/latest?cb=20110208175552");
             if (elError == "")
@@ -155,7 +155,7 @@ namespace CineFront.Presentacion
             else
             {
                 //MsgBox(elError);
-            }
+            }*/
             txtNombrePeli.Visible = false;
             cboTipoEntrada.Items.Clear();
             cboTipoEntrada.Visible = false;
