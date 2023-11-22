@@ -19,12 +19,10 @@ namespace CineFront.Presentacion.Reportes.ReportePelicula
 
         private void ReportePelicula_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'pelicula.PELICULAS' Puede moverla o quitarla según sea necesario.
-            this.pELICULASTableAdapter.Fill(this.pelicula.PELICULAS);
+            // TODO: This line of code loads data into the 'peliculaxsd.PELICULAS' table. You can move, or remove it, as needed.
+            this.pELICULASTableAdapter.Fill(this.peliculaxsd.PELICULAS);
 
             this.reportViewer1.RefreshReport();
         }
-
-
     }
 }

@@ -80,5 +80,10 @@ namespace DataApi.DAO.Funciones
         {
             return clienteDAO.BorrarCliente(c);
         }
+
+        public bool GetUserData(int id_vendedor, string pass)
+        {
+            return clienteDAO.GetUserData(id_vendedor, pass);
+        }
     }
 }

@@ -217,7 +217,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Director1">
+                    <Textbox Name="Director">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -231,7 +231,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Director1</rd:DefaultName>
+                      <rd:DefaultName>Director</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -273,6 +273,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -300,7 +301,7 @@
         <DataSetName>PELICULA</DataSetName>
         <Top>0.86995cm</Top>
         <Left>2.66912cm</Left>
-        <Height>1.30583cm</Height>
+        <Height>1.30584cm</Height>
         <Width>15.34458cm</Width>
         <Style>
           <Border>
@@ -393,18 +394,18 @@
           <DataField>Descripción</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Cantidad">
-          <DataField>Cantidad</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="Director">
           <DataField>Director</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Cantidad">
+          <DataField>Cantidad</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>Pelicula</rd:DataSetName>
-        <rd:SchemaPath>F:\TProgra\NUEVO\CineProject\CineFront\Presentacion\Reportes\ReportePelicula\Pelicula.xsd</rd:SchemaPath>
+        <rd:DataSetName>Peliculaxsd</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\Presentacion\Reportes\ReportePelicula\Peliculaxsd.xsd</rd:SchemaPath>
         <rd:TableName>PELICULAS</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

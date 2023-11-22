@@ -19,8 +19,8 @@ namespace CineFront.Presentacion.Reportes.ReporteVendedor
 
         private void ReporteVendedor_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'vENDEDOR.VENDEDORES' Puede moverla o quitarla según sea necesario.
-            this.vENDEDORESTableAdapter.Fill(this.vENDEDOR.VENDEDORES);
+            // TODO: This line of code loads data into the 'vENDEDOR.VENDEDORRRRR' table. You can move, or remove it, as needed.
+            this.vENDEDORRRRRTableAdapter.Fill(this.vENDEDOR.VENDEDORRRRR);
 
             this.reportViewer1.RefreshReport();
         }

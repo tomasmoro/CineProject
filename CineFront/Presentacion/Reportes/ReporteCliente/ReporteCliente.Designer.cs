@@ -30,39 +30,46 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.cliente = new CineFront.Presentacion.Reportes.ReporteCliente.Cliente();
             this.dtClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cliente = new CineFront.Presentacion.Reportes.ReporteCliente.Cliente();
             this.dtClienteTableAdapter = new CineFront.Presentacion.Reportes.ReporteCliente.ClienteTableAdapters.DtClienteTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.cliente)).BeginInit();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.dtClienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dtClienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtClienteBindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // reportViewer1
-            // 
-            reportDataSource1.Name = "CLIENTE";
-            reportDataSource1.Value = this.dtClienteBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "CineFront.Presentacion.Reportes.ReporteCliente.ReporteCliente.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(1, 3);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1069, 578);
-            this.reportViewer1.TabIndex = 0;
-            // 
-            // cliente
-            // 
-            this.cliente.DataSetName = "Cliente";
-            this.cliente.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dtClienteBindingSource
             // 
             this.dtClienteBindingSource.DataMember = "DtCliente";
             this.dtClienteBindingSource.DataSource = this.cliente;
             // 
+            // cliente
+            // 
+            this.cliente.DataSetName = "Cliente";
+            this.cliente.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // dtClienteTableAdapter
             // 
             this.dtClienteTableAdapter.ClearBeforeFill = true;
+            // 
+            // reportViewer1
+            // 
+            reportDataSource1.Name = "CLIENTE";
+            reportDataSource1.Value = this.dtClienteBindingSource1;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "CineFront.Presentacion.Reportes.ReporteCliente.ReporteCliente.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, -3);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(1069, 583);
+            this.reportViewer1.TabIndex = 0;
+            // 
+            // dtClienteBindingSource1
+            // 
+            this.dtClienteBindingSource1.DataMember = "DtCliente";
+            this.dtClienteBindingSource1.DataSource = this.cliente;
             // 
             // ReporteCliente
             // 
@@ -73,17 +80,18 @@
             this.Name = "ReporteCliente";
             this.Text = "ReporteCliente";
             this.Load += new System.EventHandler(this.ReporteCliente_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.cliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtClienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtClienteBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private Cliente cliente;
         private System.Windows.Forms.BindingSource dtClienteBindingSource;
         private ClienteTableAdapters.DtClienteTableAdapter dtClienteTableAdapter;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource dtClienteBindingSource1;
     }
 }

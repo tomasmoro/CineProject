@@ -23,6 +23,7 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente
             this.dtClienteTableAdapter.Fill(this.cliente.DtCliente);
 
             this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
         }
     }
 }

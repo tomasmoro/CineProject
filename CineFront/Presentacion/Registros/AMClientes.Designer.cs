@@ -91,6 +91,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(193, 26);
             this.txtTelefono.TabIndex = 6;
+            this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             // 
             // label5
             // 
@@ -184,6 +185,7 @@
             this.txtdni.Name = "txtdni";
             this.txtdni.Size = new System.Drawing.Size(193, 26);
             this.txtdni.TabIndex = 0;
+            this.txtdni.TextChanged += new System.EventHandler(this.txtdni_TextChanged);
             // 
             // label1
             // 

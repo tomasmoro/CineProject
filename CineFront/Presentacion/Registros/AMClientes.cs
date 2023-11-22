@@ -123,13 +123,17 @@ namespace CineFront.Presentacion.Registros
 
         private void AMClientes_Load(object sender, EventArgs e)
         {
-            txtName.Text = cliente.nombre;
-            txtdni.Text = cliente.id_cliente.ToString();
-            txtLastName.Text = cliente.apellido;
-            txtMail.Text = cliente.mail;
-            txtTelefono.Text = cliente.telefono;
-            dateTimePicker1.Value = cliente.fecha_nacimiento;
+            if (cliente != null)
+            {
 
+
+                txtName.Text = cliente.nombre;
+                txtdni.Text = cliente.id_cliente.ToString();
+                txtLastName.Text = cliente.apellido;
+                txtMail.Text = cliente.mail;
+                txtTelefono.Text = cliente.telefono;
+                dateTimePicker1.Value = cliente.fecha_nacimiento;
+            }
             if (esAlta)
             {
                 label1.Text = "Agregar Cliente";
@@ -159,6 +163,38 @@ namespace CineFront.Presentacion.Registros
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void txtdni_TextChanged(object sender, EventArgs e)
+        {
+            ValidarCampoUsuari((TextBox)sender);
+        }
+        private static bool ValidarCampoUsuari(TextBox txt)
+        {
+            try
+            {
+                int d = Convert.ToInt32(txt.Text);
+                return true;
+            }
+            catch (Exception)
+            {
+                txt.Text = "0";
+                txt.Select(0, txt.Text.Length);
+
+                return false;
+
+            }
+        }
+
+        private void ValidarCampoUsuario(TextBox sender)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void txtTelefono_TextChanged(object sender, EventArgs e)
+        {
+
+            ValidarCampoUsuari((TextBox)sender);
         }
     }
 }

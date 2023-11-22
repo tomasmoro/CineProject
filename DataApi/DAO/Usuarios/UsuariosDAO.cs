@@ -58,14 +58,42 @@ namespace DataApi.DAO.Usuarios
             comando.Parameters.AddWithValue("@IdCliente", cliente.id_cliente);
             comando.Parameters.AddWithValue("@NuevoNombre", cliente.nombre);
             comando.Parameters.AddWithValue("@NuevoApellido", cliente.apellido);
-            comando.Parameters.AddWithValue("@NuevaFecha", cliente.fecha_nacimiento);
             comando.Parameters.AddWithValue("@NuevoCorreo", cliente.mail);
+            comando.Parameters.AddWithValue("@NuevaFecha", cliente.fecha_nacimiento);
             comando.Parameters.AddWithValue("@NuevoTel", cliente.telefono);
 
             comando.ExecuteNonQuery();
             conexion.Close();
 
             return true;
+        }
+
+        public bool GetUserData(int id_vendedor, string pass)
+        {
+           
+                bool resultado = true;
+                SqlConnection conexion = HelperDAO.ObtenerInstancia().ObtenerConexion();
+                conexion.Close();
+                conexion.Open();
+                SqlCommand comando = new SqlCommand("SP_LOGIN", conexion);
+                comando.CommandType = CommandType.StoredProcedure;
+
+                comando.Parameters.AddWithValue("@idusuario", id_vendedor);
+                comando.Parameters.AddWithValue("@clave", pass);
+
+                SqlParameter parametro = new SqlParameter();
+                parametro.ParameterName = "@bool";
+                parametro.SqlDbType = SqlDbType.Bit;
+                parametro.Direction = ParameterDirection.Output;
+                comando.Parameters.Add(parametro);
+                comando.ExecuteNonQuery();
+
+                bool res = (bool)parametro.Value;
+
+                conexion.Close();
+
+                return res;
+            
         }
     }
 }

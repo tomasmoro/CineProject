@@ -4,20 +4,19 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CINE_GRUPO21ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CINE_GRUPO21ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CineFront.Properties.Settings.GlobalReference.Default.CINE_GRUPO21ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CINE_GRUPO21ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CINE_GRUPO21ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CineFront.Properties.Settings.GlobalReference.Default.CINE_GRUPO21ConnectionString1" Provider="Microsoft.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VENDEDORESTableAdapter" GeneratorDataComponentClassName="VENDEDORESTableAdapter" Name="VENDEDORES" UserDataComponentName="VENDEDORESTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VENDEDORRRRRTableAdapter" GeneratorDataComponentClassName="VENDEDORRRRRTableAdapter" Name="VENDEDORRRRR" UserDataComponentName="VENDEDORRRRRTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="CINE_GRUPO21ConnectionString (Settings)" DbObjectName="CINE_GRUPO21.dbo.VENDEDORES" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="CINE_GRUPO21ConnectionString1 (Settings)" DbObjectName="CINE_GRUPO21.dbo.VENDEDORES" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT V.id_vendedor 'ID',V.nombre +' '+ V.apellido  'VENDEDORES', mail 'CORREO', telefono 'TELEFONO',COUNT(id_ticket) 'VENTAS', sum(total) 'TOTAL' 
 FROM COMPROBANTES C, vendedores V, TICKETS T
 WHERE C.id_comprobante = T.id_comprobante 
 AND V.id_vendedor = C.id_vendedor
-GROUP BY v.id_vendedor,v.nombre + ' ' +v.apellido, v.mail, v.telefono
-</CommandText>
+GROUP BY v.id_vendedor,v.nombre + ' ' +v.apellido, v.mail, v.telefono</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -41,7 +40,7 @@ GROUP BY v.id_vendedor,v.nombre + ' ' +v.apellido, v.mail, v.telefono
   <xs:element name="VENDEDOR" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="VENDEDOR" msprop:Generator_DataSetName="VENDEDOR">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="VENDEDORES" msprop:Generator_RowEvHandlerName="VENDEDORESRowChangeEventHandler" msprop:Generator_RowDeletedName="VENDEDORESRowDeleted" msprop:Generator_RowDeletingName="VENDEDORESRowDeleting" msprop:Generator_RowEvArgName="VENDEDORESRowChangeEvent" msprop:Generator_TablePropName="VENDEDORES" msprop:Generator_RowChangedName="VENDEDORESRowChanged" msprop:Generator_RowChangingName="VENDEDORESRowChanging" msprop:Generator_TableClassName="VENDEDORESDataTable" msprop:Generator_RowClassName="VENDEDORESRow" msprop:Generator_TableVarName="tableVENDEDORES" msprop:Generator_UserTableName="VENDEDORES">
+        <xs:element name="VENDEDORRRRR" msprop:Generator_RowEvHandlerName="VENDEDORRRRRRowChangeEventHandler" msprop:Generator_RowDeletedName="VENDEDORRRRRRowDeleted" msprop:Generator_RowDeletingName="VENDEDORRRRRRowDeleting" msprop:Generator_RowEvArgName="VENDEDORRRRRRowChangeEvent" msprop:Generator_TablePropName="VENDEDORRRRR" msprop:Generator_RowChangedName="VENDEDORRRRRRowChanged" msprop:Generator_RowChangingName="VENDEDORRRRRRowChanging" msprop:Generator_TableClassName="VENDEDORRRRRDataTable" msprop:Generator_RowClassName="VENDEDORRRRRRow" msprop:Generator_TableVarName="tableVENDEDORRRRR" msprop:Generator_UserTableName="VENDEDORRRRR">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -74,7 +73,7 @@ GROUP BY v.id_vendedor,v.nombre + ' ' +v.apellido, v.mail, v.telefono
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:VENDEDORES" />
+      <xs:selector xpath=".//mstns:VENDEDORRRRR" />
       <xs:field xpath="mstns:ID" />
     </xs:unique>
   </xs:element>

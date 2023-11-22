@@ -1,6 +1,8 @@
 ﻿using CineFront.Presentacion.Reportes;
 using CineFront.Presentacion.Reportes.ReporteCliente;
 using CineFront.Presentacion.Reportes.ReportePelicula;
+using CineFront.Presentacion.Reportes.ReportProduc;
+using CineFront.Presentacion.Reportes.ReporteVendedor;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,7 +41,7 @@ namespace CineFront
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            ReportesProducto productos = new ReportesProducto();
+            ReporteProducto productos = new ReporteProducto();
             productos.ShowDialog();
 
 

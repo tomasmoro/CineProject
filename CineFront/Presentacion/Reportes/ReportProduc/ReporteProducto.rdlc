@@ -273,6 +273,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -301,7 +302,7 @@
         <Top>1.45203cm</Top>
         <Left>1.53141cm</Left>
         <Height>1.2cm</Height>
-        <Width>15.29167cm</Width>
+        <Width>15.29166cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -538,8 +539,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>Producto</rd:DataSetName>
-        <rd:SchemaPath>F:\TProgra\NUEVO\CineProject\CineFront\Presentacion\Reportes\ReportProduc\Producto.xsd</rd:SchemaPath>
+        <rd:DataSetName>PRODUCTO</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\Presentacion\Reportes\ReportProduc\PRODUCTO.xsd</rd:SchemaPath>
         <rd:TableName>PRODUCTOS</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

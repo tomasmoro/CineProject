@@ -20,6 +20,7 @@ namespace DataApi.DAO.Funciones
             SqlConnection conexion = HelperDAO.ObtenerInstancia().ObtenerConexion();
             try
             {
+                conexion.Close();
                 conexion.Open();
                 transaccion = conexion.BeginTransaction();
                 SqlCommand comando = new SqlCommand("SP_INSERTAR_COMPROBANTES", conexion, transaccion);
@@ -43,7 +44,7 @@ namespace DataApi.DAO.Funciones
                 int i = 1;
                 foreach (TicketDetalle d in factura.tickets)
                 {
-                    SqlCommand comandoCarga = new SqlCommand("INSERTAR_TICKET", conexion, transaccion);
+                    SqlCommand comandoCarga = new SqlCommand("SP_INSERTAR_TICKET", conexion, transaccion);
                     comandoCarga.CommandType = CommandType.StoredProcedure;
                     comandoCarga.Parameters.AddWithValue("@comprobante", facturaNro);
                     comandoCarga.Parameters.AddWithValue("@butaca_sala", d.butaca.id_butaca_sala);

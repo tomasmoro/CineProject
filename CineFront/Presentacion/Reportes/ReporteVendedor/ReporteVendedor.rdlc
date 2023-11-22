@@ -403,6 +403,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -675,11 +676,11 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>VENDEDOR</rd:DataSetName>
-        <rd:SchemaPath>F:\TProgra\NUEVO\CineProject\CineFront\Presentacion\Reportes\ReporteVendedor\VENDEDOR.xsd</rd:SchemaPath>
-        <rd:TableName>VENDEDORES</rd:TableName>
+        <rd:SchemaPath>C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\Presentacion\Reportes\ReporteVendedor\VENDEDOR.xsd</rd:SchemaPath>
+        <rd:TableName>VENDEDORRRRR</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>VENDEDORESTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>VENDEDORRRRRTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

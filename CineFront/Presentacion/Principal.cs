@@ -13,6 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CineFront.Presentacion.Reportes.ReportProduc;
 
 namespace CineFront
 {
@@ -21,7 +22,7 @@ namespace CineFront
         SeleccionPelicula seleccionPelicula;
         RegistroCliente registroUsuario;
         //RegistroVendedor registroVendedor;
-        ReportesProducto reportesProducto;
+        ReporteProducto reportesProducto;
         ReportePelicula reportePelicula;
         ReporteCliente reporteCliente;
         ReporteVendedor reporteVendedor; 
@@ -77,7 +78,7 @@ namespace CineFront
 
         private void productoMasVendidoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            reportesProducto = new ReportesProducto();
+            reportesProducto = new ReporteProducto();
             reportesProducto.Show();
         }
 
@@ -103,6 +104,11 @@ namespace CineFront
         {
             reporteVendedor = new ReporteVendedor();
             reporteVendedor.ShowDialog();
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

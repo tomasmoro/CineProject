@@ -223,6 +223,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Presentacion\InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Registros\AMClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,10 +252,10 @@
     <Compile Include="Presentacion\Reportes\ReporteCliente\ReporteCliente.Designer.cs">
       <DependentUpon>ReporteCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Reportes\ReportePelicula\Pelicula.Designer.cs">
+    <Compile Include="Presentacion\Reportes\ReportePelicula\Peliculaxsd.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Pelicula.xsd</DependentUpon>
+      <DependentUpon>Peliculaxsd.xsd</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Reportes\ReportePelicula\ReportePelicula.cs">
       <SubType>Form</SubType>
@@ -268,16 +274,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VENDEDOR.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Reportes\ReportProduc\Producto.Designer.cs">
+    <Compile Include="Presentacion\Reportes\ReportProduc\PRODUCTO.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Producto.xsd</DependentUpon>
+      <DependentUpon>PRODUCTO.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Reportes\ReportProduc\ReportesProducto.cs">
+    <Compile Include="Presentacion\Reportes\ReportProduc\ReporteProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Reportes\ReportProduc\ReportesProducto.Designer.cs">
-      <DependentUpon>ReportesProducto.cs</DependentUpon>
+    <Compile Include="Presentacion\Reportes\ReportProduc\ReporteProducto.Designer.cs">
+      <DependentUpon>ReporteProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Tickets\AsientoUI.cs" />
     <Compile Include="Presentacion\Tickets\Pago.cs">
@@ -313,6 +319,9 @@
       <DependentUpon>Reportes.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Presentacion\InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Registros\AMClientes.resx">
       <DependentUpon>AMClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -332,8 +341,8 @@
       <DependentUpon>ReporteVendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Reportes\ReportProduc\ReporteProducto.rdlc" />
-    <EmbeddedResource Include="Presentacion\Reportes\ReportProduc\ReportesProducto.resx">
-      <DependentUpon>ReportesProducto.cs</DependentUpon>
+    <EmbeddedResource Include="Presentacion\Reportes\ReportProduc\ReporteProducto.resx">
+      <DependentUpon>ReporteProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Tickets\Pago.resx">
       <DependentUpon>Pago.cs</DependentUpon>
@@ -372,16 +381,16 @@
     <None Include="Presentacion\Reportes\ReporteCliente\Cliente.xss">
       <DependentUpon>Cliente.xsd</DependentUpon>
     </None>
-    <None Include="Presentacion\Reportes\ReportePelicula\Pelicula.xsc">
-      <DependentUpon>Pelicula.xsd</DependentUpon>
+    <None Include="Presentacion\Reportes\ReportePelicula\Peliculaxsd.xsc">
+      <DependentUpon>Peliculaxsd.xsd</DependentUpon>
     </None>
-    <None Include="Presentacion\Reportes\ReportePelicula\Pelicula.xsd">
+    <None Include="Presentacion\Reportes\ReportePelicula\Peliculaxsd.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Pelicula.Designer.cs</LastGenOutput>
+      <LastGenOutput>Peliculaxsd.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Presentacion\Reportes\ReportePelicula\Pelicula.xss">
-      <DependentUpon>Pelicula.xsd</DependentUpon>
+    <None Include="Presentacion\Reportes\ReportePelicula\Peliculaxsd.xss">
+      <DependentUpon>Peliculaxsd.xsd</DependentUpon>
     </None>
     <None Include="Presentacion\Reportes\ReporteVendedor\VENDEDOR.xsc">
       <DependentUpon>VENDEDOR.xsd</DependentUpon>
@@ -394,16 +403,16 @@
     <None Include="Presentacion\Reportes\ReporteVendedor\VENDEDOR.xss">
       <DependentUpon>VENDEDOR.xsd</DependentUpon>
     </None>
-    <None Include="Presentacion\Reportes\ReportProduc\Producto.xsc">
-      <DependentUpon>Producto.xsd</DependentUpon>
+    <None Include="Presentacion\Reportes\ReportProduc\PRODUCTO.xsc">
+      <DependentUpon>PRODUCTO.xsd</DependentUpon>
     </None>
-    <None Include="Presentacion\Reportes\ReportProduc\Producto.xsd">
+    <None Include="Presentacion\Reportes\ReportProduc\PRODUCTO.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Producto.Designer.cs</LastGenOutput>
+      <LastGenOutput>PRODUCTO.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Presentacion\Reportes\ReportProduc\Producto.xss">
-      <DependentUpon>Producto.xsd</DependentUpon>
+    <None Include="Presentacion\Reportes\ReportProduc\PRODUCTO.xss">
+      <DependentUpon>PRODUCTO.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

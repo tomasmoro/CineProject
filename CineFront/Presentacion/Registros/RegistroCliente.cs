@@ -115,7 +115,7 @@ namespace CineFront.Presentacion.Registros
         private async void BorrarCliente(Cliente c) 
         {
             
-            string url = "https://localhost:7229/del_clientes/";
+            string url = "https://localhost:7229/del_clientes";
             using (var client = new HttpClient())
             {
                 var json = JsonConvert.SerializeObject(c);

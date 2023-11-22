@@ -242,6 +242,20 @@ namespace ApiCine.Controllers
                 return StatusCode(500, "Error interno!!! Intente luego...");
             }
         }
+        // GET: api/<PresupuestoController>
+        [HttpGet("/usuario/{id_vendedor}/{pass}")]
+        public IActionResult GetUserData(int id_vendedor, string pass)
+        {
 
+            try
+            {
+                bool resultado = app.GetUserData(id_vendedor, pass);
+                return Ok(resultado);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno!!! Intente luego...");
+            }
+        }
     }
 }

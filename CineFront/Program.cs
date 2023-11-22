@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using CineFront.Presentacion;
+using System;
 using System.Windows.Forms;
 
 namespace CineFront
@@ -16,7 +14,7 @@ namespace CineFront
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Principal());
+            Application.Run(new InicioSesion());
         }
     }
 }
