@@ -83,6 +83,66 @@ namespace CineFront.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap armchair_lvl_1 {
+            get {
+                object obj = ResourceManager.GetObject("armchair_lvl_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap armchair_lvl_2 {
+            get {
+                object obj = ResourceManager.GetObject("armchair_lvl_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap armchair_lvl_3 {
+            get {
+                object obj = ResourceManager.GetObject("armchair_lvl_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap armchair_lvl_4 {
+            get {
+                object obj = ResourceManager.GetObject("armchair_lvl_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap armchair_lvl_5 {
+            get {
+                object obj = ResourceManager.GetObject("armchair_lvl_5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap armchair_lvl_6 {
+            get {
+                object obj = ResourceManager.GetObject("armchair_lvl_6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap armchair_ocupped {
             get {
                 object obj = ResourceManager.GetObject("armchair_ocupped", resourceCulture);
@@ -106,6 +166,16 @@ namespace CineFront.Properties {
         internal static System.Drawing.Bitmap armchair_unselected {
             get {
                 object obj = ResourceManager.GetObject("armchair_unselected", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap butaca_de_cine {
+            get {
+                object obj = ResourceManager.GetObject("butaca_de_cine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +226,16 @@ namespace CineFront.Properties {
         internal static System.Drawing.Bitmap Fondo1 {
             get {
                 object obj = ResourceManager.GetObject("Fondo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fondos_de_pantalla {
+            get {
+                object obj = ResourceManager.GetObject("Fondos de pantalla", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

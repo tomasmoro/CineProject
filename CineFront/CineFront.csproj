@@ -244,11 +244,23 @@
     <Compile Include="Presentacion\Registros\RegistroCliente.Designer.cs">
       <DependentUpon>RegistroCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Reportes\ReporteAsientos\ReporteAsientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Reportes\ReporteAsientos\ReporteAsientos.Designer.cs">
+      <DependentUpon>ReporteAsientos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Reportes\ReporteCliente\ReporteCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\Reportes\ReporteCliente\ReporteCliente.Designer.cs">
       <DependentUpon>ReporteCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Reportes\ReportePeliculas\ReportePelículas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Reportes\ReportePeliculas\ReportePelículas.Designer.cs">
+      <DependentUpon>ReportePelículas.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Tickets\AsientoUI.cs" />
     <Compile Include="Presentacion\Tickets\Pago.cs">
@@ -293,8 +305,14 @@
     <EmbeddedResource Include="Presentacion\Registros\RegistroCliente.resx">
       <DependentUpon>RegistroCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Reportes\ReporteAsientos\ReporteAsientos.resx">
+      <DependentUpon>ReporteAsientos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Reportes\ReporteCliente\ReporteCliente.resx">
       <DependentUpon>ReporteCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Reportes\ReportePeliculas\ReportePelículas.resx">
+      <DependentUpon>ReportePelículas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Tickets\Pago.resx">
       <DependentUpon>Pago.cs</DependentUpon>
@@ -376,7 +394,15 @@
     <None Include="Resources\film-reel_2590670.png" />
     <None Include="Resources\rating_4149882 %281%29.png" />
     <None Include="Resources\Fondo Principal1.png" />
+    <None Include="Resources\armchair_lvl_1.png" />
+    <None Include="Resources\armchair_lvl_2.png" />
+    <None Include="Resources\armchair_lvl_3.png" />
+    <None Include="Resources\armchair_lvl_4.png" />
+    <None Include="Resources\armchair_lvl_5.png" />
+    <None Include="Resources\armchair_lvl_6.png" />
+    <None Include="Resources\butaca-de-cine.png" />
     <Content Include="Resources\Fondos de pantalla.png" />
+    <None Include="Resources\Fondos de pantalla1.png" />
     <Content Include="Resources\Star CinePlex.png" />
     <None Include="Resources\Star CinePlex1.png" />
     <Content Include="SqlServerTypes\readme.htm" />
@@ -394,8 +420,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Presentacion\Reportes\ReporteAsientos\" />
-    <Folder Include="Presentacion\Reportes\ReportePeliculas\" />
     <Folder Include="Presentacion\Reportes\ReporteVendedor\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

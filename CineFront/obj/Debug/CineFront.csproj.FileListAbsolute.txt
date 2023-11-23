@@ -917,3 +917,5 @@ D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFro
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.InicioSesion.resources
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Registros.AMClientes.resources
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Registros.RegistroCliente.resources
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Reportes.ReporteAsientos.ReporteAsientos.resources
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Reportes.ReportePeliculas.ReportePelículas.resources

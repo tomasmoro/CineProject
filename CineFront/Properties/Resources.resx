@@ -118,43 +118,67 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="580b57fcd9996e24bc43c44c1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\580b57fcd9996e24bc43c44c1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cinema_tickets_4998806" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cinema-tickets_4998806.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fondo Principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fondo Principal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="armchair_ocupped" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\armchair_ocupped.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="580b57fcd9996e24bc43c44c" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\580b57fcd9996e24bc43c44c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Presentacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Presentacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="armchair_unselected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armchair_unselected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="film_reel_2590670" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\film-reel_2590670.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rating_4149882__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rating_4149882 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Presentacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Presentacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fondo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fondo Principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo Principal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="armchair_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\armchair_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="armchair_unselected" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\armchair_unselected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="armchair_ocupped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armchair_ocupped.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="580b57fcd9996e24bc43c44c1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\580b57fcd9996e24bc43c44c1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Star CinePlex" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Star CinePlex1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rating_4149882__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rating_4149882 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cinema_tickets_4998806" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cinema-tickets_4998806.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="580b57fcd9996e24bc43c44c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\580b57fcd9996e24bc43c44c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fondos de pantalla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondos de pantalla1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="armchair_lvl_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armchair_lvl_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="armchair_lvl_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armchair_lvl_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="armchair_lvl_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armchair_lvl_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="armchair_lvl_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armchair_lvl_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="armchair_lvl_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armchair_lvl_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="armchair_lvl_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armchair_lvl_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="butaca_de_cine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\butaca-de-cine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

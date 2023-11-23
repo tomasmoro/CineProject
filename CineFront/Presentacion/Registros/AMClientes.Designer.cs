@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AMClientes));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -47,9 +48,10 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(344, 383);
+            this.dateTimePicker1.Location = new System.Drawing.Point(279, 249);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(135, 20);
             this.dateTimePicker1.TabIndex = 7;
             // 
             // label7
@@ -58,18 +60,18 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gold;
-            this.label7.Location = new System.Drawing.Point(104, 378);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(119, 246);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(224, 31);
+            this.label7.Size = new System.Drawing.Size(152, 21);
             this.label7.TabIndex = 36;
             this.label7.Text = "Fecha Nacimiento:";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(329, 512);
+            this.button2.Location = new System.Drawing.Point(269, 333);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 34);
+            this.button2.Size = new System.Drawing.Size(69, 22);
             this.button2.TabIndex = 9;
             this.button2.Text = "Guardar";
             this.button2.UseVisualStyleBackColor = true;
@@ -77,9 +79,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(179, 512);
+            this.button1.Location = new System.Drawing.Point(169, 333);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 34);
+            this.button1.Size = new System.Drawing.Size(70, 22);
             this.button1.TabIndex = 10;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = true;
@@ -87,9 +90,10 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(344, 328);
+            this.txtTelefono.Location = new System.Drawing.Point(279, 213);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(193, 26);
+            this.txtTelefono.Size = new System.Drawing.Size(130, 20);
             this.txtTelefono.TabIndex = 6;
             this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             // 
@@ -99,10 +103,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gold;
-            this.label5.Location = new System.Drawing.Point(104, 323);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(119, 210);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 31);
+            this.label5.Size = new System.Drawing.Size(82, 21);
             this.label5.TabIndex = 32;
             this.label5.Text = "Telefono:";
             // 
@@ -112,10 +115,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gold;
-            this.label4.Location = new System.Drawing.Point(104, 167);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(119, 109);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 31);
+            this.label4.Size = new System.Drawing.Size(77, 21);
             this.label4.TabIndex = 31;
             this.label4.Text = "Nombre:";
             // 
@@ -125,10 +127,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gold;
-            this.label3.Location = new System.Drawing.Point(104, 219);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(119, 142);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 31);
+            this.label3.Size = new System.Drawing.Size(79, 21);
             this.label3.TabIndex = 30;
             this.label3.Text = "Apellido:";
             // 
@@ -138,10 +139,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gold;
-            this.label2.Location = new System.Drawing.Point(104, 274);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(119, 178);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 31);
+            this.label2.Size = new System.Drawing.Size(48, 21);
             this.label2.TabIndex = 29;
             this.label2.Text = "Mail:";
             // 
@@ -151,39 +151,42 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gold;
-            this.label6.Location = new System.Drawing.Point(104, 118);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(119, 77);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 31);
+            this.label6.Size = new System.Drawing.Size(44, 21);
             this.label6.TabIndex = 28;
             this.label6.Text = "DNI:";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(344, 170);
+            this.txtName.Location = new System.Drawing.Point(279, 110);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(193, 26);
+            this.txtName.Size = new System.Drawing.Size(130, 20);
             this.txtName.TabIndex = 2;
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(344, 219);
+            this.txtLastName.Location = new System.Drawing.Point(279, 142);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(2);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(193, 26);
+            this.txtLastName.Size = new System.Drawing.Size(130, 20);
             this.txtLastName.TabIndex = 4;
             // 
             // txtMail
             // 
-            this.txtMail.Location = new System.Drawing.Point(344, 274);
+            this.txtMail.Location = new System.Drawing.Point(279, 178);
+            this.txtMail.Margin = new System.Windows.Forms.Padding(2);
             this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(193, 26);
+            this.txtMail.Size = new System.Drawing.Size(130, 20);
             this.txtMail.TabIndex = 5;
             // 
             // txtdni
             // 
-            this.txtdni.Location = new System.Drawing.Point(344, 121);
+            this.txtdni.Location = new System.Drawing.Point(279, 79);
+            this.txtdni.Margin = new System.Windows.Forms.Padding(2);
             this.txtdni.Name = "txtdni";
-            this.txtdni.Size = new System.Drawing.Size(193, 26);
+            this.txtdni.Size = new System.Drawing.Size(130, 20);
             this.txtdni.TabIndex = 0;
             this.txtdni.TextChanged += new System.EventHandler(this.txtdni_TextChanged);
             // 
@@ -193,19 +196,18 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(84, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(202, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 56);
+            this.label1.Size = new System.Drawing.Size(129, 37);
             this.label1.TabIndex = 23;
             this.label1.Text = "CLIENTE";
             // 
             // AMClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CineFront.Properties.Resources.Fondo;
-            this.ClientSize = new System.Drawing.Size(800, 644);
+            this.BackgroundImage = global::CineFront.Properties.Resources.Fondos_de_pantalla;
+            this.ClientSize = new System.Drawing.Size(533, 419);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button2);
@@ -221,7 +223,13 @@
             this.Controls.Add(this.txtMail);
             this.Controls.Add(this.txtdni);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(549, 458);
+            this.MinimumSize = new System.Drawing.Size(549, 458);
             this.Name = "AMClientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "1";
             this.Load += new System.EventHandler(this.AMClientes_Load);
             this.ResumeLayout(false);

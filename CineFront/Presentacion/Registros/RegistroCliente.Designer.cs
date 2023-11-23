@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroCliente));
             this.button1 = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -47,9 +48,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(516, 110);
+            this.button1.Location = new System.Drawing.Point(344, 72);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 33);
+            this.button1.Size = new System.Drawing.Size(87, 21);
             this.button1.TabIndex = 26;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
@@ -57,10 +59,9 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(794, 603);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancelar.Location = new System.Drawing.Point(529, 392);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(228, 62);
+            this.btnCancelar.Size = new System.Drawing.Size(152, 40);
             this.btnCancelar.TabIndex = 24;
             this.btnCancelar.Text = "Agregar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -78,22 +79,20 @@
             this.Correo,
             this.Quitar,
             this.colModificar});
-            this.dataGridView1.Location = new System.Drawing.Point(42, 170);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 110);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1034, 343);
+            this.dataGridView1.Size = new System.Drawing.Size(767, 223);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // txtCodigo
             // 
             this.txtCodigo.BackColor = System.Drawing.Color.White;
-            this.txtCodigo.Location = new System.Drawing.Point(153, 117);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCodigo.Location = new System.Drawing.Point(102, 76);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(291, 26);
+            this.txtCodigo.Size = new System.Drawing.Size(195, 20);
             this.txtCodigo.TabIndex = 22;
             // 
             // label6
@@ -102,10 +101,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gold;
-            this.label6.Location = new System.Drawing.Point(79, 117);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(53, 76);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 31);
+            this.label6.Size = new System.Drawing.Size(44, 21);
             this.label6.TabIndex = 21;
             this.label6.Text = "DNI:";
             // 
@@ -115,10 +113,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(178, 28);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(119, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 56);
+            this.label1.Size = new System.Drawing.Size(129, 37);
             this.label1.TabIndex = 20;
             this.label1.Text = "CLIENTE";
             // 
@@ -127,10 +124,9 @@
             this.pbAtras.BackColor = System.Drawing.Color.Transparent;
             this.pbAtras.BackgroundImage = global::CineFront.Properties.Resources._580b57fcd9996e24bc43c44c1;
             this.pbAtras.Image = global::CineFront.Properties.Resources._580b57fcd9996e24bc43c44c1;
-            this.pbAtras.Location = new System.Drawing.Point(14, 5);
-            this.pbAtras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbAtras.Location = new System.Drawing.Point(9, 3);
             this.pbAtras.Name = "pbAtras";
-            this.pbAtras.Size = new System.Drawing.Size(105, 94);
+            this.pbAtras.Size = new System.Drawing.Size(70, 61);
             this.pbAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAtras.TabIndex = 25;
             this.pbAtras.TabStop = false;
@@ -142,15 +138,15 @@
             this.DNI.MinimumWidth = 6;
             this.DNI.Name = "DNI";
             this.DNI.ReadOnly = true;
-            this.DNI.Width = 150;
+            this.DNI.Width = 80;
             // 
             // Nombre_Apellido
             // 
-            this.Nombre_Apellido.HeaderText = "Nombre_Apellido";
+            this.Nombre_Apellido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Nombre_Apellido.HeaderText = "Nombre y Apellido";
             this.Nombre_Apellido.MinimumWidth = 6;
             this.Nombre_Apellido.Name = "Nombre_Apellido";
             this.Nombre_Apellido.ReadOnly = true;
-            this.Nombre_Apellido.Width = 200;
             // 
             // Fecha
             // 
@@ -158,7 +154,7 @@
             this.Fecha.MinimumWidth = 6;
             this.Fecha.Name = "Fecha";
             this.Fecha.ReadOnly = true;
-            this.Fecha.Width = 150;
+            this.Fecha.Width = 120;
             // 
             // Correo
             // 
@@ -166,7 +162,7 @@
             this.Correo.MinimumWidth = 6;
             this.Correo.Name = "Correo";
             this.Correo.ReadOnly = true;
-            this.Correo.Width = 200;
+            this.Correo.Width = 192;
             // 
             // Quitar
             // 
@@ -174,24 +170,25 @@
             this.Quitar.MinimumWidth = 6;
             this.Quitar.Name = "Quitar";
             this.Quitar.ReadOnly = true;
-            this.Quitar.Width = 125;
+            this.Quitar.Width = 80;
             // 
             // colModificar
             // 
+            this.colModificar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.colModificar.HeaderText = "Modificar";
             this.colModificar.MinimumWidth = 8;
             this.colModificar.Name = "colModificar";
             this.colModificar.ReadOnly = true;
             this.colModificar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.colModificar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.colModificar.Width = 150;
+            this.colModificar.Width = 75;
             // 
             // RegistroCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CineFront.Properties.Resources.Fondo1;
-            this.ClientSize = new System.Drawing.Size(1186, 698);
+            this.BackgroundImage = global::CineFront.Properties.Resources.Fondos_de_pantalla;
+            this.ClientSize = new System.Drawing.Size(791, 454);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pbAtras);
             this.Controls.Add(this.btnCancelar);
@@ -199,7 +196,13 @@
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(807, 493);
+            this.MinimumSize = new System.Drawing.Size(807, 493);
             this.Name = "RegistroCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistroCliente";
             this.Load += new System.EventHandler(this.RegistroCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

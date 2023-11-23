@@ -40,7 +40,7 @@ namespace DataApi.DAO.Usuarios
             SqlCommand comando = new SqlCommand("SP_BORRAR_CLIENTE", conexion);
             comando.CommandType = CommandType.StoredProcedure;
 
-            comando.Parameters.AddWithValue("@id_cliente", cliente.id_cliente);
+            comando.Parameters.AddWithValue("@IdCliente", cliente.id_cliente);
             comando.ExecuteNonQuery();
             conexion.Close();
 

@@ -129,8 +129,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1027, 551);
-            this.MinimumSize = new System.Drawing.Size(915, 480);
+            this.MaximumSize = new System.Drawing.Size(962, 480);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(962, 480);
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StarCineplex";

@@ -32,13 +32,14 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente
 
         private void CargarDatos()
         {
+            dataGridView1.Rows.Clear();
             List<Parametro> parametros = new List<Parametro>();
 
             parametros.Add(new Parametro("@descripcion", txtName.Text));
             parametros.Add(new Parametro("@dni", txtDNI.Text));
 
             DataTable tabla = HelperDAO.ObtenerInstancia().Consultar("SP_RPT_CLIENTES", parametros);
-            dataGridView1.DataSource = tabla;
+           // dataGridView1.DataSource = tabla;
 
             foreach (DataRow r in tabla.Rows)
             {
@@ -55,6 +56,7 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente
         private void button1_Click(object sender, EventArgs e)
         {
             CargarDatos();
+            
         }
     }
 }
