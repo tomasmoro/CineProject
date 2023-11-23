@@ -1016,3 +1016,22 @@ VALUES
 )
 END;
 GO
+---------SP 18: REPORTE DE CLIENTES---------
+create proc SP_RPT_CLIENTES
+	@descripcion varchar(50) = '',
+	@dni int = 0
+	as
+	begin
+				SELECT C.NOMBRE+' '+C.APELLIDO 'NOMBRE COMPLETO',
+					C.mail 'CONTACTO',
+					SUM(T.total) 'MONTO GASTADO',
+					COUNT(T.id_ticket) 'CANTIDAD DE ENTRADAS'
+				FROM CLIENTES C
+				JOIN COMPROBANTES COM ON C.id_cliente = COM.id_cliente
+				JOIN TICKETS T ON COM.id_comprobante = T.id_ticket
+				WHERE (@descripcion != '' and (C.NOMBRE LIKE '%'+@descripcion+'%' or C.Apellido LIKE '%'+@descripcion+'%' )) or
+					(@dni != 0 and c.id_cliente = @dni) or
+					(@dni = 0 and @descripcion = '')
+				GROUP BY C.NOMBRE+' '+C.APELLIDO ,C.mail 
+				order by 3 desc
+END
