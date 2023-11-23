@@ -17,7 +17,7 @@ namespace DataApi.DAO.Funciones
         List<Vendedor> GetVendedores();
         List<Cliente> GetClientes();
         List<FormaPago> GetFormasPago();
-        bool GenerateFactura(Factura factura);
+        int GenerateFactura(Factura factura);
         List<Cliente> GetClientes(int id_cliente);
     }
 }

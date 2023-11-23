@@ -95,5 +95,31 @@ namespace DataApi.DAO.Usuarios
                 return res;
             
         }
+
+        public bool CheckTicket(QrSendModel qr)
+        {
+            bool resultado = true;
+            SqlConnection conexion = HelperDAO.ObtenerInstancia().ObtenerConexion();
+            conexion.Close();
+            conexion.Open();
+            SqlCommand comando = new SqlCommand("SP_CHECK_TICKET", conexion);
+            comando.CommandType = CommandType.StoredProcedure;
+
+            comando.Parameters.AddWithValue("@butaca_sala", qr.id_butaca_sala);
+            comando.Parameters.AddWithValue("@comprobante", qr.Nro_factura);
+
+            SqlParameter parametro = new SqlParameter();
+            parametro.ParameterName = "@check";
+            parametro.SqlDbType = SqlDbType.Bit;
+            parametro.Direction = ParameterDirection.Output;
+            comando.Parameters.Add(parametro);
+            comando.ExecuteNonQuery();
+
+            bool res = (bool)parametro.Value;
+
+            conexion.Close();
+
+            return !res;
+        }
     }
 }

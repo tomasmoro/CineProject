@@ -10,6 +10,7 @@ namespace DataApi.DAO.Usuarios
     internal interface IClientesDAO
     {
         bool BorrarCliente(Cliente c);
+        bool CheckTicket(QrSendModel qr);
         bool GetUserData(int id_vendedor, string pass);
         bool ModificarCliente(Cliente c);
         bool SaveCliente(Cliente cliente);

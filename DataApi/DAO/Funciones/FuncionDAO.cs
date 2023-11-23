@@ -13,9 +13,9 @@ namespace DataApi.DAO.Funciones
 {
     public class FuncionDAO : IFuncionDAO
     {
-        public bool GenerateFactura(Factura factura)
+        public int GenerateFactura(Factura factura)
         {
-            bool resultado = true;
+            int resultado = 0;
             SqlTransaction transaccion = null;
             SqlConnection conexion = HelperDAO.ObtenerInstancia().ObtenerConexion();
             try
@@ -39,14 +39,14 @@ namespace DataApi.DAO.Funciones
 
                 comando.ExecuteNonQuery();
 
-                int facturaNro = (int)parametro.Value;
+                resultado = (int)parametro.Value;
 
                 int i = 1;
                 foreach (TicketDetalle d in factura.tickets)
                 {
                     SqlCommand comandoCarga = new SqlCommand("SP_INSERTAR_TICKET", conexion, transaccion);
                     comandoCarga.CommandType = CommandType.StoredProcedure;
-                    comandoCarga.Parameters.AddWithValue("@comprobante", facturaNro);
+                    comandoCarga.Parameters.AddWithValue("@comprobante", resultado);
                     comandoCarga.Parameters.AddWithValue("@butaca_sala", d.butaca.id_butaca_sala);
                     comandoCarga.Parameters.AddWithValue("@total", d.total);
                     comandoCarga.ExecuteNonQuery();
@@ -59,7 +59,7 @@ namespace DataApi.DAO.Funciones
                 if (transaccion != null)
                 {
                     transaccion.Rollback();
-                    resultado = false;
+                    resultado = 0;
                 }
             }
             finally

@@ -164,6 +164,8 @@ namespace CineFront.Presentacion.Tickets
 
                 Pago p = new Pago(new Factura(newFuncion, ltickets));
                 p.ShowDialog();
+                this.Close();
+
             }
         }
 

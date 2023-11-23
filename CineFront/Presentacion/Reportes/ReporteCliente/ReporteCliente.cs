@@ -16,14 +16,5 @@ namespace CineFront.Presentacion.Reportes.ReporteCliente
         {
             InitializeComponent();
         }
-
-        private void ReporteCliente_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'cliente.DtCliente' table. You can move, or remove it, as needed.
-            this.dtClienteTableAdapter.Fill(this.cliente.DtCliente);
-
-            this.reportViewer1.RefreshReport();
-            this.reportViewer1.RefreshReport();
-        }
     }
 }

@@ -172,10 +172,12 @@ namespace CineFront.Presentacion
 
                 SeleccionAsientos s = new SeleccionAsientos(newFuncion);
                 s.ShowDialog();
+                this.Close();
+
             }
-            
+
             //Abre el formulario para elegir asientos y posteriormente realizar el pago de las entradas.
-                        
+
         }
 
         private void cboTipoEntrada_SelectedIndexChanged(object sender, EventArgs e)

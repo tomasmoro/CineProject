@@ -19,7 +19,7 @@ namespace DataApi.DAO.Funciones
             clienteDAO = new UsuariosDAO();
         }
 
-        public bool GenerateFactura(Factura newFactura)
+        public int GenerateFactura(Factura newFactura)
         {
             return funcionDAO.GenerateFactura(newFactura);
         }
@@ -84,6 +84,11 @@ namespace DataApi.DAO.Funciones
         public bool GetUserData(int id_vendedor, string pass)
         {
             return clienteDAO.GetUserData(id_vendedor, pass);
+        }
+
+        public bool CheckTicket(QrSendModel qr)
+        {
+            return clienteDAO.CheckTicket(qr);
         }
     }
 }

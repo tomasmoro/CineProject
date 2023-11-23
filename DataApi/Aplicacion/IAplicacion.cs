@@ -13,6 +13,6 @@ namespace DataApi.Aplicacion
         List<Vendedor> GetVendedores();
         List<Cliente> GetClientes();
         List<FormaPago> GetFormasPago();
-        bool GenerateFactura(Factura factura);
+        int GenerateFactura(Factura factura);
     }
 }

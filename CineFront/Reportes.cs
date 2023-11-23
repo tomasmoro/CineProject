@@ -1,8 +1,4 @@
-﻿using CineFront.Presentacion.Reportes;
-using CineFront.Presentacion.Reportes.ReporteCliente;
-using CineFront.Presentacion.Reportes.ReportePelicula;
-using CineFront.Presentacion.Reportes.ReportProduc;
-using CineFront.Presentacion.Reportes.ReporteVendedor;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,20 +25,20 @@ namespace CineFront
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            ReporteCliente cliente = new ReporteCliente();
-            cliente.ShowDialog();
+            //ReporteCliente cliente = new ReporteCliente();
+            //cliente.ShowDialog();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            ReportePelicula reportePelicula = new ReportePelicula();
-            reportePelicula.ShowDialog();
+           // ReportePelicula reportePelicula = new ReportePelicula();
+           // reportePelicula.ShowDialog();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            ReporteProducto productos = new ReporteProducto();
-            productos.ShowDialog();
+           // ReporteProducto productos = new ReporteProducto();
+           // productos.ShowDialog();
 
 
         }

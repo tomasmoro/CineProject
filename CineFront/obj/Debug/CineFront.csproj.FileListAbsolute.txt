@@ -766,8 +766,6 @@ C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\bin\De
 C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\Debug\CineFront.csproj.AssemblyReference.cache
 C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\Debug\CineFront.csproj.SuggestedBindingRedirects.cache
 C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Reportes.ReporteCliente.ReporteCliente.resources
-C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Reportes.ReportePelicula.ReportePelicula.resources
-C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Reportes.ReporteVendedor.ReporteVendedor.resources
 C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Tickets.Pago.resources
 C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Tickets.SeleccionAsientos.resources
 C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\Debug\CineFront.Presentacion.SeleccionPelicula.resources
@@ -848,5 +846,6 @@ C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\bin\De
 C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Registros.AMClientes.resources
 C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Registros.RegistroCliente.resources
-C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Reportes.ReportProduc.ReporteProducto.resources
 C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\Debug\CineFront.Presentacion.InicioSesion.resources
+C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\bin\Debug\Aspose.BarCode.dll
+C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\bin\Debug\Aspose.BarCode.xml

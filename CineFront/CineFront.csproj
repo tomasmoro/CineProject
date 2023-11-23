@@ -50,6 +50,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Aspose.BarCode, Version=23.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.BarCode.23.10.0\lib\net47\Aspose.BarCode.dll</HintPath>
+    </Reference>
     <Reference Include="Azure.Core, Version=1.25.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
       <HintPath>..\packages\Azure.Core.1.25.0\lib\net461\Azure.Core.dll</HintPath>
     </Reference>
@@ -241,49 +244,11 @@
     <Compile Include="Presentacion\Registros\RegistroCliente.Designer.cs">
       <DependentUpon>RegistroCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Reportes\ReporteCliente\Cliente.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Cliente.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Presentacion\Reportes\ReporteCliente\ReporteCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\Reportes\ReporteCliente\ReporteCliente.Designer.cs">
       <DependentUpon>ReporteCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Reportes\ReportePelicula\Peliculaxsd.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Peliculaxsd.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Reportes\ReportePelicula\ReportePelicula.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Reportes\ReportePelicula\ReportePelicula.Designer.cs">
-      <DependentUpon>ReportePelicula.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Reportes\ReporteVendedor\ReporteVendedor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Reportes\ReporteVendedor\ReporteVendedor.Designer.cs">
-      <DependentUpon>ReporteVendedor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Reportes\ReporteVendedor\VENDEDOR.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VENDEDOR.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Reportes\ReportProduc\PRODUCTO.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PRODUCTO.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Reportes\ReportProduc\ReporteProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Reportes\ReportProduc\ReporteProducto.Designer.cs">
-      <DependentUpon>ReporteProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Tickets\AsientoUI.cs" />
     <Compile Include="Presentacion\Tickets\Pago.cs">
@@ -328,21 +293,8 @@
     <EmbeddedResource Include="Presentacion\Registros\RegistroCliente.resx">
       <DependentUpon>RegistroCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Reportes\ReporteCliente\ReporteCliente.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\ReporteCliente\ReporteCliente.resx">
       <DependentUpon>ReporteCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Reportes\ReportePelicula\ReportePelicula.rdlc" />
-    <EmbeddedResource Include="Presentacion\Reportes\ReportePelicula\ReportePelicula.resx">
-      <DependentUpon>ReportePelicula.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Reportes\ReporteVendedor\ReporteVendedor.rdlc" />
-    <EmbeddedResource Include="Presentacion\Reportes\ReporteVendedor\ReporteVendedor.resx">
-      <DependentUpon>ReporteVendedor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Reportes\ReportProduc\ReporteProducto.rdlc" />
-    <EmbeddedResource Include="Presentacion\Reportes\ReportProduc\ReporteProducto.resx">
-      <DependentUpon>ReporteProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Tickets\Pago.resx">
       <DependentUpon>Pago.cs</DependentUpon>
@@ -370,50 +322,6 @@
       <DependentUpon>Reportes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
-    <None Include="Presentacion\Reportes\ReporteCliente\Cliente.xsc">
-      <DependentUpon>Cliente.xsd</DependentUpon>
-    </None>
-    <None Include="Presentacion\Reportes\ReporteCliente\Cliente.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Cliente.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Presentacion\Reportes\ReporteCliente\Cliente.xss">
-      <DependentUpon>Cliente.xsd</DependentUpon>
-    </None>
-    <None Include="Presentacion\Reportes\ReportePelicula\Peliculaxsd.xsc">
-      <DependentUpon>Peliculaxsd.xsd</DependentUpon>
-    </None>
-    <None Include="Presentacion\Reportes\ReportePelicula\Peliculaxsd.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Peliculaxsd.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Presentacion\Reportes\ReportePelicula\Peliculaxsd.xss">
-      <DependentUpon>Peliculaxsd.xsd</DependentUpon>
-    </None>
-    <None Include="Presentacion\Reportes\ReporteVendedor\VENDEDOR.xsc">
-      <DependentUpon>VENDEDOR.xsd</DependentUpon>
-    </None>
-    <None Include="Presentacion\Reportes\ReporteVendedor\VENDEDOR.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VENDEDOR.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Presentacion\Reportes\ReporteVendedor\VENDEDOR.xss">
-      <DependentUpon>VENDEDOR.xsd</DependentUpon>
-    </None>
-    <None Include="Presentacion\Reportes\ReportProduc\PRODUCTO.xsc">
-      <DependentUpon>PRODUCTO.xsd</DependentUpon>
-    </None>
-    <None Include="Presentacion\Reportes\ReportProduc\PRODUCTO.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PRODUCTO.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Presentacion\Reportes\ReportProduc\PRODUCTO.xss">
-      <DependentUpon>PRODUCTO.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -480,6 +388,11 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Presentacion\Reportes\ReporteAsientos\" />
+    <Folder Include="Presentacion\Reportes\ReportePeliculas\" />
+    <Folder Include="Presentacion\Reportes\ReporteVendedor\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.5.1.1\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.1.1\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />

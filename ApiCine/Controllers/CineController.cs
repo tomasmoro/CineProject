@@ -164,9 +164,9 @@ namespace ApiCine.Controllers
                 if (f != null)
                 {
 
-                    bool result = app.GenerateFactura(f);
-                    if (result)
-                        return Ok("Se añadio correctamente!!");
+                    int result = app.GenerateFactura(f);
+                    if (result !=0)
+                        return Ok(result);
                     else return BadRequest("Error interno!!!");
                 }
 
@@ -250,6 +250,21 @@ namespace ApiCine.Controllers
             try
             {
                 bool resultado = app.GetUserData(id_vendedor, pass);
+                return Ok(resultado);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno!!! Intente luego...");
+            }
+        }  
+        
+        [HttpPost("/check/")]
+        public IActionResult checkTicket(QrSendModel qr)
+        {
+
+            try
+            {
+                bool resultado = app.CheckTicket(qr);
                 return Ok(resultado);
             }
             catch (Exception ex)
