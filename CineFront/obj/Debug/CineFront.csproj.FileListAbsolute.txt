@@ -30,8 +30,6 @@ C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\C
 C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.csproj.CopyComplete
 C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.exe
 C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.pdb
-D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.RegistroUsuario.resources
-D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Registros.RegistroVendedor.resources
 C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Registros.RegistroVendedor.resources
 C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Tickets.Pago.resources
 C:\Users\Mariano\Desktop\Facultad\2 Cuatrimestre\Programacion 2\Cine TP\menus}\CineProject\CineFront\bin\Debug\SqlServerTypes\x64\msvcr120.dll
@@ -549,8 +547,6 @@ D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFro
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Reportes.ReporteCliente.ReporteCliente.resources
-D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Reportes.ReportePelicula.ReportePelicula.resources
-D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Reportes.ReportesProducto.resources
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Tickets.Pago.resources
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Tickets.SeleccionAsientos.resources
 D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Reportes.resources
@@ -849,3 +845,75 @@ C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\De
 C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\obj\Debug\CineFront.Presentacion.InicioSesion.resources
 C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\bin\Debug\Aspose.BarCode.dll
 C:\Users\tomas.moro\Desktop\Proyecto Cine\Proyecto3\CineProject\CineFront\bin\Debug\Aspose.BarCode.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Aspose.BarCode.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Azure.Core.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Azure.Identity.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.Identity.Client.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Buffers.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Memory.Data.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Memory.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Numerics.Vectors.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Security.AccessControl.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Security.Permissions.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Security.Principal.Windows.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Text.Encodings.Web.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Text.Json.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.ValueTuple.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Aspose.BarCode.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Azure.Core.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Azure.Identity.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.Data.SqlClient.pdb
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.Data.SqlClient.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.Identity.Client.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Buffers.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Memory.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Memory.Data.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Numerics.Vectors.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Security.AccessControl.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Security.Permissions.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Security.Principal.Windows.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Text.Encodings.Web.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Text.Json.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\System.ValueTuple.xml
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.InicioSesion.resources
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Registros.AMClientes.resources
+D:\MARK\UTN FRC\Materias\SEMESTRE 2\PROGRAMACIÓN 2\TP FINAL\CineProject\CineFront\obj\Debug\CineFront.Presentacion.Registros.RegistroCliente.resources

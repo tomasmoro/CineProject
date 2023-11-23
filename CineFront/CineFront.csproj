@@ -375,6 +375,10 @@
     <None Include="Resources\cinema-tickets_4998806.png" />
     <None Include="Resources\film-reel_2590670.png" />
     <None Include="Resources\rating_4149882 %281%29.png" />
+    <None Include="Resources\Fondo Principal1.png" />
+    <Content Include="Resources\Fondos de pantalla.png" />
+    <Content Include="Resources\Star CinePlex.png" />
+    <None Include="Resources\Star CinePlex1.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

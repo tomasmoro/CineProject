@@ -176,10 +176,13 @@ namespace CineFront.Presentacion.Tickets
            
             mCorreo.IsBodyHtml = true;
             mCorreo.Priority = MailPriority.High;
-
+            foreach (string path in files)
+            {
+                mCorreo.Attachments.Add(new Attachment(path));
+            }
             // Adjuntos
-         
-   
+
+
             try
             {
                 SmtpClient smtp = new SmtpClient();
