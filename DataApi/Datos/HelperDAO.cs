@@ -11,7 +11,7 @@ namespace DataAPI.Datos
     public class HelperDAO
     {
         private SqlConnection conexion;
-        private string stringConexion = @"Data Source=DESKTOP-VTP20P7\MSSQLSERVER01;Initial Catalog=STAR_CINEPLEX_GRUPO21_1W3;Integrated Security=True";
+        private string stringConexion = @"Data Source=EZE1-LLN-B05667\SQLEXPRESS;Initial Catalog=CINE_GRUPO21;Integrated Security=True";
         private static HelperDAO instancia;
 
         private HelperDAO()
@@ -69,7 +69,7 @@ namespace DataAPI.Datos
             return aux;
         }
 
-        internal DataTable Consultar(string nombreSP)
+        public DataTable Consultar(string nombreSP)
         {
             Conectar();
             SqlCommand comando = new SqlCommand();
@@ -82,7 +82,7 @@ namespace DataAPI.Datos
             return tabla;
         }
 
-        internal DataTable Consultar(string nombreSP, List<Parametro> lParams)
+        public DataTable Consultar(string nombreSP, List<Parametro> lParams)
         {
             Conectar();
             SqlCommand comando = new SqlCommand();

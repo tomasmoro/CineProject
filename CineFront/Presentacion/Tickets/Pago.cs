@@ -225,7 +225,7 @@ private void GenerarQR()
         string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + fileName;
         files.Add(filePath);
         gen.Save(filePath, BarCodeImageFormat.Png);
-                Thread.Sleep(1000);
+        Thread.Sleep(1000);
     }
     EnviarMail(files);
 }

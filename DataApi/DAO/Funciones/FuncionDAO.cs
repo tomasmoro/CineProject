@@ -242,6 +242,7 @@ namespace DataApi.DAO.Funciones
                 tipos_sala.Add(new TipoSala(id_tipo_sala, tipo_sala));
             }
             return tipos_sala;
-        }
+        } 
+    
     }
 }
